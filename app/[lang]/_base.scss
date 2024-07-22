@@ -1,0 +1,45 @@
+$black: #191919;
+$white: #FFFFFF;
+$grayed-white: #F2F2F2;
+$lighter-gray: #E5E5E5;
+$light-gray: #afafaf;
+$mid-gray: #8C8A8A;
+$dark-gray: #3A3A3A;
+$darker-gray: #2A2A2A;
+$red: rgba(208, 30, 46, 1);
+$dark-red: #a10923;
+$dark-purple: #4d146e;
+$purple: rgba(158, 0, 255, 1);
+$red-purple-text: linear-gradient(180deg, $red 1.58%, $purple 100%);
+$red-purple-bg: linear-gradient(to bottom, $red, $purple);
+
+// $main-font: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$main-font: "Inter", sans-serif;
+
+$vertical-padding: 100px;
+$horizontal-padding: 12%;
+$horizontal-padding-thick: 17%;
+
+$regular-font-size: 1.1rem;
+$regular-font-weight: 300;
+$regular-line-height: 1.5rem;
+
+$medium-font-size: 1.6rem;
+$medium-font-weight: 400;
+$medium-line-height: 2.3rem;
+
+$big-font-size: 3.5rem;
+$big-font-weight: 400;
+$big-line-height: 4.3rem;
+
+$small-title-size: 1.3rem;
+$small-title-weight: 400;
+$small-title-line-height: 2.3rem;
+
+$medium-title-size: 2.4rem;
+$medium-title-weight: 500;
+$medium-title-line-height: 2.7rem;
+
+$big-title-size: 4.8rem;
+$big-title-line-height: 4rem;
+$big-title-weight: 700;

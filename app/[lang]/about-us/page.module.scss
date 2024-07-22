@@ -1,0 +1,651 @@
+@use '../base';
+
+%section {
+  width: 100%;
+  padding: base.$vertical-padding base.$horizontal-padding;
+}
+
+%thiner-section {
+  width: 100%;
+  padding: base.$vertical-padding base.$horizontal-padding-thick;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  font-family: base.$main-font;
+  background-color: base.$white;
+
+  .header {
+    @extend %section;
+    display: flex;
+    flex-direction: column;
+
+    .hero {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: base.$black;
+      padding-top: base.$vertical-padding;
+      padding-bottom: 0;
+  
+      h1 {
+        width: 70%;
+        max-width: 800px;
+        font-size: base.$big-title-size;
+        line-height: 5.1rem;
+        font-weight: base.$big-title-weight;
+
+        &.spanish {
+          width: 80%;
+        }
+      }
+  
+      .asterisc {
+        font-size: 4.5rem;
+        font-weight: 400;
+        color: base.$mid-gray;
+      }
+    }
+  }
+
+
+  .horizontalSectionWrapper {
+    @extend %section;
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .imagesSection {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    
+    .imagesContainer {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding-top: 50px;
+  
+      .horizontalImageWrapper { // 1.5 aspect ratio
+        position: relative;
+        width: 750px;
+        height: 500px;
+
+        img {
+          object-fit: cover;
+        }
+      }
+  
+      .verticalImageWrapper { // 1.3 aspect ratio
+        position: relative;
+        width: 480px;
+        height: 630px;
+        margin-left: 30px;
+
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .statsSection {
+    @extend %thiner-section;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: base.$white;
+    color: base.$black;
+
+    .left {
+      padding-right: 10%;
+      padding-bottom: 80px;
+
+      .item {
+        margin-bottom: 40px;
+        
+        h4 {
+          font-size: 2.4rem;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+  
+        p {
+          font-size: 1.3rem;
+          line-height: 2.2rem;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 20%;
+      min-width: 240px;
+      border-left: 1px solid base.$black;
+      padding-left: 20px;
+
+      .top {
+        font-size: 1.2rem;
+
+        h4 {
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        p {
+          margin: 12px 0;
+        }
+      }
+
+      .verticalCoop {
+        align-self: flex-start;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        font-size: 4.5rem;
+        line-height: 2.5rem;
+        font-weight: 900;
+        color: base.$lighter-gray;
+      } 
+    }
+  }
+
+  .joinOurTeamSection {
+    @extend %thiner-section;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: base.$white;
+    color: base.$black;
+
+    .left {
+      width: 80%;
+      padding-right: 20%;
+      display: flex;
+      flex-direction: column;
+      
+      h2 {
+        font-size: base.$big-title-size;
+        font-weight: base.$big-title-weight;
+        line-height: base.$big-title-line-height;
+        width: 600px;
+        margin-bottom: 15px;
+      }
+  
+      h4 {
+        font-size: base.$medium-title-size;
+        font-weight: base.$medium-title-weight;
+        margin-top: 60px;
+      }
+
+      .paragraph {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+        margin-top: 20px;
+      }
+
+      .separator {
+        width: 100%;
+        height: 60px;
+      }
+    }
+    
+    .imageWrapper { // 0.75 aspect ratio
+      position: relative;
+      margin-right: calc(-1 * (base.$horizontal-padding-thick + base.$horizontal-padding));
+      margin-top: calc(-1 * base.$vertical-padding);
+      width: 55%;
+      aspect-ratio: 0.75;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  .perksSection {
+    @extend %section;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    background-color: base.$white;
+    color: base.$black;
+    display: flex;
+    flex-direction: row;
+
+    .left {
+      width: 22%;
+      
+      h3 {
+        font-size: base.$medium-title-size;
+        font-weight: base.$medium-title-weight;
+      }
+    }
+
+    .right {
+      width: 78%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .item {
+        width: 31%;
+        margin-bottom: 15px;
+
+        .imageWrapper {
+          position: relative;
+          width: 70px;
+          height: 65px;
+        }
+
+        h6 {
+          font-size: base.$small-title-size;
+          font-weight: base.$big-title-weight;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
+
+        p {
+          font-size: 1.1rem;
+          line-height: 1.8rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .widerNetworkSection {
+    @extend %section;
+    background-color: base.$black;
+
+    .widerNetworkContainer {
+      margin-bottom: base.$vertical-padding;
+
+      .subtitle {
+        font-size: base.$big-font-size;
+        font-weight: base.$big-font-weight;
+        line-height: base.$big-line-height;
+        color: base.$white;
+        margin-bottom: 40px;
+
+        span {
+          border-bottom: 4px solid base.$purple;
+          margin: 0 10px;
+        }
+      }
+
+      p {
+        color: base.$mid-gray;
+      }
+    }
+  }
+
+  .positiveImpactSection {
+    @extend %section;
+    background-color: base.$white;
+    color: base.$black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+
+    h2 {
+      font-size: base.$big-title-size;
+      font-weight: base.$big-title-weight;
+      line-height: base.$big-title-line-height;
+      width: 50%;
+    }
+
+    .textContainer {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 40px;
+
+      p {
+        width: 70%;
+        font-size: base.$small-title-size;
+        font-weight: base.$small-title-weight;
+        line-height: base.$small-title-line-height;
+      }
+
+      .blackStarContainer {
+        position: relative;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+// COMMON
+.sectionTitle {
+  font-size: base.$small-title-size;
+  font-weight: base.$small-title-weight;
+  color: base.$mid-gray;
+}
+
+.gradientText {
+  background: base.$red-purple-text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  &.higher {
+    padding-bottom: 20px;
+  }
+}
+
+.wideCardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 100px;
+  margin-top: base.$vertical-padding;
+  margin-bottom: 20px;
+}
+
+// Mobile
+@media (max-width: 768px) {
+  %section {
+    width: 100%;
+    padding: 40px 10%;
+  }
+  %thiner-section {
+    width: 100%;
+    padding: 40px 10%;
+  }
+
+  .main {
+    .header {
+      .hero {
+        padding-top: 60px;
+  
+        h1 {
+          width: 90%;
+          font-size: 2.4rem;
+          line-height: 2.5rem;
+
+          &.spanish {
+            width: 100%;
+          }
+        }
+  
+        .asterisc {
+          display: none;
+        }
+      }
+    }
+
+    .imagesSection {
+      height: 600px;
+      padding-top: 10px;
+      
+      .imagesContainer {
+        flex-direction: column;
+        padding-top: 0;
+  
+        .horizontalImageWrapper {
+          width: 345px;
+          height: 230px;
+        }
+  
+        .verticalImageWrapper {
+          width: 240px;
+          height: 310px;
+          margin-top: 20px;
+          align-self: flex-end;
+        }
+      }
+    }
+
+    .statsSection {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 60px;
+      width: 95%;
+      margin-bottom: 40px;
+
+      .left {
+        padding-right: 0;
+        padding-bottom: 0;
+        width: 100%;
+
+        .item {
+          margin-bottom: 40px;
+          
+          h4 {
+            font-size: 1.4rem;
+            font-weight: base.$big-title-weight;
+            margin-bottom: 15px;
+          }
+    
+          p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 5px 0;
+          }
+        }
+      }
+
+      .right {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        border: none;
+        width: 100%;
+        padding-left: 0;
+        margin-top: 10px;
+
+        .top {
+          border-left: 1px solid base.$black;
+          padding-left: 20px;
+          padding-bottom: 15px;
+          font-size: 1.1rem;
+          margin-top: 30px;
+
+          h4 {
+            margin-bottom: 10px;
+          }
+          p {
+            margin: 8px 0;
+          }
+        }
+
+        .verticalCoop {
+          align-self: flex-end;
+          font-size: 3rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+
+    .joinOurTeamSection {
+      flex-direction: column;
+      gap: 30px;
+
+      .left {
+        width: 100%;
+        padding-right: 0;
+
+        h2 {
+          font-size: 2.3rem;
+          line-height: 2.3rem;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5;
+          margin: 5px 0;
+        }
+
+        h4 {
+          font-size: 1.4rem;
+          font-weight: base.$big-title-weight;
+          margin-bottom: 15px;
+          margin-top: 30px;
+        }
+      }
+
+      .imageWrapper {
+        order: -1;
+        width: 100%;
+        align-self: flex-start;
+        margin-left: calc(-1 * 20%);
+        margin-bottom: 60px;
+        height: 340px;
+        top: 30px;
+      }
+    }
+
+    .perksSection {
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+  
+        h3 {
+          font-size: 2rem;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+      }
+
+      .right {
+        width: 100%;
+        gap: 20px;
+  
+        .item {
+          width: 100%;
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+  
+          .imageWrapper {
+            width: 45px;
+            height: 40px;
+          }
+
+          div {
+            width: 77%;
+            display: flex;
+            flex-direction: column;
+
+            h6 {
+              font-size: 1.1rem;
+              margin-top: 8px;
+              margin-bottom: 10px;
+            }
+    
+            p {
+              font-size: 0.9rem;
+              line-height: 1.2rem;
+              font-weight: 300;
+            }
+          }
+  
+        }
+      }
+    }
+
+    .widerNetworkSection {
+      .widerNetworkContainer {
+        .subtitle {
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 2.5rem;
+          color: base.$white;
+  
+          span {
+            border-bottom-width: 2px;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .wideCardsContainer {
+      margin-top: 40px;
+      gap: 60px;
+    }
+
+    .positiveImpactSection {
+      padding-top: 150px;
+
+      h2 {
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+        width: 100%;
+      }
+
+      .textContainer {
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+          width: 100%;
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+        }
+
+        .blackStarContainer {
+          position: relative;
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+
+  // COMMON
+  .sectionTitle {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 769px) and (max-width: 1400px) {
+  %section {
+    padding: 80px 8%;
+  }
+
+  %thiner-section {
+    padding: 80px 12%;
+  }
+
+  .main {
+    .joinOurTeamSection {
+      .left {
+        width: 100%;
+
+        h2 {
+          font-size: 4rem;
+        }
+      }
+    }
+    .perksSection {
+      .right {
+        .item {
+          width: 30%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "about": "Quiénes somos",
+    "contact": "Contacto",
+    "news": "Novedades",
+    "joinUs": "Sumate"
+  },
+  "home": {
+    "header": {
+      "we-develop": "Desarrollamos software ",
+      "growth": "para tu crecimiento",
+      "innovation": "para innovar",
+      "ideas": "para hacer realidad tus ideas",
+      "love": "¡porque nos apasiona!",
+      "contact-us": "Contactanos"
+    },
+    "section1": {
+      "scale": "Potenciá tu capacidad",
+      "scale-text": "Accedé a los mejores talentos para maximizar el rendimiento de tus proyectos con nuestros servicios de Staff Augmentation.",
+      "title1": "Expertise",
+      "text1": "Nuestro equipo de talentos incluye desarrolladores remotos altamente capacitados en backend, front-end, fullstack y diseño UX/UI.",
+      "title2": "Zona horaria",
+      "text2": "Nuestro equipo está distribuido internacionalmente, permitiéndonos estar alineados en zonas horarias a lo largo de los Estados Unidos y Europa.",
+      "title3": "Gestión",
+      "text3": "Obtené asistencia para identificar el alcance y los objetivos del proyecto, orientación en la puesta en producción y el control de calidad del código, impulsando resultados sobresalientes.",
+      "agile": "Agilismo",
+      "agile-text": "Trabajamos con principios y metodologías ágiles, priorizando la comunicación frecuente y las iteraciones rápidas para generar valor. Tenemos un enfoque centrado en el cliente y desarrollamos software de manera incremental, haciendo del cambio parte del proceso. Esto nos permite abordar de manera eficiente desafíos complejos, impulsar la innovación y ofrecer soluciones de alta calidad que superan las expectativas."
+    },
+    "section2": {
+      "title": "02 ⎯ Tecnologías"
+    },
+    "globalCustomersSection": {
+      "title": "Clientes globales",
+      "mainTitle": "Programación inteligente",
+      "mainText": "Trabajamos con empresas ubicadas en diferentes partes del mundo. Proporcionamos servicios especializados, adaptados a las necesidades de tu proyecto y objetivos comerciales, asegurando resultados exitosos.",
+      "customersGrid": {
+        "title": "Proyectos"
+      }
+    },
+    "whyUsSection": {
+      "title": "por qué elegirnos",
+      "item1": {
+        "title": "Escalar equipos",
+        "text": "Trabajamos con una red amplia de programadores. Esto nos permite potenciar tus proyectos, sumando profesionales con experiencia en diversos lenguajes, sin demoras."
+      },
+      "item2": {
+        "title": "Contratación eficiente",
+        "text": "Hacemos tratos directos, con un punto de contacto. De esta manera se agiliza el proceso de contratación y se crea un canal abierto para futuras búsquedas de empleo."
+      },
+      "item3": {
+        "title": "Respaldo",
+        "text": "Respondemos por la persona contratada. Contamos con 10 años de experiencia, nuestro probado entendimiento de diversos entornos empresariales mejora nuestras capacidades de resolución de problemas, asegurando servicios excepcionales."
+      },
+      "item4": {
+        "title": "Calidad",
+        "text": "Nuestros equipos tienen soporte in-house, y un requerimiento de actualización constante, manteniéndonos en el top de la tecnología."
+      }
+    },
+    "section3": {
+      "title": "03 ⎯ Nuestras ideas",
+      "mainTitle": "Somos una empresa cooperativa gobernada democráticamente por sus propios trabajadores.",
+      "item1": "Decisiones horizontales",
+      "item2": "Desarrollos colaborativos",
+      "item3": "Innovación",
+      "button": "Conocenos"
+    }
+  },
+  "aboutUs": {
+    "header": {
+      "title": "Somos una empresa cooperativa de tecnología"
+    },
+    "roadMapSection": {
+      "title": "Nuestras coordenadas",
+      "paragraph": "Nos conformamos como una empresa de desarrollo de software en el 2007, una década después, en 2018, dimos el gran paso y nos mudamos a una organización cooperativa. Esto implica una organización de propiedad conjunta, dirigida por sus propios miembros. Cada integrante tiene voz y voto, e ideas que importan a los demás.\n\nActualmente nuestra base está en Bariloche, patagonia argentina, lugar que amamos. También estamos distribuidos en Rosario, Buenos Aires, España y Estados Unidos."
+    },
+    "statsSection": {
+      "left": {
+        "title1": "Participación democrática",
+        "text1": "Decidimos colectiva y autónomamente qué proyectos encarar, la dirección estratégica que deseamos tomar, así como la forma de organizarnos.",
+        "title2": "Compromiso social",
+        "text2": "Valoramos las comunidades a las que pertenecemos, por eso buscamos contribuir, a través de la tecnología, al avance de una sociedad más equitativa.",
+        "title3": "Estamos en el lugar correcto",
+        "text3": "Hacemos lo que nos gusta, nos desarrollamos profesionalmente y nos vinculamos en un ámbito solidario y colaborativo.",
+        "title4": "Consenso económico",
+        "text4": "Tenemos el control de nuestros números. Decidimos cómo distribuir los ingresos de nuestro trabajo y qué proyectos nos parece importante sostener."
+      },
+      "right": {
+        "title": "DATOS",
+        "item1": "Fundada 2007",
+        "item2": "Clientes +100",
+        "item3": "Posición +5 países",
+        "item4": "Trabajadores +15"
+      }
+    },
+    "joinOurTeamSection": {
+      "title": "¡Unite a nuestro equipo!",
+      "paragraph1": "Colaborá con expertos en proyectos desafiantes y tecnologías diversas, en un entorno alentador que fomenta el aprendizaje y el crecimiento.",
+      "subtitle": "Nuestra filosofía de trabajo",
+      "paragraph2": "Reconocemos que el camino de cada persona es único, por eso estamos comprometidos a motivar los intereses y necesidades individuales, a la vez que buscamos impulsar al grupo hacia adelante.",
+      "button": "Sumate"
+    },
+    "perksSection": {
+      "title": "Beneficios",
+      "item1": {
+        "title": "Somos un equipo híbrido",
+        "text": "Algunos miembros trabajan totalmente remotos y otros de manera presencial desde nuestra oficina en Bariloche. Dependiendo de tus preferencias y circunstancias, podés optar por cualquiera de las dos opciones, o una combinación de ambas."
+      },
+      "item2": {
+        "title": "Tiempo libre y licencias",
+        "text": "Enmarcados en los derechos laborales argentinos y con el objetivo de establecer un balance positivo entre el trabajo y otros aspectos de la vida, ofrecemos un mínimo de 15 días de vacaciones, junto con 12 feriados nacionales. También permisos por paternidad, maternidad y matrimonio para los miembros de la cooperativa."
+      },
+      "item3": {
+        "title": "Oportunidades de desarrollo",
+        "text": "Ofrecemos salarios competitivos y oportunidades de desarrollo profesional, incluyendo un proceso anual de revisión de antigüedad."
+      },
+      "item4": {
+        "title": "Capacitaciones para tu futuro",
+        "text": "Mejora tus habilidades de comunicación con nuestras clases de inglés impartidas por profesores locales o nativos, y la interacción continua con clientes de todo el mundo.\n\nAdemás, ofrecemos acceso a cursos de formación en programación personalizados para que puedas perfeccionar tus habilidades."
+      },
+      "item5": {
+        "title": "Valores",
+        "text": "Priorizamos una cultura de confianza, en la cual el apoyo entre los y las colegas es esencial para el desarrollo colectivo. En este sentido, nos enfocamos día a día en afianzar un entorno de trabajo abierto para expresar libremente nuestras ideas.\n\nAunque debería ser obvio, sentimos que es importante explicitarlo: somos un empleador inclusivo que ofrece igualdad de oportunidades."
+      }
+    },
+    "widerNetworkSection": {
+      "title": "Red de redes",
+      "subtitlePt1": "Somos parte de ",
+      "subtitleSpan": "FACTTIC",
+      "subtitlePt2": ", un colectivo de cooperativas que reúne una fuerza laboral mayor a 450 personas.",
+      "paragraph1": "Como miembros de la Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento (FACTTIC), colaboramos para ampliar la gama de servicios ofrecidos. Al trabajar junto a otras cooperativas, mejoramos colectivamente nuestras capacidades y perfiles, contribuyendo a una fuerza laboral que supera los 450 miembros. En este marco, buscamos fomentar relaciones laborales justas, un entorno solidario y la gestión de proyectos alineados con nuestros propios intereses y principios de soberanía.",
+      "collectiveProjectsTitle": "01 ⎯ Proyectos seleccionados"
+    },
+    "positiveImpactSection": {
+      "title": "Proyectos de impacto social",
+      "paragraph": "Abordamos proyectos que generan sinergia entre actualizarnos, estudiar nuevas tecnologías y lograr un impacto positivo en nuestra comunidad. Mediante un esquema de encuentros internos ideamos soluciones innovadoras, arquitectura, diseño y ejercitamos buenas prácticas de programación."
+    }
+  },
+  "contact": {
+    "header": {
+      "title": "Contactanos"
+    },
+    "formSection": {
+      "title": "¡Poné tu proyecto en marcha!",
+      "paragraph": "Envíanos un mensaje si querés aumentar la capacidad de tu equipo. También, podés hacernos consultas generales, pedir cotizaciones o simplemente compartir tus ideas. Te responderemos lo antes posible.",
+      "form": {
+        "name": "Nombre",
+        "phone": "Teléfono",
+        "uploadCV": "Cargá tu CV",
+        "email": "Email",
+        "message": "Mensaje",
+        "button": "Enviar",
+        "uploading": "Enviando...",
+        "noFileSelected": "Ningún archivo seleccionado",
+        "errors": {
+          "requiredField": "Campo requerido",
+          "phoneInvalid": "Por favor ingresá un teléfono válido",
+          "emailInvalid": "Por favor ingresá un email válido",
+          "fileTooBig": "El tamaño del archivo debe ser menor a 5MB"
+        },
+        "successMessage": "¡Gracias por tu mensaje!",
+        "missingCaptcha": "Por favor completá la verificación de reCAPTCHA"
+      }
+    },
+    "wannaJoinSection": {
+      "title": "¿Te gustaría unirte a nuestro equipo?",
+      "paragraph": "Envía tu currículum para colaborar en futuros proyectos, o contáctanos si tenés alguna pregunta.",
+      "button": "Enviá tu CV"
+    },
+    "joinUs": {
+      "header": {
+        "title": "Sumate a nuestro equipo"
+      },
+      "openPositions": {
+        "title": "Posiciones abiertas",
+        "noPositions": "Actualmente no estamos contratando, pero por favor envianos tu currículum de todas formas, lo tendremos en cuenta para futuras oportunidades."
+      }
+    }
+  },
+  "news": {
+    "header": {
+      "title": "¡Seguí nuestras novedades!"
+    },
+    "card": {
+      "buttonText": "leer más"
+    }
+  },
+  "wideCard": {
+    "buttonText": "Know more"
+  },
+  "footer": {
+    "actionText": "¡Ponete en contacto!"
+  }
+}

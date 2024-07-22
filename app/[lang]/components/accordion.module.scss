@@ -1,0 +1,84 @@
+@use '../base';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: base.$black;
+  border-bottom: 3px solid base.$black;
+  padding: 0;
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    h4 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      padding: 15px 0;
+    }
+
+    .button {
+      font-size: 3.2rem;
+      font-weight: 400;
+      width: 55px;
+      height: 55px;
+      background: base.$red-purple-text;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      cursor: pointer;
+
+      &.bigger {
+        margin-right: -14px;
+        transform: scaleX(1.58);
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    max-height: 0;
+
+    p {
+      font-size: 1.3rem;
+      line-height: 2.2rem;
+      margin-bottom: 30px;
+    }
+
+    &.visible {
+      max-height: 400px;
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .container {
+    border-bottom: 2px solid base.$black;
+
+    .header {
+      h4 {
+        font-size: 1.3rem;
+      }
+
+      .button {
+        font-size: 2.5rem;
+      }
+    }
+
+    .content {
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+}

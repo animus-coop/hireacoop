@@ -1,0 +1,194 @@
+{
+  "nav": {
+    "about": "About Us",
+    "contact": "Contact",
+    "news": "News",
+    "joinUs": "Join us"
+  },
+  "home": {
+    "header": {
+      "we-develop": "We develop software ",
+      "growth": "for your growth",
+      "innovation": "for innovative solutions",
+      "ideas": "to bring ideas to life",
+      "love": "because we love it!",
+      "contact-us": "Contact us"
+    },
+    "section1": {
+      "title": "01 ⎯ Our Services",
+      "scale": "Scale your tech operations",
+      "scale-text": "Access top-tier talent with our Staff Augmentation services. Boost productivity and efficiency with our skilled professionals.",
+      "title1": "Expertise",
+      "text1": "From a diverse talent pool, our staff includes highly skilled remote developers proficient in backend, front-end, fullstack, and UX/UI design.",
+      "title2": "Time zone",
+      "text2": "Our distributed team is time zone aligned across the United States and Europe, ensuring fluid collaboration regardless of location.",
+      "title3": "Management",
+      "text3": "Get assistance in identifying project scope and goals, guidance in the incremental release of code, and quality-controlled deployment, driving outstanding results.",
+      "agile": "Agile team",
+      "agile-text": "By embracing agile principles and methodologies, our dedicated team prioritizes frequent communication and rapid iterations to deliver value. We focus on a customer-centric approach and work software incrementally, making change part of the process. This enables us to efficiently tackle complex challenges, drive innovation and high-quality solutions that exceed expectations."
+    },
+    "section2": {
+      "title": "02 ⎯ Technologies"
+    },
+    "globalCustomersSection": {
+      "title": "Global customers",
+      "mainTitle": "Smart coding",
+      "mainText": "We work with companies located in different parts of the world, providing dedicated expertise precisely tailored to your project needs and business objectives, ensuring successful outcomes.",
+      "customersGrid": {
+        "title": "Our work"
+      }
+    },
+    "whyUsSection": {
+      "title": "why choose us",
+      "item1": {
+        "title": "Scaling Teams",
+        "text": "We work with a broad network of programmers, who master various technologies and frameworks. This enables us to provide professionals to your team without delays, powering projects forwards."
+      },
+      "item2": {
+        "title": "Efficient Hiring",
+        "text": "We engage in direct dealings as contractors, with a single point of contact. This allows you to streamline the recruitment process and creates a channel for future job searches."
+      },
+      "item3": {
+        "title": "Support",
+        "text": "We stand behind the hired candidate, backed by 10 years of experience. Our proven understanding of diverse business environments enhances our problem-solving capabilities ensuring exceptional services."
+      },
+      "item4": {
+        "title": "Quality",
+        "text": "Our teams benefit from in-house support and maintain a constant requirement for updates, ensuring that we remain at the forefront of technology. Our commitment to nurturing our people is evident in their growth and competitive edge."
+      }
+    },
+    "section3": {
+      "title": "03 ⎯ About us",
+      "mainTitle": "We are a democratically governed cooperative tech company managed by its own workers.",
+      "item1": "Horizontal decisions",
+      "item2": "Collaborative developments",
+      "item3": "Innovation",
+      "button": "More about us"
+    }
+  },
+  "aboutUs": {
+    "header": {
+      "title": "We are a tech workers cooperative"
+    },
+    "roadMapSection": {
+      "title": "Our road map",
+      "paragraph": "Our business is owned and run by its members, understanding each other's ideas as equally important.\n\nWe established ourselves as a software development company in 2007. A decade later, in 2018, we took the big step and transitioned into a cooperative organization. Currently, our main team is based in Bariloche, Argentine Patagonia, a place we love. We are also located in Rosario, Buenos Aires, Spain, and the United States."
+    },
+    "statsSection": {
+      "left": {
+        "title1": "Democratic participation",
+        "text1": "We collectively and autonomously decide on the projects and strategic direction we wish to pursue, as well as how to organize ourselves.",
+        "title2": "Committed to social change",
+        "text2": "We are a part of the communities we belong to, striving to contribute through technology to the advancement of a more equitable society.",
+        "title3": "We are in the right place",
+        "text3": "We do what we love, we develop professionally, and we engage in a supportive and collaborative environment.",
+        "title4": "Achieving Financial Consensus",
+        "text4": "We have control over our finances, deciding how to distribute the income from our work and which projects we deem important to sustain."
+      },
+      "right": {
+        "title": "STATS",
+        "item1": "Founded 2007",
+        "item2": "Clients 100+",
+        "item3": "Position +5 countries",
+        "item4": "Workmates +15"
+      }
+    },
+    "joinOurTeamSection": {
+      "title": "Join our inspiring team",
+      "paragraph1": "Collaborate with experts across challenging projects and diverse technologies, while feeling supported in an encouraging environment that fosters learning and growth.",
+      "subtitle": "Our working philosophy",
+      "paragraph2": "We recognize that everyone's journey is unique, and we are committed to motivating and considering individual interests and needs while also driving the group forward.",
+      "button": "Work with us"
+    },
+    "perksSection": {
+      "title": "Perks and\nbenefits",
+      "item1": {
+        "title": "We are a hybrid team",
+        "text": "With some members fully remote and others commuting to the office daily. Depending on your preferences and circumstances, you can opt for either, or a combination of both."
+      },
+      "item2": {
+        "title": "Time off  and leaves",
+        "text": "Building a balance between work and other aspects of your life, we offer a minimum of 15 days of vacation, along with 12 national holidays, as well as parental and wedding leave for cooperative members."
+      },
+      "item3": {
+        "title": "Development opportunities",
+        "text": "We provide competitive salaries and career development opportunities, including an annual seniority review process."
+      },
+      "item4": {
+        "title": "Shape your future",
+        "text": "Enhance your communication skills through our english classes led by both local and native speakers, and ongoing interaction with clients spanning the globe.\n\nAdditionally, we provide access to tailored training in essential programming languages courses, which we cover, so you can further hone your skills."
+      },
+      "item5": {
+        "title": "Values",
+        "text": "We prioritize a culture of trust within our team, where peer support from our network and colleagues is essential for collective development. Here, you are encouraged to freely express your ideas in an open workplace environment.\n\nAnd, although it should go without saying, we feel it's important to reiterate: we are an equal opportunity employer and welcome applicants from all backgrounds."
+      }
+    },
+    "widerNetworkSection": {
+      "title": "Wider Network",
+      "subtitlePt1": "We are part of a bigger collective, ",
+      "subtitleSpan": "FACTTIC",
+      "subtitlePt2": ", with a workforce capacity exceeding 450 members.",
+      "paragraph1": "As members of FACTTIC, Argentina's network of technology cooperatives, we collaborate to expand the range of services offered. Working alongside other cooperatives, we collectively enhance our capabilities and profiles, contributing to a workforce capacity exceeding 450 members. Together, we share a commitment to fostering fair labor relations, nurturing a supportive environment, and managing projects aligned with our collective interests and sovereignty.",
+      "collectiveProjectsTitle": "01 ⎯ Featured collective projects"
+    },
+    "positiveImpactSection": {
+      "title": "Training and Positive impact",
+      "paragraph": "We tackle projects that create synergy between updating ourselves, studying new technologies, and achieving a positive impact on our community. Through a scheme of internal meetings, we devise innovative solutions, architecture, design, and best programming practices implementation."
+    }
+  },
+  "contact": {
+    "header": {
+      "title": "Let's talk"
+    },
+    "formSection": {
+      "title": "Get your project moving!",
+      "paragraph": "Drop us a line if you want to boost your team's velocity or capacity. Also, get in touch for general inquiries, quotes, or just to share ideas. We will get back to you as soon as possible.",
+      "form": {
+        "name": "Name",
+        "phone": "Phone",
+        "uploadCV": "Upload your CV",
+        "email": "Email",
+        "message": "Message",
+        "button": "Send email",
+        "uploading": "Sending...",
+        "noFileSelected": "No file selected",
+        "errors": {
+          "requiredField": "This field is required",
+          "phoneInvalid": "Please enter a valid phone number",
+          "emailInvalid": "Please enter a valid email address",
+          "fileTooBig": "File size must be less than 5MB"
+        },
+        "successMessage": "Thank you for your message!",
+        "missingCaptcha": "Please complete the reCAPTCHA challenge" 
+      }
+    },
+    "wannaJoinSection": {
+      "title": "Would you like to join our team?",
+      "paragraph": "Submit your resume to collaborate on upcoming projects, or contact us if you have any questions. We'd love to hear from you.",
+      "button": "Join our team"
+    },
+    "joinUs": {
+      "header": {
+        "title": "Join our inspiring team"
+      },
+      "openPositions": {
+        "title": "Open positions",
+        "noPositions": "We're not currently hiring, but please send us your resume anyway, we'll keep it in mind for future opportunities."
+      }
+    }
+  },
+  "news": {
+    "header": {
+      "title": "Stay tuned!"
+    },
+    "card": {
+      "buttonText": "read more"
+    }
+  },
+  "wideCard": {
+    "buttonText": "Know more"
+  },
+  "footer": {
+    "actionText": "Let´s get in touch!"
+  }
+}

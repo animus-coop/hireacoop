@@ -1,0 +1,79 @@
+@use '../base';
+
+.button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+  height: 50px;
+  width: fit-content;
+  padding: 24px 30px;
+  gap: 10px;
+  background-color: base.$white;
+  border-radius: 40px;
+  z-index: 999;
+  cursor: pointer;
+
+  &.blackBorder {
+    border: 1px solid base.$black;
+    background-color: transparent;
+    color: base.$black;
+  }
+
+  p {
+    color: base.$black !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+  }
+
+  .arrowContainer {
+    position: relative;
+    width: 15px;
+    height: 16px;
+    margin-bottom: -1px;
+    filter: brightness(0) grayscale(1);
+  }
+
+  &:not(:disabled):hover {
+    gap: 15px;
+
+    p {
+      background: base.$red-purple-text !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+    }
+    
+    .arrowContainer {
+      position: relative;
+      filter: none;
+    }
+  }
+
+  &:disabled {
+    background-color: base.$light-gray !important;
+    color: base.$darker-gray !important;
+    cursor: not-allowed !important;
+  }
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .button {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 0.9rem;
+    justify-content: center;
+
+    .arrowContainer {
+      width: 12px;
+      height: 13px;
+    }
+
+    &:hover {
+      gap: 10px;
+    }
+  }
+}

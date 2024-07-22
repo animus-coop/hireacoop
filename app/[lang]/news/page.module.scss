@@ -1,0 +1,119 @@
+@use '../base';
+
+%section {
+  width: 100%;
+  padding: base.$vertical-padding base.$horizontal-padding;
+}
+
+%thiner-section {
+  width: 100%;
+  padding: base.$vertical-padding base.$horizontal-padding-thick;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  font-family: base.$main-font;
+  background-color: base.$white;
+
+  .header {
+    @extend %section;
+    display: flex;
+    flex-direction: column;
+
+    .hero {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: base.$black;
+      padding-top: base.$vertical-padding;
+      padding-bottom: 0;
+  
+      h1 {
+        width: 65%;
+        max-width: 750px;
+        font-size: base.$big-title-size;
+        font-weight: base.$big-title-weight;
+        margin-top: 80px;
+
+        &.spanish {
+          height: 450px;
+        }
+      }
+  
+      .starContainer {
+        position: relative;
+        width: 45%;
+        margin-right: -18%;
+        margin-top: -80px;
+        aspect-ratio: 1;
+      }
+    }
+  }
+
+  .content {
+    @extend %section;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -25%;
+  }
+}
+
+// Mobile
+@media (max-width: 768px) {
+  %section {
+    width: 100%;
+    padding: 40px 10%;
+  }
+  %thiner-section {
+    width: 100%;
+    padding: 40px 10%;
+  }
+
+  .main {
+    margin-bottom: 0;
+
+    .header {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+
+        h1 {
+          width: 70%;
+          font-size: 3rem;
+          font-weight: base.$big-title-weight;
+          line-height: 3.1rem;
+          margin-top: 70px;
+          padding-bottom: 200px;
+          align-self: flex-start;
+        }
+
+        .starContainer {
+          width: 100%;
+          margin-top: -360px;
+          margin-right: -210px;
+          z-index: 2;
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+
+    .content {
+      position: relative;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      margin-top: -120px;
+    }
+  }
+}

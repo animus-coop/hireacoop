@@ -1,0 +1,190 @@
+@use '../base';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  font-weight: 500;
+  width: 100%;
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .logo {
+      &.black {
+        filter: invert(0.8);
+      }
+    }
+  
+    .nav {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      font-size: 1rem;
+      font-weight: 400;
+
+      .navItemContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+      }
+  
+      &.white {
+        .link {
+          color: base.$light-gray;
+          font-weight: 500;
+  
+          &:hover {
+            color: base.$white;
+          }
+  
+          &.active {
+            color: base.$white;
+            cursor: default;
+            pointer-events: none;
+          }
+        }
+
+        .underline {
+          width: 100%;
+          height: 3px;
+          background-color: base.$white;
+        }
+  
+        .lang {
+          display: flex;
+          gap: 10px;
+          color: base.$light-gray;
+  
+          .active {
+            font-weight: 700;
+            color: base.$white;
+          }
+          
+          a {
+            &:hover {
+              color: base.$white;
+            }
+          }
+        }
+      }
+      
+      &.black {
+        .link {
+          color: base.$mid-gray;
+          font-weight: 500;
+  
+          &:hover {
+            color: base.$black;
+          }
+  
+          &.active {
+            color: base.$black;
+            cursor: default;
+            pointer-events: none;
+          }
+        }
+
+        .underline {
+          width: 100%;
+          height: 3px;
+          background-color: base.$black;
+        }
+  
+        .lang {
+          display: flex;
+          gap: 10px;
+          color: base.$mid-gray;
+  
+          .active {
+            font-weight: 700;
+            color: base.$black;
+          }
+  
+          a {
+            &:hover {
+              color: base.$black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .burgerMenu, .mobileNav {
+    display: none;
+  }
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .container {
+    padding-top: 20px;
+    width: 100%;
+
+    .top {
+      .nav {
+        display: none;
+      }
+    }
+
+    .mobileNav {
+      display: flex;
+      width: 100%;
+      padding-top: 20px;
+      flex-direction: column;
+      align-self: flex-end;
+      max-height: 0;
+      transition: max-height 0.5s ease;
+      overflow: hidden;
+
+      &.visible {
+        max-height: 1000px;
+      }
+
+      .link {
+        color: base.$white;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 10px 0;
+        text-align: right;
+        border-bottom: 0.5px solid base.$light-gray;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &.active {
+          color: base.$mid-gray;
+          pointer-events: none;
+        }
+      }
+
+      &.black {
+        .link {
+          color: base.$black;
+          border-bottom: 0.5px solid base.$mid-gray;
+  
+          &:last-child {
+            border-bottom: none;
+          }
+
+          &.active {
+            color: base.$light-gray;
+            border-bottom-color: base.$light-gray;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+
+    .burgerMenu {
+      display: block;
+      color: base.$white;
+    }
+  }
+}
