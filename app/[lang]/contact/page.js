@@ -2,10 +2,8 @@ import { getDictionary } from "../../../get-dictionary";
 import EmailForm from "../components/email-form";
 import styles from "./page.module.scss";
 import Nav from "../components/nav";
-import Image from "next/image";
 import Footer from "../components/footer";
 
-import BigStarImg from '../../../public/big-star.svg';
 import Button from "../components/button";
 import AnimationWrapper from "../components/animation-wrapper";
 import { getTranslatedPathname } from "../../../utils/pathnames";
@@ -67,10 +65,6 @@ export default async function Contact({
               href="/[lang]/join-us"
               as={getTranslatedPathname(lang, 'join-us')}
             />
-          </div>
-
-          <div className={styles.starContainer}>
-            <Image fill src={BigStarImg} alt="Big star image" />
           </div>
         </div>
 

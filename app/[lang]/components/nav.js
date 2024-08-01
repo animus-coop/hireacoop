@@ -3,7 +3,7 @@
 import styles from './nav.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../../public/logo.svg';
+// import logo from '../../../public/logo.svg';
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { getTranslatedPathname } from '../../../utils/pathnames';
@@ -54,7 +54,7 @@ export default function Nav({
   return (
     <div className={styles.container}>
       <div className={styles.top}>
-        <Link href="/[lang]" as={`/${lang}`}>
+        {/* <Link href="/[lang]" as={`/${lang}`}>
           <Image
             src={logo}
             alt="Animus Logo"
@@ -63,7 +63,7 @@ export default function Nav({
             height={24}
             priority
           />
-        </Link>
+        </Link> */}
 
         <div className={styles.nav + ' ' + (black ? styles.black : styles.white)}>
           <div className={styles.navItemContainer}>

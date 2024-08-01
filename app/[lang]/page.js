@@ -8,15 +8,11 @@ import HorizontalSecion from "./components/horizontal-section";
 import Nav from "./components/nav";
 import VantaFog from "./components/vanta-fog";
 
-import CoopeImg from '../../public/coope-pic.jpeg';
-import BreakSectionImg from '../../public/break-section.jpeg';
-
 import Footer from "./components/footer";
 import { capitalize, spanishClassName } from "../../utils/strings";
 import AnimationWrapper from "./components/animation-wrapper";
 import Button from "./components/button";
 
-import { customersData, techsData } from "../data/home";
 import { getTranslatedPathname } from "../../utils/pathnames";
 
 export default async function Home({
@@ -24,54 +20,37 @@ export default async function Home({
 }) {
   const dictionary = await getDictionary(lang);
 
-  const header = dictionary["home"]["header"];
-  const section1 = dictionary["home"]["section1"];
-  const section2 = dictionary["home"]["section2"];
-  const globalCustomersSection = dictionary["home"]["globalCustomersSection"];
-  const whyUsSection = dictionary["home"]["whyUsSection"];
-  const section3 = dictionary["home"]["section3"];
-
-  const headerAlt = header["we-develop"] + header["growth"] + '. ' + capitalize(header["innovation"]) + '. ' + capitalize(header["ideas"]) + '. ' + capitalize(header["love"]);
+  const hero = dictionary["hero"];
 
   const spanishClass = spanishClassName(lang, styles.spanish);
 
   return (
     <AnimationWrapper>
       <main className={styles.main}>
-        <div id="home-hero" className={styles.header}>
-          <VantaFog
-            elementId="#home-hero"
-            baseColor="#7F0203"
-            lowlightColor="#2C00FF"
-            midtoneColor="#FE1F02"
-            highlightColor="#AF169A"
-            blurFactor={0.9}
-            zoom={0.6}
-            minHeight={800}
-          />
 
-          <Nav dictionary={dictionary} lang={lang} />
+        <Nav dictionary={dictionary} lang={lang} />
 
-          <h1 alt={headerAlt}>
-            {header["we-develop"]}<br/>
-            <TypingEffect
-              strings={[
-                header["growth"],
-                header["innovation"],
-                header["ideas"],
-                header["love"]
-              ]}
+        <div className={styles.hero}>
+          <div className={styles.imageContainer}>
+            <Image
+              src="/hero.svg"
+              alt="Fist logo"
+              fill
             />
-          </h1>
+          </div>
 
-          <Button
-            text={header['contact-us']} 
-            href="/[lang]/contact"
-            as={getTranslatedPathname(lang, 'contact')}
-          />
+          <div className={styles.titleContainer}>
+            <h1>
+              {hero["title"]}
+            </h1>
+          </div>
         </div>
 
-        <div className={styles.section1}>
+        <div className={styles.two}>
+
+        </div>
+
+        {/* <div className={styles.section1}>
           <h2 className={styles.sectionTitle + ' slide-in-bottom'}>{section1['title']}</h2>
           
           <div className={styles.grid + ' slide-in-bottom'}>
@@ -275,7 +254,7 @@ export default async function Home({
           </div>
         </div>
 
-        <Footer lang={lang} />
+        <Footer lang={lang} /> */}
       </main>
     </AnimationWrapper>
   );
