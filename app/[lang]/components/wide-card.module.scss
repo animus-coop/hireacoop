@@ -22,7 +22,7 @@
     color: #DADCE0;
   }
 
-  .imageContainer { // 1.7 aspect ratio
+  .imageContainer {
     position: relative;
     width: 50%;
     height: auto;
@@ -30,67 +30,10 @@
 
     img {
       border-radius: 15px;
+      object-fit: cover;
     }
   }
 }
 
 // Mobile
-@media (max-width: 768px) {
-  .container {
-    .top {
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 10px;
-      border-bottom-width: 1px;
-      padding-bottom: 8px;
-
-      h3 {
-        font-size: base.$small-title-size;
-        font-weight: 500;
-      }
-
-      p {
-        font-size: 1rem;
-        padding-top: 3px;
-      }
-    }
-
-    .bottom {
-      flex-direction: column;
-      gap: 20px;
-
-      .textContainer {
-        width: 100%;
-        padding-right: 0;
-        gap: 20px;
-
-        p {
-          font-size: 1rem;
-          padding-top: 0;
-        }
-      }
-
-      .button {
-        width: 102px;
-        height: 20px;
-        align-items: center;
-        gap: 5px;
-        font-size: 0.7rem;
-        align-self: flex-end;
-        margin-top: 20px;
-
-        .arrowContainer {
-          position: relative;
-          width: 15px;
-          height: 7px;
-        }
-      }
-
-      .imageContainer {
-        width: 100%;
-        aspect-ratio: 1.7;
-        order: -1;
-      }
-    }
-  }
-}
+@media (max-width: 768px) {}
