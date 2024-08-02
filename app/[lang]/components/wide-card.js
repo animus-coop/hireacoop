@@ -1,34 +1,16 @@
 import Image from 'next/image';
 import styles from './wide-card.module.scss';
-import Link from 'next/link';
 
-export default function WideCard({ index, title, text, image, alt = '', dictionary, black = false, link = null }) {
+export default function WideCard({ index, text, image, alt = '', reverse = false }) {
   return (
-    <div className={styles.container + (black ? ` ${styles.black}` : '')}>
-      <div className={styles.top + ' slide-in-bottom'}>
-        <h3>{title}</h3>
-        <p>{'0' + index}</p>
-      </div>
-      <div className={styles.bottom}>
-        <div className={styles.textContainer + ' slide-in-bottom'}>
-          <p>{text}</p>
+      <div className={styles.container} key={index}>
 
-          {link && (
-            <Link href={link}>
-              <div className={styles.button}>
-                <p>{dictionary?.['buttonText']}</p>
-                <div className={styles.arrowContainer}>
-                  <Image
-                    src='/arrow-right.svg'
-                    alt=''
-                    fill
-                    className={styles.arrow}
-                  />
-                </div>
-              </div>
-            </Link>
-          )}
-        </div>
+        { !reverse &&
+          <div className={styles.textContainer + ' slide-in-bottom'}>
+            <p>{text}</p>
+          </div>
+        }
+
         <div className={styles.imageContainer + ' slide-in-bottom'}>
           <Image
             src={image}
@@ -38,7 +20,12 @@ export default function WideCard({ index, title, text, image, alt = '', dictiona
             sizes='(max-width: 768px) 100vw, 50vw'
           />
         </div>
+
+        { reverse &&
+          <div className={styles.textContainer + ' slide-in-bottom'}>
+            <p>{text}</p>
+          </div>
+        }
       </div>
-    </div>
   );
 };

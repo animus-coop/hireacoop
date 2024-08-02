@@ -1,19 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import { getDictionary } from "../../get-dictionary";
-import TypingEffect from "./components/typewriter";
-import FlippingCard from "./components/flipping-card";
-import Accordion from "./components/accordion";
-import HorizontalSecion from "./components/horizontal-section";
 import Nav from "./components/nav";
-import VantaFog from "./components/vanta-fog";
 
-import Footer from "./components/footer";
-import { capitalize, spanishClassName } from "../../utils/strings";
+import { spanishClassName } from "../../utils/strings";
 import AnimationWrapper from "./components/animation-wrapper";
-import Button from "./components/button";
 
-import { getTranslatedPathname } from "../../utils/pathnames";
+import WideCard from "./components/wide-card";
+
+import PlaceholderImg from "../../public/placeholder.jpeg";
 
 export default async function Home({
   params: { lang }
@@ -21,8 +16,7 @@ export default async function Home({
   const dictionary = await getDictionary(lang);
 
   const hero = dictionary["hero"];
-
-  const spanishClass = spanishClassName(lang, styles.spanish);
+  const about = dictionary["about"];
 
   return (
     <AnimationWrapper>
@@ -46,8 +40,21 @@ export default async function Home({
           </div>
         </div>
 
-        <div className={styles.two}>
+        <div className={styles.about}>
+          <h2>{about["title"]}</h2>
 
+          <div className={styles.itemsContainer}>
+            <WideCard
+              text={about["item1Text"]}
+              image={PlaceholderImg}
+              reverse
+            />
+
+            <WideCard
+              text={about["item2Text"]}
+              image={PlaceholderImg}
+            />
+          </div>
         </div>
 
         {/* <div className={styles.section1}>

@@ -3,91 +3,33 @@
 .container {
   position: relative;
   display: flex;
-  flex-direction: column;
-  color: base.$white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: 75vw;
+  gap: 4.5%;
 
-  &.black {
-    color: base.$black;
-
-    .top {
-      border-bottom-color: base.$black;
-    }
-
-    .bottom {
-      .textContainer {
-        .button {
-          border-bottom-color: base.$black;
-          
-          .arrowContainer {
-            position: relative;
-            .arrow {
-              filter: invert(0.9);
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .top {
+  .textContainer {
+    width: 50%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid base.$white;
-    padding-bottom: 20px;
-
-    h3 {
-      font-size: base.$medium-title-size;
-      font-weight: base.$medium-title-weight;
-    }
-
-    p {
-      font-size: base.$small-title-size;
-      font-weight: base.$small-title-weight;
-    }
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: flex-start;
+    gap: 35px;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #DADCE0;
   }
 
-  .bottom {
+  .imageContainer { // 1.7 aspect ratio
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1.7;
 
-    .textContainer {
-      width: 45%;
-      display: flex;
-      flex-direction: column;
-      padding-right: 5%;
-      justify-content: flex-end;
-      gap: 35px;
-      font-size: 1.2rem;
-      line-height: 1.8rem;
-      font-weight: 400;
-    }
-
-    .button {
-      width: 120px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 10px;
-      border-bottom: 1px solid base.$white;
-      padding-bottom: 3px;
-
-      .arrowContainer {
-        position: relative;
-        width: 20px;
-        height: 12px;
-      }
-    }
-
-    .imageContainer { // 1.7 aspect ratio
-      position: relative;
-      width: 55%;
-      height: auto;
-      aspect-ratio: 1.7;
+    img {
+      border-radius: 15px;
     }
   }
 }
