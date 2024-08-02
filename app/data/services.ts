@@ -1,5 +1,3 @@
-import PlatformCoopImg from '../../public/placeholder.jpeg';
-
 import PlaceholderImg from '../../public/placeholder.jpeg';
 
 import { WithTranslation } from './common';

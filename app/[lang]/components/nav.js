@@ -116,7 +116,7 @@ export default function Nav({
 
         <div className={styles.link + (black ? ` ${styles.black}` : '')}>
           <Link href={lang === "es" ? ("/en" + path) : getTranslatedPathname('es', path.split('/')[1] ?? '')}>
-            <Image alt='Language symbol' src={`/lang-${black ? 'black' : 'white'}.svg`} width={12} height={12} style={{ marginRight: '5px' }} />
+            <Image alt='Language symbol' src={`/lang-${black ? 'black' : 'white'}.svg`} width={12} height={12} />
             {lang === "es" ? "ENG" : "ESP"}
           </Link>
         </div>
