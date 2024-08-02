@@ -19,6 +19,7 @@ export default async function Home({
   const hero = dictionary["hero"];
   const about = dictionary["about"];
   const services = dictionary["services"];
+  const aboutWOIP = dictionary["aboutWOIP"];
 
   return (
     <AnimationWrapper>
@@ -32,6 +33,7 @@ export default async function Home({
               src="/hero.svg"
               alt="Fist logo"
               fill
+              priority
             />
           </div>
 
@@ -72,6 +74,22 @@ export default async function Home({
                 lang={lang}
               />
             ))}
+          </div>
+        </div>
+
+        <div className={styles.about}>
+        <h2 className={styles.sectionTitle}>{aboutWOIP["title"]}</h2>
+          <div className={styles.itemsContainer}>
+            <WideCard
+              text={aboutWOIP["item1Text"]}
+              image={PlaceholderImg}
+              reverse
+            />
+            
+            <WideCard
+              text={aboutWOIP["item2Text"]}
+              image={PlaceholderImg}
+            />
           </div>
         </div>
 
