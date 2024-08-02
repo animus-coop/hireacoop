@@ -6,12 +6,12 @@ export default function WideCard({ index, text, image, alt = '', reverse = false
       <div className={styles.container} key={index}>
 
         { !reverse &&
-          <div className={styles.textContainer + ' slide-in-bottom'}>
+          <div className={styles.textContainer}>
             <p>{text}</p>
           </div>
         }
 
-        <div className={styles.imageContainer + ' slide-in-bottom'}>
+        <div className={styles.imageContainer}>
           <Image
             src={image}
             alt={alt}
@@ -22,7 +22,7 @@ export default function WideCard({ index, text, image, alt = '', reverse = false
         </div>
 
         { reverse &&
-          <div className={styles.textContainer + ' slide-in-bottom'}>
+          <div className={styles.textContainer}>
             <p>{text}</p>
           </div>
         }
