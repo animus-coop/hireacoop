@@ -5,11 +5,11 @@ import path from 'path';
 
 export async function POST(request) {
   const formData = await request.formData();
-  const email = formData.get('email');
-  const phone = formData.get('phone');
   const name = formData.get('name');
+  const org = formData.get('org');
+  const country = formData.get('country');
+  const email = formData.get('email');
   const message = formData.get('message');
-  const file = formData.get('file');
   const recaptchaToken = formData.get('recaptchaToken');
 
   // Verify reCAPTCHA token
@@ -27,7 +27,8 @@ export async function POST(request) {
 
   const emailContent = template
     .replace('{{name}}', name)
-    .replace('{{phone}}', phone)
+    .replace('{{org}}', org)
+    .replace('{{country}}', country)
     .replace('{{email}}', email)
     .replace('{{message}}', message);
 
@@ -39,23 +40,11 @@ export async function POST(request) {
     },
   });
 
-  const attachments = [];
-  if (file) {
-    const arrayBuffer = await file.arrayBuffer();
-    const content = new Uint8Array(arrayBuffer);
-
-    attachments.push({
-      filename: file.name,
-      content,
-    });
-  }
-
   const mailOptions = {
     from: process.env.EMAIL,
     to: process.env.TARGET_EMAIL,
-    subject: `[${name}] Formulario de contacto de ANIMUS`,
+    subject: `[${name}] Hire a Coop - Formulario de contacto`,
     html: emailContent,
-    attachments,
   };
 
   const sendMailPromise = () =>

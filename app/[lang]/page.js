@@ -8,6 +8,7 @@ import AnimationWrapper from "./components/animation-wrapper";
 import WideCard from "./components/wide-card";
 import FloatingCard from "./components/floating-card";
 import SmallItem from "./components/small-item";
+import EmailForm from "./components/email-form";
 
 import PlaceholderImg from "../../public/placeholder.jpeg";
 
@@ -23,6 +24,8 @@ export default async function Home({
   const services = dictionary["services"];
   const aboutWOIP = dictionary["aboutWOIP"];
   const cooperativism = dictionary["cooperativism"];
+  const contactForm = dictionary["contactForm"];
+  const emailForm = contactForm["emailForm"];
 
   return (
     <AnimationWrapper>
@@ -105,6 +108,17 @@ export default async function Home({
             <SmallItem image={PlaceholderImg} text={cooperativism["item2Text"]} />
             <SmallItem image={PlaceholderImg} text={cooperativism["item3Text"]} />
             <SmallItem image={PlaceholderImg} text={cooperativism["item4Text"]} />
+          </div>
+        </div>
+
+        <div className={styles.contactForm}>
+          <h3 className={styles.ourValues}>{contactForm["values"]}</h3>
+
+          <div className={styles.formContainer}>
+            <EmailForm
+              dictionary={emailForm}
+              lang={lang}
+            />
           </div>
         </div>
       </main>

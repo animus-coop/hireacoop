@@ -27,5 +27,24 @@
     "item2Text": "Formule sus propios principios organizativos",
     "item3Text": "Autogestión",
     "item4Text": "Crear principios democráticos en el núcleo"
+  },
+  "contactForm": {
+    "values": "Equality and diversity are fundamental to our core beliefs and values. We encourage your organization to hire cooperatives for your digital needs. This way, you obtain quality while fostering a fairer and more sustainable future in the workforce.",
+    "title": "Contacto",
+    "emailForm": {
+      "name": "Nombre completo",
+      "organization": "Organización",
+      "country": "País",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "errors": {
+        "requiredField": "This field is required",
+        "phoneInvalid": "Please enter a valid phone number",
+        "emailInvalid": "Please enter a valid email address",
+        "fileTooBig": "File size must be less than 5MB"
+      },
+      "successMessage": "Mensaje enviado"
+    }
   }
 }

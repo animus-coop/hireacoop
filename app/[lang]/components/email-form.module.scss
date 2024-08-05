@@ -35,8 +35,8 @@
     input, textarea, .input {
       max-width: 100%;
       width: 100%;
-      background-color: base.$darker-gray;
-      color: base.$white;
+      background-color: base.$white;
+      color: base.$black;
       font-family: base.$main-font;
       font-size: base.$regular-font-size;
       padding: 15px 12px;
@@ -45,7 +45,7 @@
       resize: none;
 
       &::placeholder {
-        color: base.$mid-gray;
+        color: base.$dark-gray;
         font-size: base.$regular-font-size;
       }
 
@@ -99,7 +99,7 @@
   .buttonContainer {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: 20px;
   }
 }
