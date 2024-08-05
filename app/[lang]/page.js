@@ -7,6 +7,8 @@ import AnimationWrapper from "./components/animation-wrapper";
 
 import WideCard from "./components/wide-card";
 import FloatingCard from "./components/floating-card";
+import SmallItem from "./components/small-item";
+
 import PlaceholderImg from "../../public/placeholder.jpeg";
 
 import { servicesData } from "../data/services";
@@ -20,6 +22,7 @@ export default async function Home({
   const about = dictionary["about"];
   const services = dictionary["services"];
   const aboutWOIP = dictionary["aboutWOIP"];
+  const cooperativism = dictionary["cooperativism"];
 
   return (
     <AnimationWrapper>
@@ -79,7 +82,7 @@ export default async function Home({
 
         <div className={styles.about}>
           <h2 className={styles.sectionTitle}>{aboutWOIP["title"]}</h2>
-          
+
           <div className={styles.itemsContainer}>
             <WideCard
               text={aboutWOIP["item1Text"]}
@@ -91,6 +94,17 @@ export default async function Home({
               text={aboutWOIP["item2Text"]}
               image={PlaceholderImg}
             />
+          </div>
+        </div>
+
+        <div className={styles.cooperativism}>
+          <h2 className={styles.sectionTitle}>{cooperativism["title"]}</h2>
+
+          <div className={styles.itemsContainer}>
+            <SmallItem image={PlaceholderImg} text={cooperativism["item1Text"]} />
+            <SmallItem image={PlaceholderImg} text={cooperativism["item2Text"]} />
+            <SmallItem image={PlaceholderImg} text={cooperativism["item3Text"]} />
+            <SmallItem image={PlaceholderImg} text={cooperativism["item4Text"]} />
           </div>
         </div>
       </main>

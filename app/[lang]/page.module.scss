@@ -77,6 +77,25 @@
       flex-wrap: wrap;
     }
   }
+
+  .cooperativism {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .itemsContainer {
+      width: 75vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+  }
 }
 
 // COMMON

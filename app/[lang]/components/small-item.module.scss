@@ -1,0 +1,36 @@
+@use '../base';
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: center;
+  width: 50%;
+  gap: 4.5%;
+  margin-top: 30px;
+
+  .imageContainer {
+    position: relative;
+    width: 80px;
+    height: 80px;
+
+    img {
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+
+  .textContainer {
+    width: 80%;
+    max-width: 380px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #DADCE0;
+  }
+}
+
+// Mobile
+@media (max-width: 768px) {}
