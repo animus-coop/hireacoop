@@ -5,15 +5,17 @@ import { Toaster } from "react-hot-toast";
 export async function generateMetadata({ params }) {
   const lang = params.lang;
 
-  const title = lang === "es" 
-    ? "ANIMUS - Servicios de desarrollo de software y staff augmentation."
-    : "ANIMUS - Software development and staff augmentation services.";
+  const title = {
+    es: "Hire a Coop - Contratá cooperativas para tus necesidades tecnológicas",
+    pt: "Hire a Coop - Contrate cooperativas para suas necessidades tecnológicas",
+  }[lang] ?? "Hire a Coop - Hire cooperatives for your tech needs";
 
-  const description = lang === "es"
-    ? "Empresa cooperativa de desarrollo de software y servicios de staff augmentation. Equipos distribuidos a nivel global. Back, front, fullstack y diseño UX/UI."
-    : "Cooperative software development and staff augmentation services company with globally distributed teams. Back-end, front-end, full-stack, and UX/UI design.";
+  const description = {
+    es: "La igualdad y la diversidad son fundamentales para nuestras creencias y valores. Alentamos a su organización a contratar cooperativas para sus necesidades digitales. De esta manera, obtiene calidad mientras fomenta un futuro más justo y sostenible en la fuerza laboral.",
+    pt: "A igualdade e a diversidade são fundamentais para nossas crenças e valores. Incentivamos sua organização a contratar cooperativas para suas necessidades digitais. Dessa forma, você obtém qualidade enquanto promove um futuro mais justo e sustentável na força de trabalho.",
+  }[lang] ?? "Equality and diversity are fundamental to our core beliefs and values. We encourage your organization to hire cooperatives for your digital needs. This way, you obtain quality while fostering a fairer and more sustainable future in the workforce.";
 
-  const keywords = lang === "es"
+  const keywords = lang === "es" // @TODO
     ? [
       "Servicios de Staff Augmentation",
       "Soluciones de Staffing para Proyectos de IT",
@@ -48,10 +50,11 @@ export async function generateMetadata({ params }) {
     ];
 
   return {
-    title: {
-      template: `%s | ${title}`,
-      default: title,
-    },
+    // title: {
+    //   template: `%s | ${title}`,
+    //   default: title,
+    // },
+    title,
     description,
     keywords,
     author: "ANIMUS",
