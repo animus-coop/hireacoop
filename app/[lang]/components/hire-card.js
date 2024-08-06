@@ -7,7 +7,7 @@ export default function HireCard({ image, alt = '', title }) {
       <div className={styles.imageWrapper}>
         <Image
           src={image}
-          alt=""
+          alt={alt}
           fill
           className={styles.image}
           sizes="(max-width: 768px) 100vw, 33vw"

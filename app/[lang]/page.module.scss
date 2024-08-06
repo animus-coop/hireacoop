@@ -67,19 +67,26 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 100px;
-    .sectionTitle{
+
+    .titlesContainer{
       position: relative;
-      font-size: 32px;
       width: 74%;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
+      margin-top: 80px;
       align-self: center;
+
+      .sectionTitle {
+        margin-top: 0 !important;
+      }
     }
+
     .hireCardsContainer{
       display: flex;
       flex-direction: row;
       justify-content: center;
     }
   }
+
   .services {
     width: 100%;
     display: flex;

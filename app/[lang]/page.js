@@ -74,11 +74,13 @@ export default async function Home({
             />
           </div>
         </div>
+
         <div className={styles.hire}>
-          <div className={styles.sectionTitle}>
-            <h2>{hire["title1"]}</h2>
-            <h2>{hire["title2"]}</h2>
+          <div className={styles.titlesContainer}>
+            <h2 className={styles.sectionTitle}>{hire["title1"]}</h2>
+            <h2 className={styles.sectionTitle}>{hire["title2"]}</h2>
           </div>
+
           <div className={styles.hireCardsContainer}>
             {hireData.map((hireItem, index) => (
               <HireCard
