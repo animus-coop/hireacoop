@@ -7,7 +7,6 @@ import Image from 'next/image';
 export default function Nav({
   dictionary,
   lang = 'en',
-  path = ''
 }) {
   const mobileVisible = false;
   
@@ -84,7 +83,7 @@ export default function Nav({
 
         <div className={styles.link + ' ' + styles.langsContainer}>
           <Image alt='Language symbol' src={`/lang-black.svg`} width={13} height={13} />
-          
+
           {lang !== "es" && (
             <Link href={"/es"}>
               ES

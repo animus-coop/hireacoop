@@ -48,7 +48,9 @@ export default async function Home({
               alt="Fist logo"
               fill
               priority
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
+            <div className={styles.overlay}></div>
           </div>
 
           <div className={styles.titleContainer}>

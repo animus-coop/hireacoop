@@ -175,3 +175,38 @@
   color: white;
   margin-top: 50px;
 }
+
+// Mobile
+@media (max-width: 768px) {
+  .main {
+    .hero {
+      margin-top: 20px;
+      height: 100vh;
+
+      .imageContainer {
+        width: 120vw;
+        height: 130vw;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent, black);
+      }
+
+      .titleContainer {
+        margin-top: -140px;
+        padding: 0 20px;
+
+        h1 {
+          position: relative;
+          font-size: 40px;
+          line-height: 55px;
+        }
+      }
+    }
+  }
+}
