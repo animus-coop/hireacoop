@@ -1,7 +1,7 @@
 'use client';
 
 import { useForm } from 'react-hook-form';
-import { sendEmail } from '../../../utils/send-email';
+import { sendEmail } from '../../../services/send-email';
 import styles from './email-form.module.scss';
 import { useState } from 'react';
 import Button from './button';

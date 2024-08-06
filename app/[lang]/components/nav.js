@@ -3,7 +3,6 @@
 import styles from './nav.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getTranslatedPathname } from '../../../utils/pathnames';
 
 export default function Nav({
   dictionary,
@@ -55,9 +54,9 @@ export default function Nav({
           <div className={styles.lang}>
             <Link href={"/en" + path} className={lang === 'en' ? ' ' + styles.active : ''}>EN</Link>
             |
-            <Link href={getTranslatedPathname('es', path.split('/')[1] ?? '')} className={lang === 'es' ? ' ' + styles.active : ''}>ES</Link>
+            <Link href={"/es"} className={lang === 'es' ? ' ' + styles.active : ''}>ES</Link>
             |
-            <Link href={getTranslatedPathname('pt', path.split('/')[1] ?? '')} className={lang === 'pt' ? ' ' + styles.active : ''}>PT</Link>
+            <Link href={"/pt"} className={lang === 'pt' ? ' ' + styles.active : ''}>PT</Link>
           </div>
 
         </div>
@@ -74,7 +73,7 @@ export default function Nav({
       </div>
 
       <div id='mobile-nav' className={styles.mobileNav + ' ' + (black ? styles.black : styles.white) + (mobileVisible ? ` ${styles.visible}` : '')}>
-        <Link href="#aboutHaC" className={styles.link}>
+        <Link href="#about" className={styles.link}>
           {dictionary?.['nav']?.["aboutHaC"]}
         </Link>
 
@@ -86,12 +85,12 @@ export default function Nav({
           {dictionary?.['nav']?.["contact"]}
         </Link>
 
-        <div className={styles.link + (black ? ` ${styles.black}` : '')}>
+        {/* <div className={styles.link + (black ? ` ${styles.black}` : '')}>
           <Link href={lang === "es" ? ("/en" + path) : getTranslatedPathname('es', path.split('/')[1] ?? '')}>
             <Image alt='Language symbol' src={`/lang-${black ? 'black' : 'white'}.svg`} width={12} height={12} />
             {lang === "es" ? "ENG" : "ESP"}
           </Link>
-        </div>
+        </div> */}
       </div>
       
     </div>
