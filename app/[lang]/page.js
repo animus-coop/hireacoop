@@ -11,6 +11,8 @@ import SmallItem from "./components/small-item";
 import EmailForm from "./components/email-form";
 import PartnerBadge from "./components/partner-badge";
 
+import Footer from "./components/footer";
+
 import PlaceholderImg from "../../public/placeholder.jpeg";
 
 import { servicesData } from "../data/services";
@@ -139,6 +141,8 @@ export default async function Home({
             ))}
           </div>
         </div>
+
+        <Footer />
 
       </main>
     </AnimationWrapper>
