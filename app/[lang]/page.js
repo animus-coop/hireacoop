@@ -14,6 +14,8 @@ import PartnerBadge from "./components/partner-badge";
 import Footer from "./components/footer";
 
 import PlaceholderImg from "../../public/placeholder.jpeg";
+import HireCard from "./components/hire-card";
+import { hireData } from "../data/hire";
 
 import { servicesData } from "../data/services";
 import { partnersData } from "../data/partners";
@@ -31,6 +33,7 @@ export default async function Home({
   const contactForm = dictionary["contactForm"];
   const emailForm = contactForm["emailForm"];
   const partners = dictionary["partners"];
+  const hire = dictionary["hire"];
 
   return (
     <AnimationWrapper>
@@ -69,6 +72,22 @@ export default async function Home({
               text={about["item2Text"]}
               image={PlaceholderImg}
             />
+          </div>
+        </div>
+        <div className={styles.hire}>
+          <div className={styles.sectionTitle}>
+            <h2>{hire["title1"]}</h2>
+            <h2>{hire["title2"]}</h2>
+          </div>
+          <div className={styles.hireCardsContainer}>
+            {hireData.map((hireItem, index) => (
+              <HireCard
+                key={index}
+                image={hireItem.image}
+                alt={hireItem.alt}
+                title={hireItem.text[lang]}
+              />
+            ))}
           </div>
         </div>
 

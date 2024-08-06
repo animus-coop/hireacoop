@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .image {
+    object-fit: cover;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin: 0;
+    width: 17vw;
+  }
