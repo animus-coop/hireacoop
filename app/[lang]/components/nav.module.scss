@@ -15,11 +15,11 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    
-    .logo {
-      &.black {
-        filter: invert(0.8);
-      }
+
+    .logoWrapper {
+      position: relative;
+      width: 100px;
+      height: 60px;
     }
   
     .nav {
@@ -36,83 +36,41 @@
         gap: 4px;
         align-items: center;
       }
-  
-      &.white {
-        .link {
-          color: base.$mid-gray;
-          font-weight: 500;
-  
-          &:hover {
-            color: base.$black;
-          }
-  
-          &.active {
-            color: base.$black;
-            cursor: default;
-            pointer-events: none;
-          }
+      
+      .link {
+        color: base.$mid-grey;
+        font-weight: 500;
+
+        &:hover {
+          color: base.$black;
         }
 
-        .underline {
-          width: 100%;
-          height: 3px;
-          background-color: base.$black;
-        }
-  
-        .lang {
-          display: flex;
-          gap: 10px;
-          color: base.$mid-gray;
-  
-          .active {
-            font-weight: 700;
-            color: base.$black;
-          }
-          
-          a {
-            &:hover {
-              color: base.$black;
-            }
-          }
+        &.active {
+          color: base.$black;
+          cursor: default;
+          pointer-events: none;
         }
       }
-      
-      &.black {
-        .link {
-          color: base.$mid-gray;
-          font-weight: 500;
-  
-          &:hover {
-            color: base.$black;
-          }
-  
-          &.active {
-            color: base.$black;
-            cursor: default;
-            pointer-events: none;
-          }
+
+      .underline {
+        width: 100%;
+        height: 3px;
+        background-color: base.$black;
+      }
+
+      .lang {
+        display: flex;
+        gap: 10px;
+        color: base.$mid-grey;
+
+        .active {
+          font-weight: 700;
+          color: base.$black;
         }
 
-        .underline {
-          width: 100%;
-          height: 3px;
-          background-color: base.$black;
-        }
-  
-        .lang {
-          display: flex;
-          gap: 10px;
-          color: base.$mid-gray;
-  
-          .active {
-            font-weight: 700;
+        a {
+          &:hover {
             color: base.$black;
-          }
-  
-          a {
-            &:hover {
-              color: base.$black;
-            }
           }
         }
       }
@@ -129,59 +87,64 @@
   .container {
     padding-top: 20px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     .top {
+      position: relative;
+      width: 100%;
+      justify-content: space-between;
+
+      .logoWrapper {
+        width: 70px;
+        height: 40px;
+        margin: 5px 15px;
+      }
+
       .nav {
         display: none;
       }
     }
 
     .mobileNav {
-      display: flex;
+      position: relative;
       width: 100%;
-      padding-top: 20px;
       flex-direction: column;
+      align-items: flex-end;
       align-self: flex-end;
       max-height: 0;
-      transition: max-height 0.5s ease;
+      transition: max-height 1.5s ease;
       overflow: hidden;
+      padding: 0 20px;
 
       &.visible {
         max-height: 1000px;
+        display: flex;
       }
 
       .link {
-        color: base.$white;
-        font-weight: 500;
-        font-size: 1rem;
-        padding: 10px 0;
+        color: base.$black;
+        border-bottom: 1px solid base.$light-grey;
+        padding: 12px 0;
+        width: 100%;
         text-align: right;
-        border-bottom: 0.5px solid base.$light-gray;
+
+        &.langsContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 15px;
+        }
 
         &:last-child {
           border-bottom: none;
         }
 
         &.active {
-          color: base.$mid-gray;
+          color: base.$light-grey;
+          border-bottom-color: base.$light-grey;
           pointer-events: none;
-        }
-      }
-
-      &.black {
-        .link {
-          color: base.$black;
-          border-bottom: 0.5px solid base.$mid-gray;
-  
-          &:last-child {
-            border-bottom: none;
-          }
-
-          &.active {
-            color: base.$light-gray;
-            border-bottom-color: base.$light-gray;
-            pointer-events: none;
-          }
         }
       }
     }
@@ -189,6 +152,7 @@
     .burgerMenu {
       display: block;
       color: base.$white;
+      margin: 5px 15px;
     }
   }
 }

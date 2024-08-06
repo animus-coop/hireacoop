@@ -45,8 +45,8 @@
   }
 
   &:disabled {
-    background-color: base.$light-gray !important;
-    color: base.$darker-gray !important;
+    background-color: base.$light-grey !important;
+    color: base.$darker-grey !important;
     cursor: not-allowed !important;
   }
 }

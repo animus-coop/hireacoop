@@ -7,10 +7,8 @@ import Image from 'next/image';
 export default function Nav({
   dictionary,
   lang = 'en',
-  black = false,
   path = ''
 }) {
-
   const mobileVisible = false;
   
   function toggleMenu() {
@@ -20,18 +18,17 @@ export default function Nav({
   return (
     <div className={styles.container}>
       <div className={styles.top}>
-        <Link href="/[lang]" as={`/${lang}`}>
+        <div className={styles.logoWrapper}>
           <Image
             src="/HACBlack.svg"
             alt="HAC Logo"
-            className={styles.logo + (black ? ' ' + styles.black : '')}
-            width={100}
-            height={60}
+            className={styles.logo}
+            fill
             priority
           />
-        </Link>
+        </div>
 
-        <div className={styles.nav + ' ' + (black ? styles.black : styles.white)}>
+        <div className={styles.nav}>
 
           <div className={styles.navItemContainer}>
             <Link href="#about" className={styles.link}>
@@ -52,27 +49,27 @@ export default function Nav({
           </div>
 
           <div className={styles.lang}>
-            <Link href={"/en" + path} className={lang === 'en' ? ' ' + styles.active : ''}>EN</Link>
-            |
             <Link href={"/es"} className={lang === 'es' ? ' ' + styles.active : ''}>ES</Link>
-            |
+            /
+            <Link href={"/en"} className={lang === 'en' ? ' ' + styles.active : ''}>EN</Link>
+            /
             <Link href={"/pt"} className={lang === 'pt' ? ' ' + styles.active : ''}>PT</Link>
           </div>
 
         </div>
 
         <Image
-          src={`/burger-menu-${black ? 'black' : 'white'}.svg`}
+          src={`/burger-menu-black.svg`}
           alt='Burger menu'
           className={styles.burgerMenu}
-          width={28}
-          height={25}
+          width={32}
+          height={32}
           onClick={toggleMenu}
           priority
         />
       </div>
 
-      <div id='mobile-nav' className={styles.mobileNav + ' ' + (black ? styles.black : styles.white) + (mobileVisible ? ` ${styles.visible}` : '')}>
+      <div id='mobile-nav' className={styles.mobileNav + (mobileVisible ? ` ${styles.visible}` : '')}>
         <Link href="#about" className={styles.link}>
           {dictionary?.['nav']?.["aboutHaC"]}
         </Link>
@@ -85,12 +82,25 @@ export default function Nav({
           {dictionary?.['nav']?.["contact"]}
         </Link>
 
-        {/* <div className={styles.link + (black ? ` ${styles.black}` : '')}>
-          <Link href={lang === "es" ? ("/en" + path) : getTranslatedPathname('es', path.split('/')[1] ?? '')}>
-            <Image alt='Language symbol' src={`/lang-${black ? 'black' : 'white'}.svg`} width={12} height={12} />
-            {lang === "es" ? "ENG" : "ESP"}
-          </Link>
-        </div> */}
+        <div className={styles.link + ' ' + styles.langsContainer}>
+          <Image alt='Language symbol' src={`/lang-black.svg`} width={13} height={13} />
+          
+          {lang !== "es" && (
+            <Link href={"/es"}>
+              ES
+            </Link>
+          )}
+          {lang !== "en" && (
+            <Link href={"/en"}>
+              EN
+            </Link>
+          )}
+          {lang !== "pt" && (
+            <Link href={"/pt"}>
+              PT
+            </Link>
+          )}
+        </div>
       </div>
       
     </div>

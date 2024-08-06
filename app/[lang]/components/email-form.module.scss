@@ -45,12 +45,12 @@
       resize: none;
 
       &::placeholder {
-        color: base.$dark-gray;
+        color: base.$dark-grey;
         font-size: base.$regular-font-size;
       }
 
       &:focus, &.focus {
-        outline: 1px solid base.$light-gray;
+        outline: 1px solid base.$light-grey;
       }
 
       &:disabled {
@@ -83,7 +83,7 @@
         }
         
         .noFileText {
-          color: base.$mid-gray;
+          color: base.$mid-grey;
         }
       }
     }
