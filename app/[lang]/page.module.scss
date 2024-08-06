@@ -208,5 +208,16 @@
         }
       }
     }
+
+    .about {
+      .itemsContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 50px;
+      }
+    }
   }
 }
