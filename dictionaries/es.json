@@ -44,5 +44,8 @@
       },
       "successMessage": "Mensaje enviado"
     }
+  },
+  "partners": {
+    "title": "Coopes que participan de este proyecto"
   }
 }

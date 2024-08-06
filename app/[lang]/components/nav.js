@@ -35,7 +35,7 @@ export default function Nav({
         <div className={styles.nav + ' ' + (black ? styles.black : styles.white)}>
 
           <div className={styles.navItemContainer}>
-            <Link href="#aboutHaC" className={styles.link}>
+            <Link href="#about" className={styles.link}>
               {dictionary?.['nav']?.["aboutHaC"]}
             </Link>
           </div>

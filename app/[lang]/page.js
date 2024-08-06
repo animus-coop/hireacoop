@@ -9,10 +9,12 @@ import WideCard from "./components/wide-card";
 import FloatingCard from "./components/floating-card";
 import SmallItem from "./components/small-item";
 import EmailForm from "./components/email-form";
+import PartnerBadge from "./components/partner-badge";
 
 import PlaceholderImg from "../../public/placeholder.jpeg";
 
 import { servicesData } from "../data/services";
+import { partnersData } from "../data/partners";
 
 export default async function Home({
   params: { lang }
@@ -26,6 +28,7 @@ export default async function Home({
   const cooperativism = dictionary["cooperativism"];
   const contactForm = dictionary["contactForm"];
   const emailForm = contactForm["emailForm"];
+  const partners = dictionary["partners"];
 
   return (
     <AnimationWrapper>
@@ -50,7 +53,7 @@ export default async function Home({
           </div>
         </div>
 
-        <div id="aboutHaC" className={styles.about}>
+        <div id="about" className={styles.about}>
           <h2 className={styles.sectionTitle}>{about["title"]}</h2>
 
           <div className={styles.itemsContainer}>
@@ -121,6 +124,22 @@ export default async function Home({
             />
           </div>
         </div>
+
+        <div className={styles.partners}>
+          <h2 className={styles.sectionTitle}>{partners["title"]}</h2>
+
+          <div className={styles.itemsContainer}>
+            {partnersData.map((partner, index) => (
+              <PartnerBadge
+                key={index}
+                image={partner.logo}
+                alt={partner.alt || ""}
+                name={partner.name}
+              />
+            ))}
+          </div>
+        </div>
+
       </main>
     </AnimationWrapper>
   );
