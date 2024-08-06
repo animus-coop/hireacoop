@@ -9,8 +9,9 @@ export default async function Footer() {
         <Image
           src={HACLogo}
           alt="HAC logo"
-          fill
           className={styles.image}
+          fill
+          priority
         />
       </div>
 
