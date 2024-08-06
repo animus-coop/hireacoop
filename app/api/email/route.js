@@ -12,6 +12,7 @@ export async function POST(request) {
   const message = formData.get('message');
   const recaptchaToken = formData.get('recaptchaToken');
 
+
   // Verify reCAPTCHA token
   const secretKey = process.env.RECAPTCHA_SECRET_KEY;
   const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${recaptchaToken}`;

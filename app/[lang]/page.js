@@ -50,7 +50,7 @@ export default async function Home({
           </div>
         </div>
 
-        <div className={styles.about}>
+        <div id="aboutHaC" className={styles.about}>
           <h2 className={styles.sectionTitle}>{about["title"]}</h2>
 
           <div className={styles.itemsContainer}>
@@ -67,7 +67,7 @@ export default async function Home({
           </div>
         </div>
 
-        <div className={styles.services}>
+        <div id="services" className={styles.services}>
           <h2 className={styles.sectionTitle}>{services["title"]}</h2>
 
           <div className={styles.cardsContainer}>
@@ -111,7 +111,7 @@ export default async function Home({
           </div>
         </div>
 
-        <div className={styles.contactForm}>
+        <div id="contact" className={styles.contactForm}>
           <h3 className={styles.ourValues}>{contactForm["values"]}</h3>
 
           <div className={styles.formContainer}>

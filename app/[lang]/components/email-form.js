@@ -3,10 +3,11 @@
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '../../../utils/send-email';
 import styles from './email-form.module.scss';
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import Button from './button';
 import toast from 'react-hot-toast';
-import { GoogleReCaptchaProvider, GoogleReCaptcha } from "react-google-recaptcha-v3";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import ReCaptcha from './recaptcha';
 
 function EmailForm({ dictionary, lang }) {
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
@@ -14,11 +15,6 @@ function EmailForm({ dictionary, lang }) {
 
   const [loading, setLoading] = useState(false);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
-  const [refreshRecaptcha, setRefreshRecaptcha] = useState(false);
-
-  const handleRecaptchaVerify = useCallback((token) => {
-    setRecaptchaToken(token);
-  }, []);
 
   const showSuccessToast = () => {
     toast.success(dictionary["successMessage"], {
@@ -68,8 +64,6 @@ function EmailForm({ dictionary, lang }) {
       reset();
       showSuccessToast();
     }
-
-    setRefreshRecaptcha(r => !r);
   };
 
   function getErrorMessage(field) {
@@ -83,7 +77,7 @@ function EmailForm({ dictionary, lang }) {
   }
 
   return (
-    <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
+    <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} language={lang}>
       <form id="email-form" className={styles.main} onSubmit={handleSubmit(onSubmit)}>
         <div className={styles.inputContainer}>
           <input
@@ -150,8 +144,7 @@ function EmailForm({ dictionary, lang }) {
           {errors.message && <p className={styles.alert}>{getErrorMessage('message')}</p>}
         </div>
 
-        {/* <Recaptcha onVerify={handleRecaptchaVerify} /> */}
-        <GoogleReCaptcha onVerify={handleRecaptchaVerify} refreshReCaptcha={refreshRecaptcha} />
+        <ReCaptcha setRecaptchaToken={setRecaptchaToken} />
 
         <div className={styles.buttonContainer}>
           <Button 

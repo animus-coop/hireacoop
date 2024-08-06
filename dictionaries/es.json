@@ -1,9 +1,8 @@
 {
   "nav": {
-    "about": "About Us",
-    "contact": "Contact",
-    "news": "News",
-    "joinUs": "Join us"
+    "aboutHaC": "Sobre HaC",
+    "services": "Servicios",
+    "contact": "Contact"
   },
   "hero": {
     "title": "¿Estás imaginando un desafío tecnológico?"
@@ -40,9 +39,8 @@
       "send": "Enviar",
       "errors": {
         "requiredField": "This field is required",
-        "phoneInvalid": "Please enter a valid phone number",
         "emailInvalid": "Please enter a valid email address",
-        "fileTooBig": "File size must be less than 5MB"
+        "recaptchaError": "Please verify that you are not a robot"
       },
       "successMessage": "Mensaje enviado"
     }

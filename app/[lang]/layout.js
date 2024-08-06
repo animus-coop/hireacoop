@@ -1,5 +1,5 @@
 import "./globals.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
 import { Toaster } from "react-hot-toast";
 
 export async function generateMetadata({ params }) {
@@ -78,7 +78,7 @@ export default function RootLayout({
         {children}
         <Toaster />
       </body>
-      <GoogleAnalytics gaId="G-DLF1KE4TE7" />
+      {/* <GoogleAnalytics gaId="G-DLF1KE4TE7" /> */}
     </html>
   );
 }
