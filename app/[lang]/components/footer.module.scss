@@ -26,3 +26,24 @@
     color: base.$black;
   }
 }
+
+// Mobile
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .imageContainer {
+      width: 120px;
+      height: 180px;
+      margin-bottom: 30px;
+    }
+
+    .text {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
