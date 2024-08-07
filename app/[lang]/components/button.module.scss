@@ -28,17 +28,6 @@
     font-weight: 700 !important;
   }
 
-  &:not(:disabled):hover {
-    gap: 15px;
-
-    p {
-      background: base.$red-purple-text !important;
-      -webkit-background-clip: text !important;
-      background-clip: text !important;
-      color: transparent !important;
-    }
-  }
-
   &:disabled {
     background-color: base.$light-grey !important;
     color: base.$darker-grey !important;
