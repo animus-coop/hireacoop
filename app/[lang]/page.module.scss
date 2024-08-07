@@ -244,5 +244,17 @@
         padding: 0 20px;
       }
     }
+
+    .partners {
+      width: 100%;
+      padding-bottom: 50px;
+
+      .itemsContainer {
+        width: 100%;
+        padding: 0 20px;
+        justify-content: center;
+        gap: 50px;
+      }
+    }
   }
 }

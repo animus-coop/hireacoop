@@ -29,3 +29,16 @@
     text-align: center;
   }
 }
+
+// Mobile
+@media (max-width: 768px) {
+  .container {
+    min-width: unset;
+    margin-bottom: 0;
+
+    .imageContainer {
+      width: 125px;
+      height: 125px;
+    }
+  }
+}
