@@ -37,11 +37,6 @@
       background-clip: text !important;
       color: transparent !important;
     }
-    
-    .arrowContainer {
-      position: relative;
-      filter: none;
-    }
   }
 
   &:disabled {
@@ -54,18 +49,8 @@
 // Mobile
 @media (max-width: 768px) {
   .button {
-    height: 40px;
-    padding: 0 20px;
-    font-size: 0.9rem;
+    padding: 20px 30px;
+    font-size: 1rem;
     justify-content: center;
-
-    .arrowContainer {
-      width: 12px;
-      height: 13px;
-    }
-
-    &:hover {
-      gap: 10px;
-    }
   }
 }

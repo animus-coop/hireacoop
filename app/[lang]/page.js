@@ -142,6 +142,8 @@ export default async function Home({
         <div id="contact" className={styles.contactForm}>
           <h3 className={styles.ourValues}>{contactForm["values"]}</h3>
 
+          <h2 className={styles.sectionTitle}>{contactForm["title"]}</h2>
+
           <div className={styles.formContainer}>
             <EmailForm
               dictionary={emailForm}
