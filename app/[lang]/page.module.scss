@@ -198,13 +198,14 @@
       }
 
       .titleContainer {
-        margin-top: -140px;
         padding: 0 20px;
 
         h1 {
-          position: relative;
-          font-size: 40px;
-          line-height: 55px;
+          position: absolute;
+          top: 60vh;
+          font-size: 12vw;
+          line-height: 15vw;
+          padding: 0 40px;
         }
       }
     }
