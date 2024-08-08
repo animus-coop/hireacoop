@@ -1,22 +1,19 @@
 @use 'base';
 
-// %section {
-//   width: 100%;
-//   padding: base.$vertical-padding base.$horizontal-padding;
-// }
-
-.main {
+%section {
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.main {
+  @extend %section;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   
   .hero {
+    @extend %section;
     background-color: black;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     margin-top: 100px;
     margin-bottom: -100px;
@@ -45,16 +42,12 @@
   }
 
   .about {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    @extend %section;
     justify-content: center;
     margin-bottom: 50px;
 
     .itemsContainer {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
+      @extend %section;
       justify-content: center;
       gap: 80px;
       margin-top: 70px;
@@ -62,10 +55,8 @@
   }
 
   .hire {
-    display: flex;
-    flex-direction: column;
+    @extend %section;
     justify-content: center;
-    width: 100%;
     margin-bottom: 100px;
 
     .titlesContainer{
@@ -88,9 +79,7 @@
   }
 
   .services {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    @extend %section;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
@@ -105,9 +94,7 @@
   }
 
   .cooperativism {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    @extend %section;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -124,10 +111,8 @@
   }
 
   .contactForm {
+    @extend %section;
     position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
@@ -148,9 +133,7 @@
   }
 
   .partners {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    @extend %section;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -254,6 +237,20 @@
         padding: 0 20px;
         justify-content: center;
         gap: 50px;
+      }
+    }
+  }
+}
+
+// Full HD Desktops
+@media (min-width: 1920px) {
+  .main {
+    .hero {
+      margin-bottom: -30px;
+
+      .imageContainer {
+        width: 43vw;
+        height: 43vw;
       }
     }
   }
