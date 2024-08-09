@@ -222,6 +222,15 @@
       }
     }
 
+    .services {
+      .cardsContainer {
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
     .cooperativism {
       margin-top: 20px;
       margin-bottom: 20px;
