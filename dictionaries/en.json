@@ -5,51 +5,51 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "¿Estás imaginando un desafío tecnológico?"
+    "title": "Are you imagining a technological challenge?"
   },
   "about": {
-    "title": "Sobre Hire a Coop",
-    "item1Text": "En un contexto donde las universidades tienen como propósito abordar los objetivos de desarrollo sostenible (ODS) y luchar por el trabajo decente, contratar cooperativas es una forma de hacer que la economía circule fuera de los grandes oligopolios.",
-    "item2Text": "La Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento (FACTTIC), y las organizaciones que integramos el proyecto Worker-Owned Intersectional Platforms (WOIP) trabajamos desde una perspectiva interseccional, apoyando el trabajo justo y el almacenamiento seguro de datos. Teniendo en cuenta, además, los criterios de calidad e innovación establecidos por el mercado."
+    "title": "About Hire a Coop",
+    "item1Text": "In a context where universities aim to address sustainable development goals (SDGs) and advocate for decent work, hiring cooperatives is a way to circulate the economy outside of large oligopolies.",
+    "item2Text": "The Argentine Federation of Cooperatives for Technology, Innovation, and Knowledge (FACTTIC), and the organizations involved in the Worker-Owned Intersectional Platforms (WOIP) project, work from an intersectional perspective, supporting fair labor and secure data storage. This is done while considering the quality and innovation criteria established by the market."
   },
   "hire": {
-    "title1": "¡Contratá cooperativas para tus necesidades tecnológicas!",
-    "title2": "¡Las cooperativas son la mejor alternativa para acercar nuestros recursos a nuestras ideas!"
+    "title1": "Hire cooperatives for your technological needs!",
+    "title2": "Cooperatives are the best alternative to bring our resources to our ideas!"
   },
   "services": {
-    "title": "Algunos servicios que ofrecen las cooperativas"
+    "title": "Some services offered by cooperatives"
   },
   "aboutWOIP": {
-    "title": "Sobre WOIP",
-    "item1Text": "La investigación explora los contornos de las plataformas digitales de propiedad de personas trabajadoras a partir de la perspectiva interseccional para vislumbrar un futuro laboral más sostenible para los trabajadores.\n\nAdoptando un enfoque de investigación acción, el proyecto involucra a trabajadores de reparto y tecnología en Brasil y Argentina.",
-    "item2Text": "Lo que distingue a este proyecto de investigación es el uso de la interseccionalidad, que articula perspectivas queer, feministas, raciales, de clase y decoloniales como múltiples formas de opresión laboral.\n\nFinanciado por Social Sciences and Humanities Research Council (SSHRC), por medio de un Insight Development Grant (IDG)"
+    "title": "About WOIP",
+    "item1Text": "The research explores the contours of worker-owned digital platforms from an intersectional perspective to envision a more sustainable labor future for workers.\n\nAdopting a research-action approach, the project involves delivery and technology workers in Brazil and Argentina.",
+    "item2Text": "What distinguishes this research project is the use of intersectionality, which integrates queer, feminist, racial, class, and decolonial perspectives as multiple forms of labor oppression.\n\nFunded by the Social Sciences and Humanities Research Council (SSHRC) through an Insight Development Grant (IDG)."
   },
   "cooperativism": {
-    "title": "Las plataformas de propiedad de las personas trabajadoras implica:",
-    "item1Text": "Que la clase trabajadora construya sus propias tecnologías",
-    "item2Text": "Formule sus propios principios organizativos",
-    "item3Text": "Autogestión",
-    "item4Text": "Crear principios democráticos en el núcleo"
+    "title": "Worker-owned platforms involve:",
+    "item1Text": "The working class creating their own technologies",
+    "item2Text": "Establishing their own organizational principles",
+    "item3Text": "Self-management",
+    "item4Text": "Democratic principles at the core"
   },
   "contactForm": {
     "values": "Equality and diversity are fundamental to our core beliefs and values. We encourage your organization to hire cooperatives for your digital needs. This way, you obtain quality while fostering a fairer and more sustainable future in the workforce.",
-    "title": "Contacto",
+    "title": "Contact",
     "emailForm": {
-      "name": "Nombre completo",
-      "organization": "Organización",
-      "country": "País",
-      "email": "Correo electrónico",
-      "message": "Mensaje",
-      "send": "Enviar",
+      "name": "Full name",
+      "organization": "Organization",
+      "country": "Country",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
       "errors": {
         "requiredField": "This field is required",
         "emailInvalid": "Please enter a valid email address",
         "recaptchaError": "Please verify that you are not a robot"
       },
-      "successMessage": "Mensaje enviado"
+      "successMessage": "Message sent"
     }
   },
   "partners": {
-    "title": "Coopes que participan de este proyecto"
+    "title": "Cooperatives participating in this project"
   }
 }

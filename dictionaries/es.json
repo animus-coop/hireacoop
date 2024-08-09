@@ -12,13 +12,17 @@
     "item1Text": "En un contexto donde las universidades tienen como propósito abordar los objetivos de desarrollo sostenible (ODS) y luchar por el trabajo decente, contratar cooperativas es una forma de hacer que la economía circule fuera de los grandes oligopolios.",
     "item2Text": "La Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento (FACTTIC), y las organizaciones que integramos el proyecto Worker-Owned Intersectional Platforms (WOIP) trabajamos desde una perspectiva interseccional, apoyando el trabajo justo y el almacenamiento seguro de datos. Teniendo en cuenta, además, los criterios de calidad e innovación establecidos por el mercado."
   },
+  "hire": {
+    "title1": "¡Contratá cooperativas para tus necesidades tecnológicas!",
+    "title2": "¡Las cooperativas son la mejor alternativa para acercar nuestros recursos a nuestras ideas!"
+  },
   "services": {
     "title": "Algunos servicios que ofrecen las cooperativas"
   },
   "aboutWOIP": {
     "title": "Sobre WOIP",
     "item1Text": "La investigación explora los contornos de las plataformas digitales de propiedad de personas trabajadoras a partir de la perspectiva interseccional para vislumbrar un futuro laboral más sostenible para los trabajadores.\n\nAdoptando un enfoque de investigación acción, el proyecto involucra a trabajadores de reparto y tecnología en Brasil y Argentina.",
-    "item2Text": "Lo que distingue a este proyecto de investigación es el uso de la interseccionalidad, que articula perspectivas queer, feministas, raciales, de clase y decoloniales como múltiples formas de opresión laboral.\n\nFinanciado por Social Sciences and Humanities Research Council (SSHRC), por medio de un Insight Development Grant (IDG)"
+    "item2Text": "Lo que distingue a este proyecto de investigación es el uso de la interseccionalidad, que articula perspectivas queer, feministas, raciales, de clase y decoloniales como múltiples formas de opresión laboral.\n\nFinanciado por Social Sciences and Humanities Research Council (SSHRC), por medio de un Insight Development Grant (IDG)."
   },
   "cooperativism": {
     "title": "Las plataformas de propiedad de las personas trabajadoras implica:",
@@ -28,7 +32,7 @@
     "item4Text": "Crear principios democráticos en el núcleo"
   },
   "contactForm": {
-    "values": "Equality and diversity are fundamental to our core beliefs and values. We encourage your organization to hire cooperatives for your digital needs. This way, you obtain quality while fostering a fairer and more sustainable future in the workforce.",
+    "values": "La igualdad y la diversidad son valores fundamentales para nuestras cooperativas. Invitamos y alentamos a tu organización a contratar cooperativas para resolver tus necesidades digitales. Así, vas a tener trabajos de calidad y además, fomentás un futuro más justo y sostenible en el mundo laboral.",
     "title": "Contacto",
     "emailForm": {
       "name": "Nombre completo",
@@ -38,9 +42,9 @@
       "message": "Mensaje",
       "send": "Enviar",
       "errors": {
-        "requiredField": "This field is required",
-        "emailInvalid": "Please enter a valid email address",
-        "recaptchaError": "Please verify that you are not a robot"
+        "requiredField": "Campo requerido",
+        "emailInvalid": "Por favor, ingrese un correo electrónico válido",
+        "recaptchaError": "Ocurrió un error al verificar que no seas un robot. Por favor, refrescá la página e intentá de nuevo."
       },
       "successMessage": "Mensaje enviado"
     }

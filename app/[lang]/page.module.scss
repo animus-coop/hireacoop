@@ -15,7 +15,7 @@
     @extend %section;
     background-color: black;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: -100px;
 
     .imageContainer {
@@ -25,11 +25,14 @@
     }
 
     .titleContainer {
+      position: relative;
+      bottom: 4vh;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 2vw;
+      max-width: 95vw;
    
       h1 {
         position: relative;
