@@ -204,6 +204,24 @@
       }
     }
 
+    .hire {
+      width: 100%;
+      align-items: center;
+      margin-bottom: 70px;
+
+      .titlesContainer {
+        width: 95vw;
+      }
+  
+      .hireCardsContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        gap: 50px;
+      }
+    }
+
     .cooperativism {
       margin-top: 20px;
       margin-bottom: 20px;
