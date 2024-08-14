@@ -94,6 +94,7 @@ export default async function Home({
                 image={hireItem.image}
                 alt={hireItem.alt}
                 title={hireItem.text[lang]}
+                placeholder="blur"
               />
             ))}
           </div>
