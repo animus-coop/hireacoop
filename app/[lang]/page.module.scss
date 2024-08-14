@@ -15,6 +15,7 @@
     @extend %section;
     background-color: black;
     align-items: center;
+    margin-bottom: -50px;
 
     .imageContainer {
       position: relative;
@@ -60,7 +61,6 @@
   .about {
     @extend %section;
     justify-content: center;
-    margin-top: -70px;
     margin-bottom: 50px;
 
     .itemsContainer {
