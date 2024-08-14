@@ -20,6 +20,8 @@ import { hireData } from "../data/hire";
 import { servicesData } from "../data/services";
 import { partnersData } from "../data/partners";
 
+import HeroImg from "../../public/hero.jpg";
+
 export default async function Home({
   params: { lang }
 }) {
@@ -44,12 +46,13 @@ export default async function Home({
         <div className={styles.hero}>
           <div className={styles.imageContainer}>
             <Image
-              src="/hero.jpg"
+              src={HeroImg}
               alt="HaC logo"
               fill
               priority
               sizes="100vw"
               className={styles.image}
+              placeholder="blur"
             />
             <div className={styles.overlay}></div>
           </div>
