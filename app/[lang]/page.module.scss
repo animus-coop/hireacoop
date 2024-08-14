@@ -15,13 +15,26 @@
     @extend %section;
     background-color: black;
     align-items: center;
-    margin-top: 80px;
-    margin-bottom: -100px;
 
     .imageContainer {
       position: relative;
-      width: 40vw;
-      height: 40vw;
+      width: 100vw;
+      height: 100vh;
+      overflow: visible;
+
+      .image {
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent 40%, black 100%);
     }
 
     .titleContainer {
@@ -47,6 +60,7 @@
   .about {
     @extend %section;
     justify-content: center;
+    margin-top: -70px;
     margin-bottom: 50px;
 
     .itemsContainer {
@@ -166,29 +180,18 @@
 @media (max-width: 768px) {
   .main {
     .hero {
-      margin-top: 20px;
-      height: 100vh;
-
       .imageContainer {
-        width: 120vw;
-        height: 130vw;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, transparent, black);
+        .image {
+          object-position: 45% top;
+        }
       }
 
       .titleContainer {
         padding: 0 20px;
 
         h1 {
-          position: absolute;
-          top: 60vh;
+          position: relative;
+          top: -50vh;
           font-size: 12vw;
           line-height: 15vw;
           padding: 0 40px;
@@ -197,6 +200,8 @@
     }
 
     .about {
+      margin-top: -30vh;
+
       .itemsContainer {
         width: 100%;
         display: flex;
@@ -211,6 +216,7 @@
       width: 100%;
       align-items: center;
       margin-bottom: 70px;
+      margin-top: -50px;
 
       .titlesContainer {
         width: 95vw;
@@ -226,6 +232,9 @@
     }
 
     .services {
+      margin-bottom: 300px;
+      margin-top: -20px;
+
       .cardsContainer {
         width: 90vw;
         flex-direction: column;
@@ -270,18 +279,9 @@
       }
     }
   }
-}
 
-// Full HD Desktops
-@media (min-width: 1920px) {
-  .main {
-    .hero {
-      margin-bottom: -30px;
-
-      .imageContainer {
-        width: 43vw;
-        height: 43vw;
-      }
-    }
+  // COMMON
+  .sectionTitle {
+    padding: 0 20px;
   }
 }

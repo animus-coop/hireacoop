@@ -44,11 +44,12 @@ export default async function Home({
         <div className={styles.hero}>
           <div className={styles.imageContainer}>
             <Image
-              src="/hero.svg"
-              alt="Fist logo"
+              src="/hero.jpg"
+              alt="HaC logo"
               fill
               priority
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="100vw"
+              className={styles.image}
             />
             <div className={styles.overlay}></div>
           </div>
