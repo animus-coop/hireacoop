@@ -11,6 +11,19 @@ export default function AnimationWrapper({ children }) {
   const main = useRef(null);
 
   useGSAP(() => {
+    const scrollDownParallaxElements = gsap.utils.toArray('.scroll-down-parallax');
+    scrollDownParallaxElements.forEach((element) => {
+      gsap.to(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+        height: '30vh',
+      });
+    });
+
     const slideInBottomElements = gsap.utils.toArray('.slide-in-bottom');
     slideInBottomElements.forEach((element) => {
       const noOpacity = element.classList.contains('no-opacity');

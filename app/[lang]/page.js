@@ -48,7 +48,7 @@ export default async function Home({
         <Nav dictionary={dictionary} lang={lang} />
 
         <div className={styles.hero}>
-          <div className={styles.imageContainer}>
+          <div className={styles.imageContainer  + ' scroll-down-parallax'}>
             <Image
               src={HeroImg}
               alt="HaC logo"
