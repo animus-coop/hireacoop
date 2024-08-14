@@ -9,7 +9,6 @@ export default function PartnerBadge({ name, image, alt = "", key }) {
           src={image}
           alt={alt}
           fill
-          placeholder="blur"
           sizes="(max-width: 768px) 50vw, 25vw"
           className={styles.image}
         />

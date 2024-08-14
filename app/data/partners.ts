@@ -1,4 +1,6 @@
-import PlaceholderImg from '../../public/placeholder.jpeg';
+import CL from '../../public/CodigoLibre.svg';
+import Animus from '../../public/Animus.png';
+import ALT from '../../public/ALT.png';
 import { StaticImageData } from 'next/image';
 
 type Partner = {
@@ -8,8 +10,7 @@ type Partner = {
 }
 
 export const partnersData: Partner[] = [
-  { name: "Partner 1", logo: PlaceholderImg, alt: 'Placeholder alt' },
-  { name: "Partner 2", logo: PlaceholderImg, alt: 'Placeholder alt' },
-  { name: "Partner 3", logo: PlaceholderImg, alt: 'Placeholder alt' },
-  { name: "Partner 4", logo: PlaceholderImg, alt: 'Placeholder alt' },
+  { name: "Animus", logo: Animus, alt: 'Placeholder alt' },
+  { name: "ALT", logo: ALT, alt: 'Placeholder alt' },
+  { name: "Codigo Libre", logo: CL, alt: 'Placeholder alt' },
 ];

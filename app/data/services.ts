@@ -1,5 +1,12 @@
-import PlaceholderImg from '../../public/placeholder.jpeg';
-
+import antena from '../../public/antena.png'
+import archivos from '../../public/archivos.png'
+import camara_video from '../../public/camara video.png'
+import candado from '../../public/candado.png'
+import computadora from '../../public/computadora.png'
+import engranajes from '../../public/engranajes.png'
+import graficos from '../../public/graficos.png'
+import pizarron from '../../public/pizarron.png'
+import polaroid from '../../public/polaroid.png'
 import { WithTranslation } from './common';
 import { StaticImageData } from 'next/image';
 
@@ -16,7 +23,7 @@ export const servicesData: Service[] = [
       en: 'Web development and mobile applications',
       pt: 'Desenvolvimento web e aplicativos móveis',
     },
-    image: PlaceholderImg,
+    image: computadora,
     alt: 'Placeholder alt',
   },
   { 
@@ -25,7 +32,7 @@ export const servicesData: Service[] = [
       en: 'Data analysis and visualization',
       pt: 'Análise e visualização de dados',
     },
-    image: PlaceholderImg,
+    image: graficos,
     alt: 'Placeholder alt',
   },
   { 
@@ -34,7 +41,7 @@ export const servicesData: Service[] = [
       en: 'Report design, visual identities',
       pt: 'Design de relatórios, identidades visuais',
     },
-    image: PlaceholderImg,
+    image: archivos,
     alt: 'Placeholder alt',
   },
   { 
@@ -43,34 +50,7 @@ export const servicesData: Service[] = [
       en: 'Audiovisual production and digital illustration',
       pt: 'Produção audiovisual e ilustração digital',
     },
-    image: PlaceholderImg,
-    alt: 'Placeholder alt',
-  },
-  {
-    text: {
-      es: 'Desarrollo de software para la gestión documental',
-      en: 'Software development for document management',
-      pt: 'Desenvolvimento de software para gestão documental',
-    },
-    image: PlaceholderImg,
-    alt: 'Placeholder alt',
-  },
-  {
-    text: {
-      es: 'Diseño e implementación de campus virtuales',
-      en: 'Design and implementation of virtual campuses',
-      pt: 'Design e implementação de campus virtuais',
-    },
-    image: PlaceholderImg,
-    alt: 'Placeholder alt',
-  },
-  {
-    text: {
-      es: 'Ilustración digital',
-      en: 'Digital illustration',
-      pt: 'Ilustração digital',
-    },
-    image: PlaceholderImg,
+    image: camara_video,
     alt: 'Placeholder alt',
   },
   { 
@@ -79,7 +59,7 @@ export const servicesData: Service[] = [
       en: 'Social media management',
       pt: 'Gestão de redes sociais',
     },
-    image: PlaceholderImg,
+    image: polaroid,
     alt: 'Placeholder alt',
   },
   { 
@@ -88,7 +68,7 @@ export const servicesData: Service[] = [
       en: 'Secure infrastructure for data storage',
       pt: 'Infraestrutura segura para armazenamento de dados',
     },
-    image: PlaceholderImg,
+    image: candado,
     alt: 'Placeholder alt',
   },
   { 
@@ -97,7 +77,7 @@ export const servicesData: Service[] = [
       en: 'Network infrastructure - MariaLab?',
       pt: 'Infraestrutura de redes - MariaLab?',
     },
-    image: PlaceholderImg,
+    image: antena,
     alt: 'Placeholder alt',
   },
   { 
@@ -106,16 +86,7 @@ export const servicesData: Service[] = [
       en: 'Administrative process automation',
       pt: 'Automação de processos administrativos',
     },
-    image: PlaceholderImg,
-    alt: 'Placeholder alt',
-  },
-  {
-    text: {
-      es: 'Desarrollo de software a medida para el análisis de datos',
-      en: 'Custom software development for data analysis',
-      pt: 'Desenvolvimento de software sob medida para análise de dados',
-    },
-    image: PlaceholderImg,
+    image: engranajes,
     alt: 'Placeholder alt',
   },
   { 
@@ -124,7 +95,7 @@ export const servicesData: Service[] = [
       en: 'Training and consulting for technology project implementation',
       pt: 'Treinamentos e consultoria para a implementação de projetos tecnológicos',
     },
-    image: PlaceholderImg,
+    image: pizarron,
     alt: 'Placeholder alt',
   },
 ];

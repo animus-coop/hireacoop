@@ -13,6 +13,10 @@ import PartnerBadge from "./components/partner-badge";
 
 import Footer from "./components/footer";
 
+import HAC_1 from "../../public/HAC_1.jpg";
+import HAC_2 from "../../public/HAC_2.jpg";
+import WOIP_1 from "../../public/WOIP_1.jpg";
+import WOIP_2 from "../../public/WOIP_2.jpg";
 import PlaceholderImg from "../../public/placeholder.jpeg";
 import HireCard from "./components/hire-card";
 import { hireData } from "../data/hire";
@@ -70,13 +74,13 @@ export default async function Home({
           <div className={styles.itemsContainer}>
             <WideCard
               text={about["item1Text"]}
-              image={PlaceholderImg}
+              image={HAC_1}
               reverse
             />
 
             <WideCard
               text={about["item2Text"]}
-              image={PlaceholderImg}
+              image={HAC_2}
             />
           </div>
         </div>
@@ -108,7 +112,7 @@ export default async function Home({
               <FloatingCard
                 key={index}
                 text={service["text"]}
-                image={PlaceholderImg}
+                image={service["image"]}
                 alt=""
                 lang={lang}
               />
@@ -122,13 +126,13 @@ export default async function Home({
           <div className={styles.itemsContainer}>
             <WideCard
               text={aboutWOIP["item1Text"]}
-              image={PlaceholderImg}
+              image={WOIP_1}
               reverse
             />
             
             <WideCard
               text={aboutWOIP["item2Text"]}
-              image={PlaceholderImg}
+              image={WOIP_2}
             />
           </div>
         </div>
