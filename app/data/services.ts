@@ -73,9 +73,9 @@ export const servicesData: Service[] = [
   },
   { 
     text: {
-      es: 'Infraestructura de redes - MariaLab?',
-      en: 'Network infrastructure - MariaLab?',
-      pt: 'Infraestrutura de redes - MariaLab?',
+      es: 'Infraestructura de redes',
+      en: 'Network infrastructure',
+      pt: 'Infraestrutura de redes',
     },
     image: antena,
     alt: 'Placeholder alt',

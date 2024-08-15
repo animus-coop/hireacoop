@@ -1,4 +1,6 @@
-import PlaceHolderImg from '../../public/placeholder.jpeg';
+import facttic from '../../public/FACTTIC.png';
+import digilabour from '../../public/Digitalabour.png';
+import WOIP from '../../public/WOIP.png';
 import { StaticImageData } from 'next/image';
 
 type Financier = {
@@ -8,7 +10,7 @@ type Financier = {
 }
 
 export const financierData: Financier[] = [
-  { name: "WOIP", logo: PlaceHolderImg, alt: 'Placeholder alt' },
-  { name: "Digital Labour", logo: PlaceHolderImg, alt: 'Placeholder alt' },
-  { name: "FACTTIC", logo: PlaceHolderImg, alt: 'Placeholder alt' },
+  { name: "WOIP", logo: WOIP, alt: 'Placeholder alt' },
+  { name: "Digital Labour", logo: digilabour, alt: 'Placeholder alt' },
+  { name: "FACTTIC", logo: facttic, alt: 'Placeholder alt' },
 ];
