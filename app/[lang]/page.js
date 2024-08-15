@@ -10,6 +10,7 @@ import FloatingCard from "./components/floating-card";
 import SmallItem from "./components/small-item";
 import EmailForm from "./components/email-form";
 import PartnerBadge from "./components/partner-badge";
+import FinanciersBadge from "./components/financiers";
 
 import Footer from "./components/footer";
 
@@ -17,7 +18,10 @@ import HAC_1 from "../../public/HAC_1.jpg";
 import HAC_2 from "../../public/HAC_2.jpg";
 import WOIP_1 from "../../public/WOIP_1.jpg";
 import WOIP_2 from "../../public/WOIP_2.jpg";
-import PlaceholderImg from "../../public/placeholder.jpeg";
+import Icono1 from "../../public/Icono_1.jpg";
+import Icono2 from "../../public/Icono_2.jpg";
+import Icono3 from "../../public/Icono_3.jpg";
+import Icono4 from "../../public/Icono_4.jpg";
 import HireCard from "./components/hire-card";
 import { hireData } from "../data/hire";
 
@@ -25,6 +29,7 @@ import { servicesData } from "../data/services";
 import { partnersData } from "../data/partners";
 
 import HeroImg from "../../public/hero.jpg";
+import { financierData } from "../data/financiers";
 
 export default async function Home({
   params: { lang }
@@ -87,7 +92,6 @@ export default async function Home({
 
         <div className={styles.hire}>
           <div className={styles.titlesContainer}>
-            <h2 className={styles.sectionTitle}>{hire["title1"]}</h2>
             <h2 className={styles.sectionTitle}>{hire["title2"]}</h2>
           </div>
 
@@ -141,10 +145,10 @@ export default async function Home({
           <h2 className={styles.sectionTitle}>{cooperativism["title"]}</h2>
 
           <div className={styles.itemsContainer}>
-            <SmallItem image={PlaceholderImg} text={cooperativism["item1Text"]} />
-            <SmallItem image={PlaceholderImg} text={cooperativism["item2Text"]} />
-            <SmallItem image={PlaceholderImg} text={cooperativism["item3Text"]} />
-            <SmallItem image={PlaceholderImg} text={cooperativism["item4Text"]} />
+            <SmallItem image={Icono1} text={cooperativism["item1Text"]} />
+            <SmallItem image={Icono3} text={cooperativism["item2Text"]} />
+            <SmallItem image={Icono2} text={cooperativism["item3Text"]} />
+            <SmallItem image={Icono4} text={cooperativism["item4Text"]} />
           </div>
         </div>
 
@@ -180,12 +184,12 @@ export default async function Home({
           <h2 className={styles.sectionTitle}>{partners["title2"]}</h2>
 
           <div className={styles.itemsContainer}>
-            {partnersData.map((partner, index) => (
-              <PartnerBadge
+            {financierData.map((financier, index) => (
+              <FinanciersBadge
                 key={index}
-                image={partner.logo}
-                alt={partner.alt || ""}
-                name={partner.name}
+                image={financier.logo}
+                alt={financier.alt || ""}
+                name={financier.name}
               />
             ))}
           </div>
