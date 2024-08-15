@@ -6,12 +6,11 @@ import styles from './footer.module.scss';
 import HACLogo from '../../../public/HAC-fist-black.svg';
 import InstagramIcon from '../../../public/icons/instagram.svg';
 import LinkedInIcon from '../../../public/icons/linkedin.svg';
-import PlacehoderImg from '../../../public/placeholder.jpeg';
 import AnimusLogo from '../../../public/Animus.png';
 import ALTLogo from '../../../public/ALT.png';
 import CodigoLibreLogo from '../../../public/CodigoLibre.svg';
 
-export default async function Footer() {
+export default async function Footer({ dictionary, lang = 'en' }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.imageContainer}>
@@ -49,7 +48,7 @@ export default async function Footer() {
       </div>
 
       <div className={styles.poweredBy}>
-        <p className={styles.text}>Powered by</p>
+        <p className={styles.text}>{dictionary.poweredBy}</p>
 
         <div className={styles.logosWrapper}>
           <Link href="https://animus.coop/" target='_blank'>

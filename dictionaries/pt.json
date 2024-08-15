@@ -51,5 +51,8 @@
   "partners": {
     "title1": "Contrate uma Cooperativa de Organizações Participantes",
     "title2": "Eles financiam e apoiam este projeto"
+  },
+  "footer": {
+    "poweredBy": "Projetado e desenvolvido por"
   }
 }

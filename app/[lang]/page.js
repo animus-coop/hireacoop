@@ -45,6 +45,7 @@ export default async function Home({
   const emailForm = contactForm["emailForm"];
   const partners = dictionary["partners"];
   const hire = dictionary["hire"];
+  const footer = dictionary["footer"];
 
   return (
     <AnimationWrapper>
@@ -195,7 +196,7 @@ export default async function Home({
           </div>
         </div>
 
-        <Footer />
+        <Footer dictionary={footer} lang={lang} />
 
       </main>
     </AnimationWrapper>

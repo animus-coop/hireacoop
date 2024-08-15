@@ -51,5 +51,8 @@
   "partners": {
     "title1": "Organizaciones participantes de  Hire a Coop",
     "title2": "Financian y apoyan este proyecto"
+  },
+  "footer": {
+    "poweredBy": "Diseñado y desarrollado por"
   }
 }
