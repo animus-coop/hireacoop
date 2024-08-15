@@ -10,37 +10,44 @@
   justify-content: space-between;
   align-items: flex-end;
 
-  .imageContainer {
-    position: relative;
-    width: 150px;
-    height: 220px;
-    
-    .image {
-      object-fit: cover;
-    }
-  }
-
-  .socialMedia {
+  .left {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 40px;
 
-    .item {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
-
-      .iconContainer {
-        position: relative;
-        width: 40px;
-        height: 40px;
+    .imageContainer {
+      position: relative;
+      width: 150px;
+      height: 220px;
+      
+      .image {
+        object-fit: cover;
       }
-
-      p {
-        font-size: 18px;
-        font-weight: 500;
-        color: base.$dark-grey;
+    }
+  
+    .socialMedia {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+  
+        .iconContainer {
+          position: relative;
+          width: 40px;
+          height: 40px;
+        }
+  
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          color: base.$dark-grey;
+        }
       }
     }
   }
@@ -48,7 +55,7 @@
   .poweredBy {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 22px;
 
     .text {
       font-size: 18px;
@@ -88,42 +95,56 @@
     gap: 20px;
     padding-bottom: 50px;
 
-    .imageContainer {
-      width: 120px;
-      height: 180px;
-      margin-bottom: 30px;
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      
+      .imageContainer {
+        width: 120px;
+        height: 180px;
+      }
+
+      .socialMedia {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+  
+        .item {
+          gap: 5px;
+  
+          .iconContainer {
+            width: 30px;
+            height: 30px;
+          }
+  
+          p {
+            font-size: 16px;
+          }
+        }
+      }
     }
 
     .poweredBy {
+      margin-top: 20px;
+      justify-content: center;
+      width: 100%;
+      gap: 15px;
+
       .text {
         text-align: center;
       }
 
       .logosWrapper {
+        justify-content: center;
+        gap: 15px;
+
         .logoContainer {
           width: 70px;
           height: 70px;
-        }
-      }
-    }
-
-    .socialMedia {
-      order: 2;
-      width: 100%;
-      flex-direction: row;
-      justify-content: center;
-      margin-top: 20px;
-
-      .item {
-        gap: 5px;
-
-        .iconContainer {
-          width: 30px;
-          height: 30px;
-        }
-
-        p {
-          font-size: 16px;
+          margin-right: 0;
         }
       }
     }

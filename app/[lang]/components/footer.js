@@ -13,38 +13,29 @@ import CodigoLibreLogo from '../../../public/CodigoLibre.svg';
 export default async function Footer({ dictionary, lang = 'en' }) {
   return (
     <footer className={styles.footer}>
-      <div className={styles.imageContainer}>
-        <Image
-          src={HACLogo}
-          alt="HAC logo"
-          className={styles.image}
-          fill
-          priority
-        />
-      </div>
+      <div className={styles.left}>
+        <div className={styles.imageContainer}>
+          <Image
+            src={HACLogo}
+            alt="HAC logo"
+            className={styles.image}
+            fill
+            priority
+          />
+        </div>
 
-      <div className={styles.socialMedia}>
-        <Link href="https://www.instagram.com/hac_coop/" className={styles.item} target="_blank">
-          <div className={styles.iconContainer}>
-            <Image
-              src={InstagramIcon}
-              alt="Instagram"
-              fill
-            />
-          </div>
-          <p>Instagram</p>
-        </Link>
-
-        <Link href="https://www.instagram.com/hac_coop/" className={styles.item} target="_blank">
-          <div className={styles.iconContainer}>
-            <Image
-              src={LinkedInIcon}
-              alt="LinkedIn"
-              fill
-            />
-          </div>
-          <p>LinkedIn</p>
-        </Link>
+        <div className={styles.socialMedia}>
+          <Link href="https://www.instagram.com/hac_coop/" className={styles.item} target="_blank">
+            <div className={styles.iconContainer}>
+              <Image
+                src={InstagramIcon}
+                alt="Instagram"
+                fill
+              />
+            </div>
+            <p>Instagram</p>
+          </Link>
+        </div>
       </div>
 
       <div className={styles.poweredBy}>
