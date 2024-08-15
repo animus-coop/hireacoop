@@ -162,7 +162,22 @@ export default async function Home({
         </div>
 
         <div className={styles.partners}>
-          <h2 className={styles.sectionTitle}>{partners["title"]}</h2>
+          <h2 className={styles.sectionTitle}>{partners["title1"]}</h2>
+
+          <div className={styles.itemsContainer}>
+            {partnersData.map((partner, index) => (
+              <PartnerBadge
+                key={index}
+                image={partner.logo}
+                alt={partner.alt || ""}
+                name={partner.name}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.partners}>
+          <h2 className={styles.sectionTitle}>{partners["title2"]}</h2>
 
           <div className={styles.itemsContainer}>
             {partnersData.map((partner, index) => (
