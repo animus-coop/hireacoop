@@ -5,12 +5,12 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Are you imagining a technological challenge?"
+    "title": "Are you imagining a technological challenge in your project?"
   },
   "about": {
     "title": "About Hire a Coop",
     "item1Text": "In a context where universities aim to address sustainable development goals (SDGs) and advocate for decent work, hiring cooperatives is a way to circulate the economy outside of large oligopolies.",
-    "item2Text": "The Argentine Federation of Cooperatives for Technology, Innovation, and Knowledge (FACTTIC), and the organizations involved in the Worker-Owned Intersectional Platforms (WOIP) project, work from an intersectional perspective, supporting fair labor and secure data storage. This is done while considering the quality and innovation criteria established by the market."
+    "item2Text": "The Argentine Federation of Cooperatives for Technology, Innovation, and Knowledge (FACTTIC), and the organizations involved in the Worker-Owned Intersectional Platforms (WOIP) project, works from an intersectional perspective, supporting fair labor and secure data storage. This is done while considering the quality and innovation criteria established by the market."
   },
   "hire": {
     "title2": "Cooperatives are the best alternative to bring our resources to our ideas!"
@@ -19,7 +19,7 @@
     "title": "Some services offered by cooperatives"
   },
   "aboutWOIP": {
-    "title": "About WOIP",
+    "title": "About ",
     "item1Text": "The research explores the contours of worker-owned digital platforms from an intersectional perspective to envision a more sustainable labor future for workers.\n\nAdopting a research-action approach, the project involves delivery and technology workers in Brazil and Argentina.",
     "item2Text": "What distinguishes this research project is the use of intersectionality, which integrates queer, feminist, racial, class, and decolonial perspectives as multiple forms of labor oppression.\n\nFunded by the Social Sciences and Humanities Research Council (SSHRC) through an Insight Development Grant (IDG)."
   },

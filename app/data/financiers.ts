@@ -13,7 +13,7 @@ type Financier = {
 
 export const financierData: Financier[] = [
   { name: "WOIP", logo: WOIP, alt: 'Placeholder alt' },
-  { name: "Digilabour", logo: digilabour, alt: 'Placeholder alt' },
+  { name: "DigiLabour", logo: digilabour, alt: 'Placeholder alt' },
   { name: "FACTTIC", logo: facttic, alt: 'Placeholder alt' },
   { name: "University of Toronto", logo: TorontoUniversity, alt: 'Placeholder alt' },
   { name: "sshrc", logo: SSHRC, alt: 'Placeholder alt' },

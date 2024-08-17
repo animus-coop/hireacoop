@@ -30,6 +30,7 @@ import { partnersData } from "../data/partners";
 
 import HeroImg from "../../public/hero.jpg";
 import { financierData } from "../data/financiers";
+import Link from "next/link";
 
 export default async function Home({
   params: { lang }
@@ -68,7 +69,7 @@ export default async function Home({
           </div>
 
           <div className={styles.titleContainer}>
-            <h1>
+            <h1 className={lang === 'en' ? styles.en : ''}>
               {hero["title"]}
             </h1>
           </div>
@@ -126,7 +127,7 @@ export default async function Home({
         </div>
 
         <div className={styles.about}>
-          <h2 className={styles.sectionTitle}>{aboutWOIP["title"]}</h2>
+          <h2 className={styles.sectionTitle}>{aboutWOIP["title"]}<Link className={styles.link} href="https://digilabour.com.br/worker-owned-intersectional-platforms-woip/" target="_blank">WOIP</Link></h2>
 
           <div className={styles.itemsContainer}>
             <WideCard

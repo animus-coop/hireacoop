@@ -5,7 +5,6 @@ import styles from './footer.module.scss';
 
 import HACLogo from '../../../public/HAC-fist-black.svg';
 import InstagramIcon from '../../../public/icons/instagram.svg';
-import LinkedInIcon from '../../../public/icons/linkedin.svg';
 import AnimusLogo from '../../../public/Animus.png';
 import ALTLogo from '../../../public/ALT.png';
 import CodigoLibreLogo from '../../../public/CodigoLibre.svg';

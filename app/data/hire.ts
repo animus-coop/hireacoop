@@ -24,7 +24,7 @@ export const hireData: Hire[] = [
   { 
     text: {
       es: 'Les trabajadores que las integran son sus dueñes',
-      en: 'The workers who are part of them are their owners',
+      en: 'The workers are the owners of the cooperatives',
       pt: 'Os trabalhadores que as integram são seus proprietários',
     },
     image: Circle2Img,

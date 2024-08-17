@@ -63,6 +63,11 @@
     justify-content: center;
     margin-bottom: 50px;
 
+    .link {
+      color: white;
+      text-decoration: underline;
+    }
+
     .itemsContainer {
       @extend %section;
       justify-content: center;
@@ -194,7 +199,11 @@
           top: -43vh;
           font-size: 12vw;
           line-height: 15vw;
-          padding: 0 40px;
+          padding: 0 10px;
+
+          &.en {
+            top: -50vh;
+          }
         }
       }
     }
