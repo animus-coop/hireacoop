@@ -9,6 +9,8 @@
   background-color: white;
   height: auto;
   padding: 2vh 2vw;
+  position: fixed;
+  z-index: 2;
 
   .top {
     display: flex;

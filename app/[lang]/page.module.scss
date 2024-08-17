@@ -15,17 +15,17 @@
     @extend %section;
     background-color: black;
     align-items: center;
-    margin-bottom: -50px;
+    margin-bottom: -90px;
 
     .imageContainer {
       position: relative;
       width: 100vw;
-      height: 100vh;
+      height: 110vh;
       overflow: visible;
 
       .image {
         object-fit: cover;
-        object-position: 50% 30%;
+        object-position: 50% 9%;
       }
     }
 
@@ -35,17 +35,17 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, transparent 40%, black 100%);
+      background: linear-gradient(to bottom, transparent 50%, black 100%);
     }
 
     .titleContainer {
       position: relative;
-      bottom: 4vh;
+      bottom: 15vh;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 2vw;
+      margin-top: 5vw;
       max-width: 95vw;
    
       h1 {
@@ -62,6 +62,11 @@
     @extend %section;
     justify-content: center;
     margin-bottom: 50px;
+
+    .link {
+      color: white;
+      text-decoration: underline;
+    }
 
     .itemsContainer {
       @extend %section;
@@ -133,6 +138,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 40px;
 
     .ourValues {
       position: relative;
@@ -154,7 +160,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 50px;
 
     .itemsContainer {
       width: 75vw;
@@ -162,7 +167,7 @@
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      margin-top: 60px;
+      margin-top: 50px;
     }
   }
 }
@@ -191,10 +196,14 @@
 
         h1 {
           position: relative;
-          top: -50vh;
+          top: -43vh;
           font-size: 12vw;
           line-height: 15vw;
-          padding: 0 40px;
+          padding: 0 10px;
+
+          &.en {
+            top: -50vh;
+          }
         }
       }
     }

@@ -13,14 +13,13 @@
     "item2Text": "La Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento (FACTTIC), y las organizaciones que integramos el proyecto Worker-Owned Intersectional Platforms (WOIP) trabajamos desde una perspectiva interseccional, apoyando el trabajo justo y el almacenamiento seguro de datos. Teniendo en cuenta, además, los criterios de calidad e innovación establecidos por el mercado."
   },
   "hire": {
-    "title1": "¡Contratá cooperativas para tus necesidades tecnológicas!",
     "title2": "¡Las cooperativas son la mejor alternativa para acercar nuestros recursos a nuestras ideas!"
   },
   "services": {
     "title": "Algunos servicios que ofrecen las cooperativas"
   },
   "aboutWOIP": {
-    "title": "Sobre WOIP",
+    "title": "Sobre ",
     "item1Text": "La investigación explora los contornos de las plataformas digitales de propiedad de personas trabajadoras a partir de la perspectiva interseccional para vislumbrar un futuro laboral más sostenible para los trabajadores.\n\nAdoptando un enfoque de investigación acción, el proyecto involucra a trabajadores de reparto y tecnología en Brasil y Argentina.",
     "item2Text": "Lo que distingue a este proyecto de investigación es el uso de la interseccionalidad, que articula perspectivas queer, feministas, raciales, de clase y decoloniales como múltiples formas de opresión laboral.\n\nFinanciado por Social Sciences and Humanities Research Council (SSHRC), por medio de un Insight Development Grant (IDG)."
   },
@@ -50,6 +49,10 @@
     }
   },
   "partners": {
-    "title": "Coopes que participan de este proyecto"
+    "title1": "Organizaciones participantes de  Hire a Coop",
+    "title2": "Financian y apoyan este proyecto"
+  },
+  "footer": {
+    "poweredBy": "Diseñado y desarrollado por"
   }
 }

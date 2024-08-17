@@ -13,16 +13,15 @@
     "item2Text": "A Federação Argentina de Cooperativas de Trabalho de Tecnologia, Inovação e Conhecimento (FACTTIC) e as organizações que integram o projeto Worker-Owned Intersectional Platforms (WOIP) trabalham a partir de uma perspectiva interseccional, apoiando o trabalho justo e o armazenamento seguro de dados. Isso é feito levando em conta os critérios de qualidade e inovação estabelecidos pelo mercado."
   },
   "hire": {
-    "title1": "Contrate cooperativas para suas necessidades tecnológicas!",
-    "title2": "CAs cooperativas são a melhor alternativa para aproximar nossos recursos de nossas ideias!"
+    "title2": "Contratar cooperativas são a melhor alternativa para aproximar nossos recursos de nossas ideias!"
   },
   "services": {
     "title": "Alguns serviços oferecidos pelas cooperativas"
   },
   "aboutWOIP": {
-    "title": "Sobre WOIP",
-    "item1Text": "A pesquisa explora os contornos das plataformas digitais de propriedade dos trabalhadores a partir de uma perspectiva interseccional para vislumbrar um futuro laboral mais sustentável para os trabalhadores.\n\nAdotando uma abordagem de pesquisa-ação, o projeto envolve trabalhadores de entrega e tecnologia no Brasil e na Argentina.",
-    "item2Text": "O que distingue este projeto de pesquisa é o uso da interseccionalidade, que articula perspectivas queer, feministas, raciais, de classe e decoloniais como múltiplas formas de opressão laboral.\n\nFinanciado pelo Conselho de Pesquisa em Ciências Sociais e Humanas (SSHRC), por meio de um Insight Development Grant (IDG)."
+    "title": "Sobre ",
+    "item1Text": "A pesquisa explora os contornos das plataformas digitais de propriedade das pessoas trabalhadoras a partir de uma perspectiva interseccional para vislumbrar um futuro laboral mais sustentável para os trabalhadores.\n\nAdotando uma abordagem de pesquisa-ação, o projeto envolve trabalhadores de entrega e tecnologia no Brasil e na Argentina.",
+    "item2Text": "O que distingue este projeto de pesquisa é o uso da interseccionalidade, que articula perspectivas queer, feministas, raciais, de classe e decoloniais como múltiplas formas de opressão laboral.\n\nFinanciado pelo Conselho de Pesquisa em Ciências Sociais e Humanas (SSHRC Canada), por meio de um Insight Development Grant (IDG)."
   },
   "cooperativism": {
     "title": "As plataformas de propriedade dos trabalhadores envolvem:",
@@ -50,6 +49,10 @@
     }
   },
   "partners": {
-    "title": "Cooperativas participantes deste projeto"
+    "title1": "Contrate uma Cooperativa participante",
+    "title2": "Eles financiam e apoiam este projeto"
+  },
+  "footer": {
+    "poweredBy": "Projetado e desenvolvido por"
   }
 }
