@@ -192,6 +192,7 @@ export default async function Home({
                 image={financier.logo}
                 alt={financier.alt || ""}
                 name={financier.name}
+                url={financier.url}
               />
             ))}
           </div>

@@ -65,6 +65,10 @@
 
     .link {
       color: white;
+      text-decoration: none;
+    }
+
+    .link:hover {
       text-decoration: underline;
     }
 
