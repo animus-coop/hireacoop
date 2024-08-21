@@ -24,7 +24,7 @@ export default async function Footer({ dictionary, lang = 'en' }) {
         </div>
 
         <div className={styles.socialMedia}>
-          <Link href="https://www.instagram.com/hac_coop/" className={styles.item} target="_blank">
+          <Link href="https://www.instagram.com/hireacoop/" className={styles.item} target="_blank">
             <div className={styles.iconContainer}>
               <Image
                 src={InstagramIcon}
