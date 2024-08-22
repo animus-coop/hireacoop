@@ -11,6 +11,7 @@ export default function FinanciersBadge({ name, image, alt = "", url, key }) {
           fill
           sizes="(max-width: 768px) 50vw, 25vw"
           className={styles.image}
+          placeholder="blur"
         />
       </div>
 
