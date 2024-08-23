@@ -102,9 +102,8 @@ export default async function Home({
               <HireCard
                 key={index}
                 image={hireItem.image}
-                alt={hireItem.alt}
                 title={hireItem.text[lang]}
-                placeholder="blur"
+                alt={hireItem.alt}
               />
             ))}
           </div>

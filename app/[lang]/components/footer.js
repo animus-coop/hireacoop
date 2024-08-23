@@ -9,7 +9,7 @@ import AnimusLogo from '../../../public/Animus.png';
 import ALTLogo from '../../../public/ALT.png';
 import CodigoLibreLogo from '../../../public/CodigoLibre.svg';
 
-export default async function Footer({ dictionary, lang = 'en' }) {
+export default async function Footer({ dictionary }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.left}>
