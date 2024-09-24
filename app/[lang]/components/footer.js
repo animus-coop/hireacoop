@@ -6,7 +6,7 @@ import styles from './footer.module.scss';
 import HACLogo from '../../../public/HAC-fist-black.svg';
 import InstagramIcon from '../../../public/icons/instagram.svg';
 import AnimusLogo from '../../../public/Animus.png';
-import ALTLogo from '../../../public/ALT.png';
+import ALTLogo from '../../../public/ALT.svg';
 import CodigoLibreLogo from '../../../public/CodigoLibre.svg';
 
 export default async function Footer({ dictionary }) {

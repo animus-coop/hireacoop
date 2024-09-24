@@ -1,6 +1,6 @@
 import CL from '../../public/CodigoLibre.svg';
 import Animus from '../../public/Animus.png';
-import ALT from '../../public/ALT.png';
+import ALT from '../../public/ALT.svg';
 import { StaticImageData } from 'next/image';
 
 type Partner = {
