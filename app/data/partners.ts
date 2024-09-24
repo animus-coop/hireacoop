@@ -1,6 +1,6 @@
 import CL from '../../public/CodigoLibre.svg';
 import Animus from '../../public/Animus.png';
-import ALT from '../../public/ALT.png';
+import ALT from '../../public/ALT.svg';
 import SeñoCourier from '../../public/LOGOS_SENORITAS-06.png';
 import Marialab from '../../public/Marialab.png';
 import MTST from '../../public/MTST.png';
