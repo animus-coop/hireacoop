@@ -1,5 +1,5 @@
+import Script from "next/script";
 import "./globals.css";
-// import { GoogleAnalytics } from "@next/third-parties/google"; // @TODO?
 import { Toaster } from "react-hot-toast";
 
 export async function generateMetadata({ params }) {
@@ -149,7 +149,20 @@ export default function RootLayout({
         {children}
         <Toaster />
       </body>
-      {/* @TODO?: <GoogleAnalytics gaId="G-DLF1KE4TE7" /> */}
+      <Script id="matomo" strategy="afterInteractive">
+        {`
+          var _paq = window._paq = window._paq || [];
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="https://hireacoopvercelapp.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='https://cdn.matomo.cloud/hireacoopvercelapp.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+          })();
+        `}
+      </Script>
     </html>
   );
 }
