@@ -55,7 +55,7 @@ export default async function Home({
         <Nav dictionary={dictionary} lang={lang} />
 
         <div className={styles.hero}>
-          <div className={styles.imageContainer  + ' scroll-down-parallax'}>
+          <div className={styles.imageContainer + ' scroll-down-parallax'}>
             <Image
               src={HeroImg}
               alt="HaC logo"
@@ -75,20 +75,19 @@ export default async function Home({
           </div>
         </div>
 
-        <div id="about" className={styles.about}>
-          <h2 className={styles.sectionTitle}>{about["title"]}</h2>
+        <div id="services" className={styles.services}>
+          <h2 className={styles.sectionTitle}>{services["title"]}</h2>
 
-          <div className={styles.itemsContainer}>
-            <WideCard
-              text={about["item1Text"]}
-              image={HAC_1}
-              reverse
-            />
-
-            <WideCard
-              text={about["item2Text"]}
-              image={HAC_2}
-            />
+          <div className={styles.cardsContainer}>
+            {servicesData.map((service, index) => (
+              <FloatingCard
+                key={index}
+                text={service["text"]}
+                image={service["image"]}
+                alt=""
+                lang={lang}
+              />
+            ))}
           </div>
         </div>
 
@@ -109,19 +108,20 @@ export default async function Home({
           </div>
         </div>
 
-        <div id="services" className={styles.services}>
-          <h2 className={styles.sectionTitle}>{services["title"]}</h2>
+        <div id="about" className={styles.about}>
+          <h2 className={styles.sectionTitle}>{about["title"]}</h2>
 
-          <div className={styles.cardsContainer}>
-            {servicesData.map((service, index) => (
-              <FloatingCard
-                key={index}
-                text={service["text"]}
-                image={service["image"]}
-                alt=""
-                lang={lang}
-              />
-            ))}
+          <div className={styles.itemsContainer}>
+            <WideCard
+              text={about["item1Text"]}
+              image={HAC_1}
+              reverse
+            />
+
+            <WideCard
+              text={about["item2Text"]}
+              image={HAC_2}
+            />
           </div>
         </div>
 
@@ -134,7 +134,7 @@ export default async function Home({
               image={WOIP_1}
               reverse
             />
-            
+
             <WideCard
               text={aboutWOIP["item2Text"]}
               image={WOIP_2}
