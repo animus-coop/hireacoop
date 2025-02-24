@@ -175,7 +175,6 @@ export default async function Home({
                 key={index}
                 image={partner.logo}
                 alt={partner.alt || ""}
-                name={partner.name}
               />
             ))}
           </div>
