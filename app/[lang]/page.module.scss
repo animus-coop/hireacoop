@@ -10,7 +10,7 @@
   @extend %section;
   justify-content: space-between;
   align-items: center;
-  
+
   .hero {
     @extend %section;
     background-color: black;
@@ -25,7 +25,7 @@
 
       .image {
         object-fit: cover;
-        object-position: 50% 9%;
+        object-position: 50% 70%;
       }
     }
 
@@ -46,17 +46,12 @@
       justify-content: center;
       align-items: center;
       max-width: 95vw;
-   
+
       h1 {
         position: relative;
         width: 100%;
         text-align: center;
         font-size: 6vw;
-
-        &.en {
-          font-size: 6.5vw;
-          margin-top: 8vh;
-        }
       }
     }
   }
@@ -112,7 +107,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    
+
     .cardsContainer {
       width: 75vw;
       display: flex;
@@ -188,12 +183,24 @@
   margin-top: 50px;
 }
 
+@media(min-width: 768px) and (max-width: 1660px) {
+  .main {
+    .hero {
+      .titleContainer {
+        h1 {
+          margin-top: 5vh;
+        }
+      }
+    }
+  }
+}
+
 // Mobile
 @media (max-width: 768px) {
   .main {
     .hero {
       .imageContainer {
-        transform: translateY(5%);
+        transform: translateY(-10%);
         .image {
           object-position: 45% top;
         }
@@ -211,12 +218,7 @@
           font-size: 14.5vw;
           line-height: 16vw;
           padding: 0 10px;
-          margin-top: -5vh;
-
-          &.en {
-            font-size: 15vw;
-            margin-top: 0;
-          }
+          margin-top: 5vh;
         }
       }
     }
@@ -243,7 +245,7 @@
       .titlesContainer {
         width: 95vw;
       }
-  
+
       .hireCardsContainer {
         flex-direction: column;
         justify-content: center;
@@ -268,7 +270,7 @@
     .cooperativism {
       margin-top: 20px;
       margin-bottom: 20px;
-  
+
       .itemsContainer {
         width: 100%;
         padding: 0 20px;

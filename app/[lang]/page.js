@@ -69,7 +69,7 @@ export default async function Home({
           </div>
 
           <div className={styles.titleContainer}>
-            <h1 className={lang === 'en' ? styles.en : ''}>
+            <h1>
               {hero["title"]}
             </h1>
           </div>
