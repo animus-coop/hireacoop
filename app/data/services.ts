@@ -1,5 +1,12 @@
-import { WithTranslation } from './common';
 import { StaticImageData } from 'next/image';
+import { WithTranslation } from './common';
+import communityManager from '../../public/community-manager.png'
+import socialImpact from '../../public/social-impact.png'
+import softwareDevelopment from '../../public/software-development.png'
+import staffAugmentation from '../../public/staff-augmentation.png'
+import virtualQueue from '../../public/virtual-queue.png'
+import designUxui from '../../public/design-uxui.png'
+
 
 type Service = {
   text: WithTranslation;
@@ -14,61 +21,61 @@ export const servicesData: Service[] = [
       en: 'Web and mobile application development',
       pt: 'Desenvolvimento de aplicativos móveis e da Web',
     },
-    image: '',
+    image: softwareDevelopment,
     alt: 'Web and mobile application development image',
   },
   {
     text: {
-      es: '',
-      en: '',
-      pt: '',
+      es: 'Diseño de marca',
+      en: 'Branding',
+      pt: 'Design de marca',
     },
-    image: '',
-    alt: '',
+    image: designUxui, // todo: update image
+    alt: 'Branding image',
   },
   {
     text: {
-      es: '',
-      en: '',
-      pt: '',
+      es: 'Diseño UX/UI',
+      en: 'UX/UI design',
+      pt: 'Design UX/UI',
     },
-    image: '',
-    alt: '',
+    image: designUxui,
+    alt: 'UX/UI design image',
   },
   {
     text: {
-      es: '',
-      en: '',
-      pt: '',
+      es: 'Community Manager',
+      en: 'Community Manager',
+      pt: 'Community Manager',
     },
-    image: '',
-    alt: '',
+    image: communityManager,
+    alt: 'Community Manager image',
   },
   {
     text: {
-      es: '',
-      en: '',
-      pt: '',
+      es: 'Staff Augmentation',
+      en: 'Staff Augmentation',
+      pt: 'Staff Augmentation',
     },
-    image: '',
-    alt: '',
+    image: staffAugmentation,
+    alt: 'Staff Augmentation image',
   },
   {
     text: {
-      es: '',
-      en: '',
-      pt: '',
+      es: 'Virtual queue',
+      en: 'Virtual queue',
+      pt: 'Virtual queue',
     },
-    image: '',
-    alt: '',
+    image: virtualQueue,
+    alt: 'Virtual queue image',
   },
   {
     text: {
-      es: '',
-      en: '',
-      pt: '',
+      es: 'Gestión de proyectos de impacto social',
+      en: 'Social impact project management',
+      pt: 'Gerenciamento de projetos de impacto social',
     },
-    image: '',
-    alt: '',
+    image: socialImpact,
+    alt: 'Social impact project management image',
   },
 ];
