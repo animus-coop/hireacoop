@@ -7,6 +7,9 @@
   "hero": {
     "title": "Imagining a\ntechnological challenge?"
   },
+  "services": {
+    "title": "Services we offer"
+  },
   "about": {
     "title": "About Hire a Coop",
     "item1Text": "In a context where universities aim to address sustainable development goals (SDGs) and advocate for decent work, hiring cooperatives is a way to circulate the economy outside of large oligopolies.",
@@ -14,9 +17,6 @@
   },
   "hire": {
     "title2": "Cooperatives are the best alternative to bring our resources to our ideas!"
-  },
-  "services": {
-    "title": "Some services offered by cooperatives"
   },
   "aboutWOIP": {
     "title": "About ",

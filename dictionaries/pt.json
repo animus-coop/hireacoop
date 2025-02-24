@@ -7,6 +7,9 @@
   "hero": {
     "title": "Você está imaginando um\ndesafio tecnológico?"
   },
+  "services": {
+    "title": "Serviços que oferecemos"
+  },
   "about": {
     "title": "Sobre Hire a Coop",
     "item1Text": "Em um contexto onde as universidades têm como objetivo abordar os Objetivos de Desenvolvimento Sustentável (ODS) e lutar por trabalho decente, contratar cooperativas é uma forma de fazer a economia circular fora dos grandes oligopólios.",
@@ -14,9 +17,6 @@
   },
   "hire": {
     "title2": "Contratar cooperativas são a melhor alternativa para aproximar nossos recursos de nossas ideias!"
-  },
-  "services": {
-    "title": "Alguns serviços oferecidos pelas cooperativas"
   },
   "aboutWOIP": {
     "title": "Sobre ",
