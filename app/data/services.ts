@@ -1,5 +1,7 @@
 import { StaticImageData } from 'next/image';
 import { WithTranslation } from './common';
+
+import branding from '../../public/branding.png'
 import communityManager from '../../public/community-manager.png'
 import socialImpact from '../../public/social-impact.png'
 import softwareDevelopment from '../../public/software-development.png'
@@ -30,7 +32,7 @@ export const servicesData: Service[] = [
       en: 'Branding',
       pt: 'Design de marca',
     },
-    image: designUxui, // todo: update image
+    image: branding,
     alt: 'Branding image',
   },
   {
