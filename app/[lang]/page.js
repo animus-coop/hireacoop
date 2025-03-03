@@ -5,12 +5,12 @@ import Nav from "./components/nav";
 
 import AnimationWrapper from "./components/animation-wrapper";
 
-import WideCard from "./components/wide-card";
-import FloatingCard from "./components/floating-card";
-import SmallItem from "./components/small-item";
-import EmailForm from "./components/email-form";
-import PartnerBadge from "./components/partner-badge";
+import ContactForm from "./components/contact-form";
 import FinanciersBadge from "./components/financiers";
+import FloatingCard from "./components/floating-card";
+import PartnerBadge from "./components/partner-badge";
+import SmallItem from "./components/small-item";
+import WideCard from "./components/wide-card";
 
 import Footer from "./components/footer";
 
@@ -159,7 +159,7 @@ export default async function Home({
           <h2 className={styles.sectionTitle}>{contactForm["title"]}</h2>
 
           <div className={styles.formContainer}>
-            <EmailForm
+            <ContactForm
               dictionary={emailForm}
               lang={lang}
             />

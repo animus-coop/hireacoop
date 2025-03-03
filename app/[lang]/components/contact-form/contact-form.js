@@ -1,15 +1,16 @@
 'use client';
 
-import { useForm } from 'react-hook-form';
-import { sendEmail } from '../../../services/send-email';
-import styles from './email-form.module.scss';
-import { useState } from 'react';
-import Button from './button';
-import toast from 'react-hot-toast';
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
-import ReCaptcha from './recaptcha';
+import { useForm } from 'react-hook-form';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
 
-function EmailForm({ dictionary, lang }) {
+import { sendEmail } from '../../../../services/send-email';
+import Button from '../button';
+import ReCaptcha from '../recaptcha';
+import styles from './contact-form.module.scss';
+
+function ContactForm({ dictionary, lang }) {
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
   const errorMessages = dictionary['errors'];
 
@@ -131,4 +132,4 @@ function EmailForm({ dictionary, lang }) {
   );
 }
 
-export default EmailForm;
+export default ContactForm;
