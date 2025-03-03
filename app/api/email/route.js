@@ -6,8 +6,6 @@ import path from 'path';
 export async function POST(request) {
   const formData = await request.formData();
   const name = formData.get('name');
-  const org = formData.get('org');
-  const country = formData.get('country');
   const email = formData.get('email');
   const message = formData.get('message');
   const recaptchaToken = formData.get('recaptchaToken');
@@ -28,8 +26,6 @@ export async function POST(request) {
 
   const emailContent = template
     .replace('{{name}}', name)
-    .replace('{{org}}', org)
-    .replace('{{country}}', country)
     .replace('{{email}}', email)
     .replace('{{message}}', message);
 

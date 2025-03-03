@@ -35,8 +35,6 @@
     "title": "Contacto",
     "emailForm": {
       "name": "Nombre completo",
-      "organization": "Organización",
-      "country": "País",
       "email": "Correo electrónico",
       "message": "Mensaje",
       "send": "Enviar",

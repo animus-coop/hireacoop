@@ -45,8 +45,6 @@ function EmailForm({ dictionary, lang }) {
 
     const formData = new FormData();
     formData.append('name', data.name);
-    formData.append('org', data.org);
-    formData.append('country', data.country);
     formData.append('email', data.email);
     formData.append('message', data.message);
     formData.append('recaptchaToken', recaptchaToken);
@@ -90,32 +88,6 @@ function EmailForm({ dictionary, lang }) {
             {...register('name', { required: true })}
           />
           {errors.name && <p className={styles.alert}>{getErrorMessage('name')}</p>}
-        </div>
-
-        <div className={styles.inputContainer}>
-          <input
-            id='org'
-            name='org'
-            disabled={loading}
-            type='text'
-            autoComplete='org'
-            placeholder={dictionary['organization']}
-            {...register('org', { required: true })}
-          />
-          {errors.organization && <p className={styles.alert}>{getErrorMessage('organization')}</p>}
-        </div>
-
-        <div className={styles.inputContainer}>
-          <input
-            id='country'
-            name='country'
-            disabled={loading}
-            type='text'
-            autoComplete='country'
-            placeholder={dictionary['country']}
-            {...register('country', { required: true })}
-          />
-          {errors.country && <p className={styles.alert}>{getErrorMessage('country')}</p>}
         </div>
 
         <div className={styles.inputContainer}>
