@@ -108,6 +108,20 @@ export default async function Home({
           </div>
         </div>
 
+        <div id="contact" className={styles.contactForm}>
+          <h3 className={styles.ourValues}>{contactForm["values"]}</h3>
+
+          <h2 className={styles.sectionTitle}>{contactForm["title"]}</h2>
+
+          <div className={styles.formContainer}>
+            <ContactForm
+              dictionary={emailForm}
+              lang={lang}
+            />
+          </div>
+        </div>
+
+
         <div id="about" className={styles.about}>
           <h2 className={styles.sectionTitle}>{about["title"]}</h2>
 
@@ -150,19 +164,6 @@ export default async function Home({
             <SmallItem image={Icono3} text={cooperativism["item2Text"]} />
             <SmallItem image={Icono2} text={cooperativism["item3Text"]} />
             <SmallItem image={Icono4} text={cooperativism["item4Text"]} />
-          </div>
-        </div>
-
-        <div id="contact" className={styles.contactForm}>
-          <h3 className={styles.ourValues}>{contactForm["values"]}</h3>
-
-          <h2 className={styles.sectionTitle}>{contactForm["title"]}</h2>
-
-          <div className={styles.formContainer}>
-            <ContactForm
-              dictionary={emailForm}
-              lang={lang}
-            />
           </div>
         </div>
 
