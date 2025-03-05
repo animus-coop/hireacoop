@@ -29,15 +29,15 @@ export default function Nav({
 
         <div className={styles.nav}>
 
-          <div className={styles.navItemContainer}>
-            <Link href="#about" className={styles.link}>
-              {dictionary?.['nav']?.["aboutHaC"]}
+        <div className={styles.navItemContainer}>
+            <Link href="#services" className={styles.link}>
+              {dictionary?.['nav']?.["services"]}
             </Link>
           </div>
 
           <div className={styles.navItemContainer}>
-            <Link href="#services" className={styles.link}>
-              {dictionary?.['nav']?.["services"]}
+            <Link href="#about" className={styles.link}>
+              {dictionary?.['nav']?.["aboutHaC"]}
             </Link>
           </div>
 
