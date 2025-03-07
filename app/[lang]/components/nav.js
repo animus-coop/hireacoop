@@ -9,7 +9,7 @@ export default function Nav({
   lang = 'en',
 }) {
   const mobileVisible = false;
-  
+
   function toggleMenu() {
     document.getElementById('mobile-nav').classList.toggle(styles.visible);
   }
@@ -36,14 +36,14 @@ export default function Nav({
           </div>
 
           <div className={styles.navItemContainer}>
-            <Link href="#about" className={styles.link}>
-              {dictionary?.['nav']?.["aboutHaC"]}
+            <Link href="#contact" className={styles.link}>
+              {dictionary?.['nav']?.["contact"]}
             </Link>
           </div>
 
           <div className={styles.navItemContainer}>
-            <Link href="#contact" className={styles.link}>
-              {dictionary?.['nav']?.["contact"]}
+            <Link href="#about" className={styles.link}>
+              {dictionary?.['nav']?.["aboutHaC"]}
             </Link>
           </div>
 
@@ -101,7 +101,7 @@ export default function Nav({
           )}
         </div>
       </div>
-      
+
     </div>
   );
 }
