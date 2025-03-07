@@ -49,8 +49,10 @@ function ContactForm({ dictionary, lang }) {
     formData.append('email', data.email);
     formData.append('message', data.message);
     formData.append('recaptchaToken', recaptchaToken);
-    
-    const response = await sendEmail(formData);
+
+
+    const endpoint = '/api/contact-email';
+    const response = await sendEmail(formData, endpoint);
 
     if (response.error || response.status !== 200) {
       showErrorToast(response.error?.[lang] ?? response.error);
@@ -120,7 +122,7 @@ function ContactForm({ dictionary, lang }) {
         <ReCaptcha setRecaptchaToken={setRecaptchaToken} />
 
         <div className={styles.buttonContainer}>
-          <Button 
+          <Button
             text={dictionary['send']}
             loading={loading}
             disabled={loading}
