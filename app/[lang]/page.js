@@ -47,6 +47,7 @@ export default async function Home({
   const partners = dictionary["partners"];
   const hire = dictionary["hire"];
   const footer = dictionary["footer"];
+  const collaborateForm = dictionary["collaborateForm"];
 
   return (
     <AnimationWrapper>
@@ -110,7 +111,7 @@ export default async function Home({
 
         <div id="contact" className={styles.contactForm}>
           <h2 className={styles.sectionTitle}>{contactForm["title"]}</h2>
-          <p className={styles.ourValues}>{contactForm["values"]}</p>
+          <p className={styles.sectionSubtitle}>{contactForm["values"]}</p>
 
           <div className={styles.formContainer}>
             <ContactForm
@@ -151,6 +152,18 @@ export default async function Home({
             <WideCard
               text={aboutWOIP["item2Text"]}
               image={WOIP_2}
+            />
+          </div>
+        </div>
+
+        <div id="collaborate" className={styles.collaborateForm}>
+          <h2 className={styles.sectionTitle}>{collaborateForm["title"]}</h2>
+          <p className={styles.sectionSubtitle}>{collaborateForm["subtitle"]}</p>
+
+          <div className={styles.formContainer}>
+            <ContactForm
+              dictionary={emailForm}
+              lang={lang}
             />
           </div>
         </div>

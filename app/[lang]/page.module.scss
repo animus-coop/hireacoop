@@ -138,13 +138,20 @@
     margin-top: 100px;
     margin-bottom: 40px;
 
-    .ourValues {
+    .formContainer {
       position: relative;
-      width: 70vw;
-      text-align: center;
-      font-size: 24px;
-      margin-top: 40px;
+      margin-top: 60px;
+      width: 65vw;
     }
+  }
+
+  .collaborateForm {
+    @extend %section;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
 
     .formContainer {
       position: relative;
@@ -177,6 +184,14 @@
   text-align: center;
   color: white;
   margin-top: 50px;
+}
+
+.sectionSubtitle {
+  position: relative;
+  width: 70vw;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
 }
 
 @media(min-width: 768px) and (max-width: 1660px) {
@@ -277,10 +292,6 @@
     }
 
     .contactForm {
-      .ourValues {
-        width: 100%;
-        padding: 0 20px;
-      }
 
       .formContainer {
         width: 100%;
@@ -303,6 +314,11 @@
 
   // COMMON
   .sectionTitle {
+    padding: 0 20px;
+  }
+
+  .sectionSubtitle {
+    width: 100%;
     padding: 0 20px;
   }
 }
