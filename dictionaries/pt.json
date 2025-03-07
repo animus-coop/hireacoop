@@ -57,6 +57,21 @@
       "successMessage": "Mensagem enviada"
     }
   },
+  "collaborateForm": {
+    "title": "Junte-se à campanha!",
+    "subtitle": "Enviaremos os materiais de divulgação da HAC por e-mail",
+    "emailForm": {
+      "name": "Nome completo",
+      "email": "Endereço de e-mail",
+      "send": "Enviar",
+      "errors": {
+        "requiredField": "Campo obrigatório",
+        "emailInvalid": "Por favor, insira um endereço de e-mail válido",
+        "recaptchaError": "Ocorreu um erro ao verificar que você não é um robô. Por favor, recarregue a página e tente novamente."
+      },
+      "successMessage": "Mensagem enviada"
+    }
+  },
   "partners": {
     "title1": "Contrate uma Cooperativa participante",
     "title2": "Eles financiam e apoiam este projeto"

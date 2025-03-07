@@ -57,6 +57,21 @@
       "successMessage": "Mensaje enviado"
     }
   },
+  "collaborateForm": {
+    "title": "¡Sumate a la campaña!",
+    "subtitle": "Te enviaremos los materiales de difusión de HAC por email",
+    "emailForm": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "send": "Enviar",
+      "errors": {
+        "requiredField": "Campo requerido",
+        "emailInvalid": "Por favor, ingrese un correo electrónico válido",
+        "recaptchaError": "Ocurrió un error al verificar que no seas un robot. Por favor, refrescá la página e intentá de nuevo."
+      },
+      "successMessage": "Mensaje enviado"
+    }
+  },
   "partners": {
     "title1": "Organizaciones participantes de  Hire a Coop",
     "title2": "Financian y apoyan este proyecto"

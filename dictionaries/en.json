@@ -57,6 +57,21 @@
       "successMessage": "Message sent"
     }
   },
+  "collaborateForm": {
+    "title": "Join the campaign!",
+    "subtitle": "We will send you HAC promotional materials by email",
+    "emailForm": {
+      "name": "Full name",
+      "email": "Email address",
+      "send": "Send",
+      "errors": {
+        "requiredField": "Required field",
+        "emailInvalid": "Please enter a valid email address",
+        "recaptchaError": "An error occurred while verifying that you are not a robot. Please refresh the page and try again."
+      },
+      "successMessage": "Message sent"
+    }
+  },
   "partners": {
     "title1": "Hire a Coop Participating Organizations",
     "title2": "They finance and support this project"
