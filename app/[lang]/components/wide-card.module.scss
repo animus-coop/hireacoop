@@ -8,12 +8,12 @@
   align-self: center;
   width: 75vw;
   gap: 4.5%;
+  padding-bottom: 20px;
 
   .textContainer {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
     justify-content: flex-start;
     gap: 35px;
     font-size: 20px;
@@ -40,14 +40,14 @@
   .container {
     flex-direction: column;
     width: 90vw;
-    
+
     .imageContainer {
       width: 100%;
       height: 100%;
       aspect-ratio: 1.7;
       order: 1;
     }
-  
+
     .textContainer {
       width: 100%;
       order: 2;
