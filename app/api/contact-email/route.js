@@ -7,6 +7,7 @@ export async function POST(request) {
   const formData = await request.formData();
   const name = formData.get('name');
   const email = formData.get('email');
+  const subject = formData.get('subject');
   const message = formData.get('message');
   const recaptchaToken = formData.get('recaptchaToken');
 
@@ -40,7 +41,7 @@ export async function POST(request) {
   const mailOptions = {
     from: process.env.EMAIL,
     to: process.env.TARGET_EMAIL,
-    subject: `[${name}] Hire a Coop - Formulario de contacto`,
+    subject: `[${name}] [${subject}] Hire a Coop - Formulario de contacto`,
     html: emailContent,
   };
 

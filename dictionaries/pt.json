@@ -43,6 +43,17 @@
         "emailInvalid": "Por favor, insira um endereço de e-mail válido",
         "recaptchaError": "Por favor, verifique se você não é um robô"
       },
+      "subject": {
+        "selectSubject": "Selecionar assunto",
+        "softwareDevelopment": "Desenvolvimento de aplicativos móveis e da Web",
+        "branding": "Design de marca",
+        "designUxui": "Design UX/UI",
+        "communityManager": "Community Manager",
+        "staffAugmentation": "Staff Augmentation",
+        "virtualQueue": "Virtual queue",
+        "socialImpact": "Gerenciamento de projetos de impacto social",
+        "other": "Outro"
+      },
       "successMessage": "Mensagem enviada"
     }
   },

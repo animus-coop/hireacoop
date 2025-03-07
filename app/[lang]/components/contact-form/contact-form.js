@@ -13,6 +13,7 @@ import styles from './contact-form.module.scss';
 function ContactForm({ dictionary, lang }) {
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
   const errorMessages = dictionary['errors'];
+  const subjectOptions = dictionary['subject'];
 
   const [loading, setLoading] = useState(false);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
@@ -47,9 +48,9 @@ function ContactForm({ dictionary, lang }) {
     const formData = new FormData();
     formData.append('name', data.name);
     formData.append('email', data.email);
+    formData.append('subject', data.subject);
     formData.append('message', data.message);
     formData.append('recaptchaToken', recaptchaToken);
-
 
     const endpoint = '/api/contact-email';
     const response = await sendEmail(formData, endpoint);
@@ -104,6 +105,21 @@ function ContactForm({ dictionary, lang }) {
             {...register('email', { required: true, pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ })}
           />
           {errors.email && <p className={styles.alert}>{getErrorMessage('email')}</p>}
+        </div>
+
+        <div className={styles.inputContainer}>
+          <select
+            id='subject'
+            name='subject'
+            disabled={loading}
+            {...register('subject', { required: true })}
+          >
+            <option value="">{subjectOptions['selectSubject']}</option>
+            {Object.keys(subjectOptions).slice(1).map((key) => (
+              <option value={subjectOptions[key]} key={key}>{subjectOptions[key]}</option>
+            ))}
+          </select>
+          {errors.subject && <p className={styles.alert}>{getErrorMessage('subject')}</p>}
         </div>
 
         <div className={styles.inputContainer}>

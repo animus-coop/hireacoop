@@ -43,6 +43,17 @@
         "emailInvalid": "Please enter a valid email address",
         "recaptchaError": "Please verify that you are not a robot"
       },
+      "subject": {
+        "selectSubject": "Select subject",
+        "softwareDevelopment": "Web and mobile application development",
+        "branding": "Branding",
+        "designUxui": "UX/UI design",
+        "communityManager": "Community Manager",
+        "staffAugmentation": "Staff Augmentation",
+        "virtualQueue": "Virtual queue",
+        "socialImpact": "Social impact project management",
+        "other": "Other"
+      },
       "successMessage": "Message sent"
     }
   },
