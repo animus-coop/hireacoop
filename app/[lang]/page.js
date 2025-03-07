@@ -5,6 +5,7 @@ import Nav from "./components/nav";
 
 import AnimationWrapper from "./components/animation-wrapper";
 
+import CollaborateForm from "./components/collaborate-form";
 import ContactForm from "./components/contact-form";
 import FinanciersBadge from "./components/financiers";
 import FloatingCard from "./components/floating-card";
@@ -161,7 +162,7 @@ export default async function Home({
           <p className={styles.sectionSubtitle}>{collaborateForm["subtitle"]}</p>
 
           <div className={styles.formContainer}>
-            <ContactForm
+            <CollaborateForm
               dictionary={emailForm}
               lang={lang}
             />
