@@ -12,29 +12,29 @@ type Hire = {
   }
 
 export const hireData: Hire[] = [
-  { 
+  {
     text: {
-      es: 'Las cooperativas somos organizaciones democráticas y horizontales',
-      en: 'Cooperatives are democratic and horizontal organizations',
-      pt: 'As cooperativas são organizações democráticas e horizontais',
+      es: 'Somos empresas democráticas y horizontales',
+      en: 'We are democratic and horizontal companies',
+      pt: 'Somos empresas democráticas e horizontais',
     },
     image: Circle1Img,
     alt: 'Image with lots of hands raised',
   },
-  { 
+  {
     text: {
-      es: 'Les trabajadores que las integran son sus dueñes',
-      en: 'The workers are the owners of the cooperatives',
-      pt: 'Os trabalhadores que as integram são seus proprietários',
+      es: 'Somos organizaciones propiedad de sus trabajadores',
+      en: 'We are organizations owned by their workers',
+      pt: 'Somos organizações pertencentes aos seus trabalhadore',
     },
     image: Circle2Img,
     alt: 'Image of a hand holding a key',
   },
-  { 
+  {
     text: {
-      es: 'Valoramos las instancias de los procesos y consensuamos las decisiones',
-      en: 'We value the processes and reach decisions through consensus',
-      pt: 'Valorizamos as instâncias dos processos e tomamos decisões por consenso',
+      es: 'Ponemos la innovación al servicio del bien común',
+      en: 'We put innovation at the service of the common good',
+      pt: 'Colocamos a inovação a serviço do bem comum',
     },
     image: Circle3Img,
     alt: 'Image representing concense',
