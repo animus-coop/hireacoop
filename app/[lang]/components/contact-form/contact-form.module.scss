@@ -32,7 +32,7 @@
       margin-bottom: 10px;
     }
 
-    input, textarea, .input {
+    input, textarea, select, .input {
       max-width: 100%;
       width: 100%;
       background-color: base.$white;
@@ -77,11 +77,11 @@
         &.disabled {
           cursor: not-allowed;
         }
-        
+
         .fileName {
           color: base.$white;
         }
-        
+
         .noFileText {
           color: base.$mid-grey;
         }
