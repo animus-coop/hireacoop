@@ -53,7 +53,7 @@ function ContactForm({ dictionary, lang }) {
     formData.append('recaptchaToken', recaptchaToken);
 
     const endpoint = '/api/contact-email';
-    const response = await sendEmail(formData, endpoint);
+    const response = await sendEmail(endpoint, formData);
 
     if (response.error || response.status !== 200) {
       showErrorToast(response.error?.[lang] ?? response.error);

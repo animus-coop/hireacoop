@@ -1,4 +1,4 @@
-export async function sendEmail(formData, endpoint) {
+export async function sendEmail(endpoint, formData) {
 
   const response = await fetch(endpoint, {
     method: 'POST',
