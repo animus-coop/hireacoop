@@ -44,11 +44,12 @@ export default async function Home({
   const aboutWOIP = dictionary["aboutWOIP"];
   const cooperativism = dictionary["cooperativism"];
   const contactForm = dictionary["contactForm"];
-  const emailForm = contactForm["emailForm"];
+  const contactEmailForm = contactForm["emailForm"];
   const partners = dictionary["partners"];
   const hire = dictionary["hire"];
   const footer = dictionary["footer"];
   const collaborateForm = dictionary["collaborateForm"];
+  const collaborateEmailForm = collaborateForm["emailForm"];
 
   return (
     <AnimationWrapper>
@@ -116,7 +117,7 @@ export default async function Home({
 
           <div className={styles.formContainer}>
             <ContactForm
-              dictionary={emailForm}
+              dictionary={contactEmailForm}
               lang={lang}
             />
           </div>
@@ -163,7 +164,7 @@ export default async function Home({
 
           <div className={styles.formContainer}>
             <CollaborateForm
-              dictionary={emailForm}
+              dictionary={collaborateEmailForm}
               lang={lang}
             />
           </div>
