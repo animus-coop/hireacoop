@@ -1,4 +1,6 @@
 import nodemailer from 'nodemailer';
+import fs from 'fs';
+import path from 'path';
 
 
 export async function sendCollaborateEmails(
@@ -6,7 +8,7 @@ export async function sendCollaborateEmails(
   externalMailContentValues,
   internalMailContentValues,
 ) {
-  Promise.all([
+  return Promise.all([
     sendCollaborateExternalEmail(
       externalMail,
       externalMailContentValues,
@@ -89,7 +91,18 @@ async function sendEmail(
     attachments: attachments.map(attachment => getAttachment(attachment.filename, attachment.publicName))
   };
 
-  await transport.sendMail(mailOptions);
+  const sendMailPromise = () =>
+    new Promise((resolve, reject) => {
+      transport.sendMail(mailOptions, function (err) {
+        if (!err) {
+          resolve('Email sent');
+        } else {
+          reject(err.message);
+        }
+      });
+    });
+
+  await sendMailPromise();
 }
 
 async function getTemplateWithContent(
@@ -108,7 +121,7 @@ async function getTemplateWithContent(
 }
 
 function getAttachment(filename, publicName) {
-  const path = path.join(process.cwd(), 'shareable-content', filename);
+  const filePath = path.join(process.cwd(), 'shareable-content', filename);
   const fileContent = fs.readFileSync(filePath);
 
   return {
