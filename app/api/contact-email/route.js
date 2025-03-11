@@ -22,7 +22,7 @@ export async function POST(request) {
     return NextResponse.json({ error: { en: 'Something went wrong with the reCAPTCHA verification.\nPlease refresh the page and try again.', es: 'Algo salió mal con la verificación de reCAPTCHA.\nPor favor actualizá la página e intentá de nuevo.' }, status: 400 });
   }
 
-  const templatePath = path.join(process.cwd(), 'public', 'email-template.html');
+  const templatePath = path.join(process.cwd(), 'public', 'contact-email-template.html');
   let template = fs.readFileSync(templatePath, 'utf8');
 
   const emailContent = template
