@@ -37,33 +37,6 @@ async function sendCollaborateExternalEmail(
     contentValues,
   );
 
-  const attachments = [
-    {
-      filename: 'HAC(ESP).pdf',
-      publicName: 'HAC(ESP).pdf',
-    },
-    {
-      filename: 'HAC(PR).pdf',
-      publicName: 'HAC(PR).pdf',
-    },
-    {
-      filename: 'HAC(ENG).pdf',
-      publicName: 'HAC(ENG).pdf',
-    },
-    {
-      filename: 'HAC-Servicios(ESP).pdf',
-      publicName: 'HAC-Servicios(ESP).pdf',
-    },
-    {
-      filename: 'HAC-Serviços(PR)',
-      publicName: 'HAC-Serviços(PR)',
-    },
-    {
-      filename: 'HAC-Services(ENG).pdf',
-      publicName: 'HAC-Services(ENG).pdf',
-    },
-  ]
-
   const subject = dictionary['collaborateForm']['email']['subject'];
 
   await sendEmail(
@@ -71,7 +44,6 @@ async function sendCollaborateExternalEmail(
     to,
     subject,
     templateWithContent,
-    attachments,
   );
 }
 
