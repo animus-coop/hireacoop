@@ -60,10 +60,12 @@ async function sendCollaborateInternalEmail(
     contentValues,
   );
 
+  const subject = `[${contentValues.name}] [${contentValues.organization ? contentValues.organization : 'NoDef'}] Hire a Coop - Formulario de colaboración`
+
   await sendEmail(
     process.env.EMAIL,
     process.env.TARGET_EMAIL,
-    'sendCollaborateInternalEmail',
+    subject,
     templateWithContent,
   );
 }

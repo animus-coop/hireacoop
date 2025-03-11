@@ -46,6 +46,7 @@ function CollaborateForm({ dictionary, lang }) {
 
     const formData = new FormData();
     formData.append('name', data.name);
+    formData.append('organization', data.organization);
     formData.append('email', data.email);
     formData.append('recaptchaToken', recaptchaToken);
 

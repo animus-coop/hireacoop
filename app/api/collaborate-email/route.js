@@ -5,6 +5,7 @@ import { sendCollaborateEmails } from './utils';
 export async function POST(request) {
   const formData = await request.formData();
   const name = formData.get('name');
+  const organization = formData.get('organization');
   const email = formData.get('email');
   const recaptchaToken = formData.get('recaptchaToken');
 
@@ -22,7 +23,11 @@ export async function POST(request) {
     await sendCollaborateEmails(
       email,
       {},
-      {},
+      {
+        name,
+        email,
+        organization,
+      },
     );
 
     return NextResponse.json({ message: 'Email sent successfully', status: 200 });
