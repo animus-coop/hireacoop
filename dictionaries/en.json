@@ -84,5 +84,8 @@
   },
   "footer": {
     "poweredBy": "Powered by"
+  },
+  "share": {
+    "text": "Thanks for joining HAC!"
   }
 }
