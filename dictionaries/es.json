@@ -58,10 +58,11 @@
     }
   },
   "collaborateForm": {
-    "title": "¡Sumate a la campaña!",
-    "subtitle": "Te enviaremos los materiales de difusión de HAC por email",
+    "title": "¡Sumate a HAC!",
+    "subtitle": "Completá los datos y te enviamos materiales para que lleves donde quieras!\nAh! No te olvides de pasar por nuestro Instagram <a href='https://www.instagram.com/hireacoop/'>@hireacoop</a> y compartirnos por donde va viajando HAC.\nGracias por ayudarnos a que la campaña llegue a más lugares!\nUn mundo más justo es posible",
     "emailForm": {
       "name": "Nombre completo",
+      "organization": "Institución/Organización",
       "email": "Correo electrónico",
       "send": "Enviar",
       "errors": {

@@ -160,7 +160,10 @@ export default async function Home({
 
         <div id="collaborate" className={styles.collaborateForm}>
           <h2 className={styles.sectionTitle}>{collaborateForm["title"]}</h2>
-          <p className={styles.sectionSubtitle}>{collaborateForm["subtitle"]}</p>
+          <div
+            className={styles.sectionSubtitle}
+            dangerouslySetInnerHTML={{ __html: collaborateForm["subtitle"] }}
+          />
 
           <div className={styles.formContainer}>
             <CollaborateForm
