@@ -72,6 +72,10 @@
         "recaptchaError": "Ocorreu um erro ao verificar que você não é um robô. Por favor, recarregue a página e tente novamente."
       },
       "successMessage": "Mensagem enviada"
+    },
+    "email": {
+      "subject": "MATERIAIS HAC 🔥 🙏",
+      "content": "Oi!<br><br>Aqui estão os materiais, muito obrigado por divulgar a campanha!<br><br>E não se esqueça que, se quiser, pode compartilhar conosco no Instagram <a href='https://www.instagram.com/hireacoop/' target='_blank'>@hireacoop</a> para onde levou os materiais!<br><br>Com carinho,<br><br>Equipe Intercooperativa HAC"
     }
   },
   "partners": {

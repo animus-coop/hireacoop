@@ -2,16 +2,20 @@ import nodemailer from 'nodemailer';
 import fs from 'fs';
 import path from 'path';
 
+import { getDictionary } from '@/get-dictionary';
+
 
 export async function sendCollaborateEmails(
   externalMail,
   externalMailContentValues,
   internalMailContentValues,
+  lang,
 ) {
   return Promise.all([
     sendCollaborateExternalEmail(
       externalMail,
       externalMailContentValues,
+      lang,
     ),
     sendCollaborateInternalEmail(
       internalMailContentValues,
@@ -22,7 +26,10 @@ export async function sendCollaborateEmails(
 async function sendCollaborateExternalEmail(
   to,
   contentValues,
+  lang,
 ) {
+  const dictionary = await getDictionary(lang);
+
   const templateName = 'collaborate-email-external-template.html';
 
   const templateWithContent = await getTemplateWithContent(
@@ -41,10 +48,12 @@ async function sendCollaborateExternalEmail(
     },
   ]
 
+  const subject = dictionary['collaborateForm']['email']['subject'];
+
   await sendEmail(
     process.env.EMAIL,
     to,
-    'sendCollaborateExternalEmail',
+    subject,
     templateWithContent,
     attachments,
   );

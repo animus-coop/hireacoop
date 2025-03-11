@@ -49,6 +49,7 @@ function CollaborateForm({ dictionary, lang }) {
     formData.append('organization', data.organization);
     formData.append('email', data.email);
     formData.append('recaptchaToken', recaptchaToken);
+    formData.append('lang', lang);
 
     const endpoint = '/api/collaborate-email';
     const response = await sendEmail(endpoint, formData);
