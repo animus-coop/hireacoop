@@ -18,7 +18,6 @@ import Footer from "./components/footer";
 import HAC_1 from "../../public/HAC_1.jpg";
 import HAC_2 from "../../public/HAC_2.jpg";
 import WOIP_1 from "../../public/WOIP_1.jpg";
-import WOIP_2 from "../../public/WOIP_2.jpg";
 import Icono1 from "../../public/Icono_1.jpg";
 import Icono2 from "../../public/Icono_2.jpg";
 import Icono3 from "../../public/Icono_3.jpg";
@@ -149,11 +148,6 @@ export default async function Home({
               text={aboutWOIP["item1Text"]}
               image={WOIP_1}
               reverse
-            />
-
-            <WideCard
-              text={aboutWOIP["item2Text"]}
-              image={WOIP_2}
             />
           </div>
         </div>
