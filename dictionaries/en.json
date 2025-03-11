@@ -68,6 +68,7 @@
       "errors": {
         "requiredField": "Required field",
         "emailInvalid": "Please enter a valid email address",
+        "organizationMaxLength": "Max content 100 characters",
         "recaptchaError": "An error occurred while verifying that you are not a robot. Please refresh the page and try again."
       },
       "successMessage": "Message sent"

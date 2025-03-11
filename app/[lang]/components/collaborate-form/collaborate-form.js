@@ -72,6 +72,10 @@ function CollaborateForm({ dictionary, lang }) {
     if (errors[field]?.type === 'pattern') {
       return errorMessages[`${field}Invalid`];
     }
+    if (errors[field]?.type === 'maxLength') {
+      return errorMessages[`${field}MaxLength`];
+    }
+
     return '';
   }
 
@@ -89,6 +93,18 @@ function CollaborateForm({ dictionary, lang }) {
             {...register('name', { required: true })}
           />
           {errors.name && <p className={styles.alert}>{getErrorMessage('name')}</p>}
+        </div>
+
+        <div className={styles.inputContainer}>
+          <input
+            id='organization'
+            name='organization'
+            disabled={loading}
+            type='text'
+            placeholder={dictionary['organization']}
+            {...register('organization', { maxLength: 100 })}
+          />
+          {errors.organization && <p className={styles.alert}>{getErrorMessage('organization')}</p>}
         </div>
 
         <div className={styles.inputContainer}>
