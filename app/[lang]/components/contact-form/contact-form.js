@@ -1,6 +1,5 @@
 'use client';
 
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
@@ -79,74 +78,72 @@ function ContactForm({ dictionary, lang }) {
   }
 
   return (
-    <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} language={lang}>
-      <form id="email-form" className={styles.main} onSubmit={handleSubmit(onSubmit)}>
-        <div className={styles.inputContainer}>
-          <input
-            id='name'
-            name='name'
-            disabled={loading}
-            type='text'
-            autoComplete='name'
-            placeholder={dictionary['name']}
-            {...register('name', { required: true })}
-          />
-          {errors.name && <p className={styles.alert}>{getErrorMessage('name')}</p>}
-        </div>
+    <form id="email-form" className={styles.main} onSubmit={handleSubmit(onSubmit)}>
+      <div className={styles.inputContainer}>
+        <input
+          id='name'
+          name='name'
+          disabled={loading}
+          type='text'
+          autoComplete='name'
+          placeholder={dictionary['name']}
+          {...register('name', { required: true })}
+        />
+        {errors.name && <p className={styles.alert}>{getErrorMessage('name')}</p>}
+      </div>
 
-        <div className={styles.inputContainer}>
-          <input
-            id='email'
-            name='email'
-            disabled={loading}
-            type='email'
-            autoComplete='email'
-            placeholder={dictionary['email']}
-            {...register('email', { required: true, pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ })}
-          />
-          {errors.email && <p className={styles.alert}>{getErrorMessage('email')}</p>}
-        </div>
+      <div className={styles.inputContainer}>
+        <input
+          id='email'
+          name='email'
+          disabled={loading}
+          type='email'
+          autoComplete='email'
+          placeholder={dictionary['email']}
+          {...register('email', { required: true, pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ })}
+        />
+        {errors.email && <p className={styles.alert}>{getErrorMessage('email')}</p>}
+      </div>
 
-        <div className={styles.inputContainer}>
-          <select
-            id='subject'
-            name='subject'
-            disabled={loading}
-            {...register('subject', { required: true })}
-          >
-            <option value="">{subjectOptions['selectSubject']}</option>
-            {Object.keys(subjectOptions).slice(1).map((key) => (
-              <option value={subjectOptions[key]} key={key}>{subjectOptions[key]}</option>
-            ))}
-          </select>
-          {errors.subject && <p className={styles.alert}>{getErrorMessage('subject')}</p>}
-        </div>
+      <div className={styles.inputContainer}>
+        <select
+          id='subject'
+          name='subject'
+          disabled={loading}
+          {...register('subject', { required: true })}
+        >
+          <option value="">{subjectOptions['selectSubject']}</option>
+          {Object.keys(subjectOptions).slice(1).map((key) => (
+            <option value={subjectOptions[key]} key={key}>{subjectOptions[key]}</option>
+          ))}
+        </select>
+        {errors.subject && <p className={styles.alert}>{getErrorMessage('subject')}</p>}
+      </div>
 
-        <div className={styles.inputContainer}>
-          <textarea
-            id='message'
-            name='message'
-            disabled={loading}
-            rows={10}
-            autoComplete='off'
-            placeholder={dictionary['message']}
-            {...register('message', { required: true })}
-          />
-          {errors.message && <p className={styles.alert}>{getErrorMessage('message')}</p>}
-        </div>
+      <div className={styles.inputContainer}>
+        <textarea
+          id='message'
+          name='message'
+          disabled={loading}
+          rows={10}
+          autoComplete='off'
+          placeholder={dictionary['message']}
+          {...register('message', { required: true })}
+        />
+        {errors.message && <p className={styles.alert}>{getErrorMessage('message')}</p>}
+      </div>
 
-        <ReCaptcha setRecaptchaToken={setRecaptchaToken} />
+      <ReCaptcha setRecaptchaToken={setRecaptchaToken} />
 
-        <div className={styles.buttonContainer}>
-          <Button
-            text={dictionary['send']}
-            loading={loading}
-            disabled={loading}
-            submitForm
-          />
-        </div>
-      </form>
-    </GoogleReCaptchaProvider>
+      <div className={styles.buttonContainer}>
+        <Button
+          text={dictionary['send']}
+          loading={loading}
+          disabled={loading}
+          submitForm
+        />
+      </div>
+    </form>
   );
 }
 

@@ -4,6 +4,7 @@ import { getDictionary } from "../../get-dictionary";
 import Nav from "./components/nav";
 
 import AnimationWrapper from "./components/animation-wrapper";
+import WithRecatchaContent from '@/contexts/with-recaptcha-content';
 
 import CollaborateForm from "./components/collaborate-form";
 import ContactForm from "./components/contact-form";
@@ -110,62 +111,63 @@ export default async function Home({
           </div>
         </div>
 
-        <div id="contact" className={styles.contactForm}>
-          <h2 className={styles.sectionTitle}>{contactForm["title"]}</h2>
-          <p className={styles.sectionSubtitle}>{contactForm["values"]}</p>
+        <WithRecatchaContent lang={lang}>
+          <div id="contact" className={styles.contactForm}>
+            <h2 className={styles.sectionTitle}>{contactForm["title"]}</h2>
+            <p className={styles.sectionSubtitle}>{contactForm["values"]}</p>
 
-          <div className={styles.formContainer}>
-            <ContactForm
-              dictionary={contactEmailForm}
-              lang={lang}
-            />
+            <div className={styles.formContainer}>
+              <ContactForm
+                dictionary={contactEmailForm}
+                lang={lang}
+              />
+            </div>
           </div>
-        </div>
 
+          <div id="about" className={styles.about}>
+            <h2 className={styles.sectionTitle}>{about["title"]}</h2>
 
-        <div id="about" className={styles.about}>
-          <h2 className={styles.sectionTitle}>{about["title"]}</h2>
+            <div className={styles.itemsContainer}>
+              <WideCard
+                text={about["item1Text"]}
+                image={HAC_1}
+                reverse
+              />
 
-          <div className={styles.itemsContainer}>
-            <WideCard
-              text={about["item1Text"]}
-              image={HAC_1}
-              reverse
-            />
-
-            <WideCard
-              text={about["item2Text"]}
-              image={HAC_2}
-            />
+              <WideCard
+                text={about["item2Text"]}
+                image={HAC_2}
+              />
+            </div>
           </div>
-        </div>
 
-        <div className={styles.about}>
-          <h2 className={styles.sectionTitle}>{aboutWOIP["title"]}<Link className={styles.link} href="https://digilabour.com.br/worker-owned-intersectional-platforms-woip/" target="_blank">WOIP</Link></h2>
+          <div className={styles.about}>
+            <h2 className={styles.sectionTitle}>{aboutWOIP["title"]}<Link className={styles.link} href="https://digilabour.com.br/worker-owned-intersectional-platforms-woip/" target="_blank">WOIP</Link></h2>
 
-          <div className={styles.itemsContainer}>
-            <WideCard
-              text={aboutWOIP["item1Text"]}
-              image={WOIP_1}
-              reverse
-            />
+            <div className={styles.itemsContainer}>
+              <WideCard
+                text={aboutWOIP["item1Text"]}
+                image={WOIP_1}
+                reverse
+              />
+            </div>
           </div>
-        </div>
 
-        <div id="collaborate" className={styles.collaborateForm}>
-          <h2 className={styles.sectionTitle}>{collaborateForm["title"]}</h2>
-          <div
-            className={styles.sectionSubtitle}
-            dangerouslySetInnerHTML={{ __html: collaborateForm["subtitle"] }}
-          />
-
-          <div className={styles.formContainer}>
-            <CollaborateForm
-              dictionary={collaborateEmailForm}
-              lang={lang}
+          <div id="collaborate" className={styles.collaborateForm}>
+            <h2 className={styles.sectionTitle}>{collaborateForm["title"]}</h2>
+            <div
+              className={styles.sectionSubtitle}
+              dangerouslySetInnerHTML={{ __html: collaborateForm["subtitle"] }}
             />
+
+            <div className={styles.formContainer}>
+              <CollaborateForm
+                dictionary={collaborateEmailForm}
+                lang={lang}
+              />
+            </div>
           </div>
-        </div>
+        </WithRecatchaContent>
 
         <div className={styles.cooperativism}>
           <h2 className={styles.sectionTitle}>{cooperativism["title"]}</h2>

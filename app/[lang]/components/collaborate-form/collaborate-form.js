@@ -1,6 +1,5 @@
 'use client';
 
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
@@ -82,58 +81,56 @@ function CollaborateForm({ dictionary, lang }) {
   }
 
   return (
-    <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} language={lang}>
-      <form id="email-form" className={styles.main} onSubmit={handleSubmit(onSubmit)}>
-        <div className={styles.inputContainer}>
-          <input
-            id='name'
-            name='name'
-            disabled={loading}
-            type='text'
-            autoComplete='name'
-            placeholder={dictionary['name']}
-            {...register('name', { required: true })}
-          />
-          {errors.name && <p className={styles.alert}>{getErrorMessage('name')}</p>}
-        </div>
+    <form id="email-form" className={styles.main} onSubmit={handleSubmit(onSubmit)}>
+      <div className={styles.inputContainer}>
+        <input
+          id='name'
+          name='name'
+          disabled={loading}
+          type='text'
+          autoComplete='name'
+          placeholder={dictionary['name']}
+          {...register('name', { required: true })}
+        />
+        {errors.name && <p className={styles.alert}>{getErrorMessage('name')}</p>}
+      </div>
 
-        <div className={styles.inputContainer}>
-          <input
-            id='organization'
-            name='organization'
-            disabled={loading}
-            type='text'
-            placeholder={dictionary['organization']}
-            {...register('organization', { maxLength: 100 })}
-          />
-          {errors.organization && <p className={styles.alert}>{getErrorMessage('organization')}</p>}
-        </div>
+      <div className={styles.inputContainer}>
+        <input
+          id='organization'
+          name='organization'
+          disabled={loading}
+          type='text'
+          placeholder={dictionary['organization']}
+          {...register('organization', { maxLength: 100 })}
+        />
+        {errors.organization && <p className={styles.alert}>{getErrorMessage('organization')}</p>}
+      </div>
 
-        <div className={styles.inputContainer}>
-          <input
-            id='email'
-            name='email'
-            disabled={loading}
-            type='email'
-            autoComplete='email'
-            placeholder={dictionary['email']}
-            {...register('email', { required: true, pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ })}
-          />
-          {errors.email && <p className={styles.alert}>{getErrorMessage('email')}</p>}
-        </div>
+      <div className={styles.inputContainer}>
+        <input
+          id='email'
+          name='email'
+          disabled={loading}
+          type='email'
+          autoComplete='email'
+          placeholder={dictionary['email']}
+          {...register('email', { required: true, pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ })}
+        />
+        {errors.email && <p className={styles.alert}>{getErrorMessage('email')}</p>}
+      </div>
 
-        <ReCaptcha setRecaptchaToken={setRecaptchaToken} />
+      <ReCaptcha setRecaptchaToken={setRecaptchaToken} />
 
-        <div className={styles.buttonContainer}>
-          <Button
-            text={dictionary['send']}
-            loading={loading}
-            disabled={loading}
-            submitForm
-          />
-        </div>
-      </form>
-    </GoogleReCaptchaProvider>
+      <div className={styles.buttonContainer}>
+        <Button
+          text={dictionary['send']}
+          loading={loading}
+          disabled={loading}
+          submitForm
+        />
+      </div>
+    </form>
   );
 }
 
