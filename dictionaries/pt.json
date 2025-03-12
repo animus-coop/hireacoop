@@ -54,7 +54,8 @@
         "other": "Outro"
       },
       "successMessage": "Mensagem enviada"
-    }
+    },
+    "missingCaptcha": "Erro de Catpcha!"
   },
   "collaborateForm": {
     "title": "Junte-se ao HAC!",
@@ -75,7 +76,8 @@
     "email": {
       "subject": "MATERIAIS HAC 🔥 🙏",
       "content": "Oi!<br><br>neste <a href='https://hireacoop.tech/pt/share' target='_blank'>link</a> você tem os materiais, muito obrigado por divulgar a campanha!<br><br>E não se esqueça que, se quiser, pode compartilhar conosco no Instagram <a href='https://www.instagram.com/hireacoop/' target='_blank'>@hireacoop</a> para onde levou os materiais!<br><br>Com carinho,<br><br>Equipe Intercooperativa HAC"
-    }
+    },
+    "missingCaptcha": "Erro de Catpcha!"
   },
   "partners": {
     "title1": "Contrate uma Cooperativa participante",
