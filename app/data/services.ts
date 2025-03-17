@@ -21,7 +21,7 @@ export const servicesData: Service[] = [
     text: {
       es: 'Desarrollo web y de aplicaciones móviles',
       en: 'Web and mobile application development',
-      pt: 'Desenvolvimento de aplicativos móveis e da Web',
+      pt: 'Desenvolvimento de aplicativos de Web',
     },
     image: softwareDevelopment,
     alt: 'Web and mobile application development image',
@@ -66,7 +66,7 @@ export const servicesData: Service[] = [
     text: {
       es: 'Virtual queue',
       en: 'Virtual queue',
-      pt: 'Virtual queue',
+      pt: 'Fila virtual',
     },
     image: virtualQueue,
     alt: 'Virtual queue image',
@@ -75,7 +75,7 @@ export const servicesData: Service[] = [
     text: {
       es: 'Gestión de proyectos de impacto social',
       en: 'Social impact project management',
-      pt: 'Gerenciamento de projetos de impacto social',
+      pt: 'Gestão de projetos de impacto social',
     },
     image: socialImpact,
     alt: 'Social impact project management image',

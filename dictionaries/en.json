@@ -5,14 +5,14 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Imagining a\ntechnological challenge?"
+    "title": "Are you imagining a\ntechnological challenge?"
   },
   "services": {
     "title": "Services we offer"
   },
   "about": {
     "title": "About Hire a Coop",
-    "item1Text": "Hire a COOP is a campaign designed to promote responsible consumption of services and products from self-managed organizations.<br><br>Hiring a cooperative aligns with the <a href='https://sdgs.un.org/goals' target='_blank'>Sustainable Development Goals</a>, fostering decent work, economic redistribution,gender equality and sustainable development.<br><br>The year 2025 has been declared the <a href='https://www.un.org/en/desa/cooperatives-launch-2025-international-year' target='_blank'>International Year of Cooperatives</a> for the United Nations in recognition of their social role in building a better world.<br><br>We invite universities, civil associations, non-profit organizations and any company that wants to align its resources with its values. <br><br><h4>In each of our actions, we make a difference.</h4>",
+    "item1Text": "Hire a COOP is a campaign designed to promote responsible consumption of services and products from self-managed organizations.<br><br>Hiring a cooperative aligns with the <a href='https://sdgs.un.org/goals' target='_blank'>Sustainable Development Goals</a>, fostering decent work, economic redistribution,gender equality and sustainable development.<br><br>The year 2025 has been declared the <a href='https://www.un.org/en/desa/cooperatives-launch-2025-international-year' target='_blank'>International Year of Cooperatives</a> for the United Nations in recognition of their social role in building a better world.<br><br>We invite universities, civil associations, non-profit organizations and any company that wants to align their resources with their values. <br><br><h4>We can contribute to changing the world with each of out actions.</h4>",
     "item2Text": "At the Argentine Federation of Technology, Innovation, and Knowledge Work Cooperatives (FACTTIC), we are more than 40 technology cooperatives that develop high-quality technology while ensuring fair and inclusive work and data privacy.<br><br>Cooperative means innovation, fairness, and high-quality services.<br><br>We know that incorporating technology is a big decision, which is why we support you from the very beginning to build the most powerful and suitable solution for your needs.<br><br>No project is too small or too big when we work together.<br><br><h4>Count on a co-op for your technological challenges!</h4>"
   },
   "hire": {
@@ -30,7 +30,7 @@
     "item4Text": "Democratic principles at the core"
   },
   "contactForm": {
-    "values": "Equality and diversity are fundamental to our core beliefs and values. We encourage your organization to hire cooperatives for your digital needs. This way, you obtain quality while fostering a fairer and more sustainable future in the workforce.",
+    "values": "Equity and diversity are fundamental to our core beliefs and values. We encourage your organization to hire cooperatives for your digital needs. Thus, you obtain quality while fostering a fairer and more sustainable future in the workforce.",
     "title": "Contact",
     "emailForm": {
       "name": "Full name",
@@ -59,7 +59,7 @@
   },
   "collaborateForm": {
     "title": "Join HAC!",
-    "subtitle": "Fill the form, and we'll send you materials so you can take them wherever you want!\nOh! Don't forget to check out our Instagram <a href='https://www.instagram.com/hireacoop/'>@hireacoop</a> and share with us where HAC is traveling!\nThanks for helping us spread the campaign to more places!\nA fairer world is possible!",
+    "subtitle": "Please fill out the form, and we'll send you materials so you can take them wherever you want!\nOh! Don't forget to check out our Instagram <a href='https://www.instagram.com/hireacoop/'>@hireacoop</a> and share with us where HAC is traveling!\nThanks for helping us spread the campaign to more places!\nA fairer world is possible!",
     "emailForm": {
       "name": "Full name",
       "organization": "Institution/Organization",
@@ -75,7 +75,7 @@
     },
     "email": {
       "subject": "HAC MATERIALS 🔥 🙏",
-      "content": "Hey!<br><br> in this <a href='https://hireacoop.tech/en/share' target='_blank'>link</a> you have the materials, thank you so much for spreading the word about our campaign!<br><br>And remember, if you'd like, you can share with us on Instagram <a href='https://www.instagram.com/hireacoop/' target='_blank'>@hireacoop</a> where you took them!<br><br>Love,<br><br>The HAC Intercooperative Team"
+      "content": "Hey!<br><br>Here are the <a href='https://hireacoop.tech/en/share' target='_blank'>materials</a>.<br><br>Thank you so much for spreading the word about our campaign!<br><br>And, if you'd like, you can share with us on Instagram <a href='https://www.instagram.com/hireacoop/' target='_blank'>@hireacoop</a> where you took them!<br><br>Best wishes!<br><br>The HAC Intercooperative Team"
     },
     "missingCaptcha": "Catpcha error!"
   },

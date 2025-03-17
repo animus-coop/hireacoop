@@ -25,7 +25,7 @@ export const hireData: Hire[] = [
     text: {
       es: 'Somos organizaciones propiedad de sus trabajadores',
       en: 'We are organizations owned by their workers',
-      pt: 'Somos organizações pertencentes aos seus trabalhadore',
+      pt: 'Somos organizações pertencentes a suas pessoas trabalhadoras',
     },
     image: Circle2Img,
     alt: 'Image of a hand holding a key',
