@@ -10,7 +10,9 @@ export default async function Collaborate({
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <DownloadHacFiles/>
+      <DownloadHacFiles filename="hac-en.zip"/>
+      <DownloadHacFiles filename="hac-es.zip"/>
+      <DownloadHacFiles filename="hac-pt.zip"/>
       <h1>{dictionary['share']['text']}</h1>
     </div>
   );
