@@ -7,7 +7,7 @@ export default function WideCard({ index, text, image, alt = '', reverse = false
 
         { !reverse &&
           <div className={styles.textContainer}>
-            <p>{text}</p>
+            <div dangerouslySetInnerHTML={{ __html: text }} />
           </div>
         }
 
@@ -23,7 +23,7 @@ export default function WideCard({ index, text, image, alt = '', reverse = false
 
         { reverse &&
           <div className={styles.textContainer}>
-            <p>{text}</p>
+            <div dangerouslySetInnerHTML={{ __html: text }} />
           </div>
         }
       </div>

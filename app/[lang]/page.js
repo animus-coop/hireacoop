@@ -4,20 +4,21 @@ import { getDictionary } from "../../get-dictionary";
 import Nav from "./components/nav";
 
 import AnimationWrapper from "./components/animation-wrapper";
+import WithRecatchaContent from '@/contexts/with-recaptcha-content';
 
-import WideCard from "./components/wide-card";
-import FloatingCard from "./components/floating-card";
-import SmallItem from "./components/small-item";
-import EmailForm from "./components/email-form";
-import PartnerBadge from "./components/partner-badge";
+import CollaborateForm from "./components/collaborate-form";
+import ContactForm from "./components/contact-form";
 import FinanciersBadge from "./components/financiers";
+import FloatingCard from "./components/floating-card";
+import PartnerBadge from "./components/partner-badge";
+import SmallItem from "./components/small-item";
+import WideCard from "./components/wide-card";
 
 import Footer from "./components/footer";
 
 import HAC_1 from "../../public/HAC_1.jpg";
 import HAC_2 from "../../public/HAC_2.jpg";
 import WOIP_1 from "../../public/WOIP_1.jpg";
-import WOIP_2 from "../../public/WOIP_2.jpg";
 import Icono1 from "../../public/Icono_1.jpg";
 import Icono2 from "../../public/Icono_2.jpg";
 import Icono3 from "../../public/Icono_3.jpg";
@@ -43,10 +44,12 @@ export default async function Home({
   const aboutWOIP = dictionary["aboutWOIP"];
   const cooperativism = dictionary["cooperativism"];
   const contactForm = dictionary["contactForm"];
-  const emailForm = contactForm["emailForm"];
+  const contactEmailForm = contactForm["emailForm"];
   const partners = dictionary["partners"];
   const hire = dictionary["hire"];
   const footer = dictionary["footer"];
+  const collaborateForm = dictionary["collaborateForm"];
+  const collaborateEmailForm = collaborateForm["emailForm"];
 
   return (
     <AnimationWrapper>
@@ -55,7 +58,7 @@ export default async function Home({
         <Nav dictionary={dictionary} lang={lang} />
 
         <div className={styles.hero}>
-          <div className={styles.imageContainer  + ' scroll-down-parallax'}>
+          <div className={styles.imageContainer + ' scroll-down-parallax'}>
             <Image
               src={HeroImg}
               alt="HaC logo"
@@ -69,26 +72,25 @@ export default async function Home({
           </div>
 
           <div className={styles.titleContainer}>
-            <h1 className={lang === 'en' ? styles.en : ''}>
+            <h1>
               {hero["title"]}
             </h1>
           </div>
         </div>
 
-        <div id="about" className={styles.about}>
-          <h2 className={styles.sectionTitle}>{about["title"]}</h2>
+        <div id="services" className={styles.services}>
+          <h2 className={styles.sectionTitle}>{services["title"]}</h2>
 
-          <div className={styles.itemsContainer}>
-            <WideCard
-              text={about["item1Text"]}
-              image={HAC_1}
-              reverse
-            />
-
-            <WideCard
-              text={about["item2Text"]}
-              image={HAC_2}
-            />
+          <div className={styles.cardsContainer}>
+            {servicesData.map((service, index) => (
+              <FloatingCard
+                key={index}
+                text={service["text"]}
+                image={service["image"]}
+                alt=""
+                lang={lang}
+              />
+            ))}
           </div>
         </div>
 
@@ -109,38 +111,63 @@ export default async function Home({
           </div>
         </div>
 
-        <div id="services" className={styles.services}>
-          <h2 className={styles.sectionTitle}>{services["title"]}</h2>
+        <WithRecatchaContent lang={lang}>
+          <div id="contact" className={styles.contactForm}>
+            <h2 className={styles.sectionTitle}>{contactForm["title"]}</h2>
+            <p className={styles.sectionSubtitle}>{contactForm["values"]}</p>
 
-          <div className={styles.cardsContainer}>
-            {servicesData.map((service, index) => (
-              <FloatingCard
-                key={index}
-                text={service["text"]}
-                image={service["image"]}
-                alt=""
+            <div className={styles.formContainer}>
+              <ContactForm
+                dictionary={contactEmailForm}
                 lang={lang}
               />
-            ))}
+            </div>
           </div>
-        </div>
 
-        <div className={styles.about}>
-          <h2 className={styles.sectionTitle}>{aboutWOIP["title"]}<Link className={styles.link} href="https://digilabour.com.br/worker-owned-intersectional-platforms-woip/" target="_blank">WOIP</Link></h2>
+          <div id="about" className={styles.about}>
+            <h2 className={styles.sectionTitle}>{about["title"]}</h2>
 
-          <div className={styles.itemsContainer}>
-            <WideCard
-              text={aboutWOIP["item1Text"]}
-              image={WOIP_1}
-              reverse
-            />
-            
-            <WideCard
-              text={aboutWOIP["item2Text"]}
-              image={WOIP_2}
-            />
+            <div className={styles.itemsContainer}>
+              <WideCard
+                text={about["item1Text"]}
+                image={HAC_1}
+                reverse
+              />
+
+              <WideCard
+                text={about["item2Text"]}
+                image={HAC_2}
+              />
+            </div>
           </div>
-        </div>
+
+          <div className={styles.about}>
+            <h2 className={styles.sectionTitle}>{aboutWOIP["title"]}<Link className={styles.link} href="https://digilabour.com.br/worker-owned-intersectional-platforms-woip/" target="_blank">WOIP</Link></h2>
+
+            <div className={styles.itemsContainer}>
+              <WideCard
+                text={aboutWOIP["item1Text"]}
+                image={WOIP_1}
+                reverse
+              />
+            </div>
+          </div>
+
+          <div id="collaborate" className={styles.collaborateForm}>
+            <h2 className={styles.sectionTitle}>{collaborateForm["title"]}</h2>
+            <div
+              className={styles.sectionSubtitle}
+              dangerouslySetInnerHTML={{ __html: collaborateForm["subtitle"] }}
+            />
+
+            <div className={styles.formContainer}>
+              <CollaborateForm
+                dictionary={collaborateEmailForm}
+                lang={lang}
+              />
+            </div>
+          </div>
+        </WithRecatchaContent>
 
         <div className={styles.cooperativism}>
           <h2 className={styles.sectionTitle}>{cooperativism["title"]}</h2>
@@ -153,19 +180,6 @@ export default async function Home({
           </div>
         </div>
 
-        <div id="contact" className={styles.contactForm}>
-          <h3 className={styles.ourValues}>{contactForm["values"]}</h3>
-
-          <h2 className={styles.sectionTitle}>{contactForm["title"]}</h2>
-
-          <div className={styles.formContainer}>
-            <EmailForm
-              dictionary={emailForm}
-              lang={lang}
-            />
-          </div>
-        </div>
-
         <div className={styles.partners}>
           <h2 className={styles.sectionTitle}>{partners["title1"]}</h2>
 
@@ -175,7 +189,6 @@ export default async function Home({
                 key={index}
                 image={partner.logo}
                 alt={partner.alt || ""}
-                name={partner.name}
               />
             ))}
           </div>

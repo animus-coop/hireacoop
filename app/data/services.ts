@@ -1,14 +1,14 @@
-import antena from '../../public/antena.png'
-import archivos from '../../public/archivos.png'
-import camara_video from '../../public/camara video.png'
-import candado from '../../public/candado.png'
-import computadora from '../../public/computadora.png'
-import engranajes from '../../public/engranajes.png'
-import graficos from '../../public/graficos.png'
-import pizarron from '../../public/pizarron.png'
-import polaroid from '../../public/polaroid.png'
-import { WithTranslation } from './common';
 import { StaticImageData } from 'next/image';
+import { WithTranslation } from './common';
+
+import branding from '../../public/branding.png'
+import communityManager from '../../public/community-manager.png'
+import socialImpact from '../../public/social-impact.png'
+import softwareDevelopment from '../../public/software-development.png'
+import staffAugmentation from '../../public/staff-augmentation.png'
+import virtualQueue from '../../public/virtual-queue.png'
+import designUxui from '../../public/design-uxui.png'
+
 
 type Service = {
   text: WithTranslation;
@@ -17,85 +17,67 @@ type Service = {
 }
 
 export const servicesData: Service[] = [
-  { 
+  {
     text: {
-      es: 'Desarrollo web y aplicaciones móviles',
-      en: 'Web development and mobile applications',
-      pt: 'Desenvolvimento web e aplicativos móveis',
+      es: 'Desarrollo web y de aplicaciones móviles',
+      en: 'Web and mobile application development',
+      pt: 'Desenvolvimento de aplicativos de Web',
     },
-    image: computadora,
-    alt: 'Placeholder alt',
+    image: softwareDevelopment,
+    alt: 'Web and mobile application development image',
   },
-  { 
+  {
     text: {
-      es: 'Análisis y visualización de datos',
-      en: 'Data analysis and visualization',
-      pt: 'Análise e visualização de dados',
+      es: 'Diseño de marca',
+      en: 'Branding',
+      pt: 'Design de marca',
     },
-    image: graficos,
-    alt: 'Placeholder alt',
+    image: branding,
+    alt: 'Branding image',
   },
-  { 
+  {
     text: {
-      es: 'Diseño de informes, identidades visuales',
-      en: 'Report design, visual identities',
-      pt: 'Design de relatórios, identidades visuais',
+      es: 'Diseño UX/UI',
+      en: 'UX/UI design',
+      pt: 'Design UX/UI',
     },
-    image: archivos,
-    alt: 'Placeholder alt',
+    image: designUxui,
+    alt: 'UX/UI design image',
   },
-  { 
+  {
     text: {
-      es: 'Producción audiovisual e ilustración digital',
-      en: 'Audiovisual production and digital illustration',
-      pt: 'Produção audiovisual e ilustração digital',
+      es: 'Community Manager',
+      en: 'Community Manager',
+      pt: 'Community Manager',
     },
-    image: camara_video,
-    alt: 'Placeholder alt',
+    image: communityManager,
+    alt: 'Community Manager image',
   },
-  { 
+  {
     text: {
-      es: 'Gestión de redes sociales',
-      en: 'Social media management',
-      pt: 'Gestão de redes sociais',
+      es: 'Staff Augmentation',
+      en: 'Staff Augmentation',
+      pt: 'Staff Augmentation',
     },
-    image: polaroid,
-    alt: 'Placeholder alt',
+    image: staffAugmentation,
+    alt: 'Staff Augmentation image',
   },
-  { 
+  {
     text: {
-      es: 'Infraestructura segura para el almacenamiento de datos',
-      en: 'Secure infrastructure for data storage',
-      pt: 'Infraestrutura segura para armazenamento de dados',
+      es: 'Virtual queue',
+      en: 'Virtual queue',
+      pt: 'Fila virtual',
     },
-    image: candado,
-    alt: 'Placeholder alt',
+    image: virtualQueue,
+    alt: 'Virtual queue image',
   },
-  { 
+  {
     text: {
-      es: 'Infraestructura de redes',
-      en: 'Network infrastructure',
-      pt: 'Infraestrutura de redes',
+      es: 'Gestión de proyectos de impacto social',
+      en: 'Social impact project management',
+      pt: 'Gestão de projetos de impacto social',
     },
-    image: antena,
-    alt: 'Placeholder alt',
-  },
-  { 
-    text: {
-      es: 'Automatización de procesos administrativos',
-      en: 'Administrative process automation',
-      pt: 'Automação de processos administrativos',
-    },
-    image: engranajes,
-    alt: 'Placeholder alt',
-  },
-  { 
-    text: {
-      es: 'Capacitaciones y asesoramiento para la implementación de proyectos tecnológicos',
-      en: 'Training and consulting for technology project implementation',
-      pt: 'Treinamentos e consultoria para a implementação de projetos tecnológicos',
-    },
-    image: pizarron,
-    alt: 'Placeholder alt',
+    image: socialImpact,
+    alt: 'Social impact project management image',
   },
 ];

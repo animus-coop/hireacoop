@@ -7,21 +7,20 @@
   "hero": {
     "title": "¿Desconfiás de las\nBig Tech?"
   },
+  "services": {
+    "title": "Servicios que ofrecemos"
+  },
   "about": {
     "title": "Sobre Hire a Coop",
-    "item1Text": "En un contexto donde las universidades tienen como propósito abordar los objetivos de desarrollo sostenible (ODS) y luchar por el trabajo decente, contratar cooperativas es una forma de hacer que la economía circule fuera de los grandes oligopolios.",
-    "item2Text": "La Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento (FACTTIC), y las organizaciones que integramos el proyecto Worker-Owned Intersectional Platforms (WOIP) trabajamos desde una perspectiva interseccional, apoyando el trabajo justo y el almacenamiento seguro de datos. Teniendo en cuenta, además, los criterios de calidad e innovación establecidos por el mercado."
+    "item1Text": "\"Hire a COOP\" (Contrata una cooperativa) es una campaña diseñada para fomentar el consumo responsable de servicios y productos provenientes de la autogestión.<br><br>Contratar una cooperativa porque, en sintonía con los <a href='https://www.un.org/sustainabledevelopment/es/sustainable-development-goals/' target='_blank'>ODM</a>, fomenta el trabajo decente, la redistribución económica y el desarrollo sostenible.<br><br>2025 fue declarado el <a href='https://aciamericas.coop/noticias/la-onu-propone-un-segundo-ano-internacional-de-las-cooperativas-en-2025/' target='_blank'>año internacional de las cooperativas por Naciones Unidas</a> en reconocimiento de la función social de estas entidades en la construcción de un mundo mejor.<br><br>Invitamos a las Universidades, asociaciones civiles, organizaciones sin fines de lucro y toda empresa que quieran orientar sus recursos a donde apuntan sus ideales.<br><br><h4>En cada una de nuestras acciones, hacemos la diferencia.</h4>",
+    "item2Text": "En la Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento (FACTTIC) sómos más de 40 cooperativas tecnológicas que desarrollamos tecnología de calidad garantizando el trabajo justo e inclusivo y la privacidad de datos.<br><br>Cooperativo significa innovador, justo y de calidad.<br><br>Sabemos que incorporar tecnologías es una gran decisión por eso te acompañamos desde el primer momento para construir la solución más potente y adecuada a tus posibilidades.<br><br>No hay proyecto demasiado pequeño ni demasiado grande si trabajamos en conjunto.<br><br><h4>¡Contá con una coope para tus desafíos tecnológicos!</h4>"
   },
   "hire": {
     "title2": "¡Las cooperativas son la mejor alternativa para acercar nuestros recursos a nuestras ideas!"
   },
-  "services": {
-    "title": "Algunos servicios que ofrecen las cooperativas"
-  },
   "aboutWOIP": {
     "title": "Sobre ",
-    "item1Text": "La investigación explora los contornos de las plataformas digitales de propiedad de personas trabajadoras a partir de la perspectiva interseccional para vislumbrar un futuro laboral más sostenible para los trabajadores.\n\nAdoptando un enfoque de investigación acción, el proyecto involucra a trabajadores de reparto y tecnología en Brasil y Argentina.",
-    "item2Text": "Lo que distingue a este proyecto de investigación es el uso de la interseccionalidad, que articula perspectivas queer, feministas, raciales, de clase y decoloniales como múltiples formas de opresión laboral.\n\nFinanciado por Social Sciences and Humanities Research Council (SSHRC), por medio de un Insight Development Grant (IDG)."
+    "item1Text": "La investigación explora los contornos de las plataformas digitales de propiedad de personas trabajadoras a partir de la perspectiva interseccional para vislumbrar un futuro laboral más sostenible para los trabajadores.\n\nAdoptando un enfoque de investigación acción, el proyecto involucra a trabajadores de reparto y tecnología en Brasil y Argentina.\n\nLo que distingue a este proyecto de investigación es el uso de la interseccionalidad, que articula perspectivas queer, feministas, raciales, de clase y decoloniales como múltiples formas de opresión laboral.\n\nFinanciado por Social Sciences and Humanities Research Council (SSHRC), por medio de un Insight Development Grant (IDG)."
   },
   "cooperativism": {
     "title": "Las plataformas de propiedad de las personas trabajadoras implica:",
@@ -35,8 +34,6 @@
     "title": "Contacto",
     "emailForm": {
       "name": "Nombre completo",
-      "organization": "Organización",
-      "country": "País",
       "email": "Correo electrónico",
       "message": "Mensaje",
       "send": "Enviar",
@@ -45,8 +42,42 @@
         "emailInvalid": "Por favor, ingrese un correo electrónico válido",
         "recaptchaError": "Ocurrió un error al verificar que no seas un robot. Por favor, refrescá la página e intentá de nuevo."
       },
+      "subject": {
+        "selectSubject": "Elija el asunto",
+        "softwareDevelopment": "Desarrollo web y de aplicaciones móviles",
+        "branding": "Diseño de marca",
+        "designUxui": "Diseño UX/UI",
+        "communityManager": "Community Manager",
+        "staffAugmentation": "Staff Augmentation",
+        "virtualQueue": "Virtual queue",
+        "socialImpact": "Gestión de proyectos de impacto social",
+        "other": "Otro"
+      },
       "successMessage": "Mensaje enviado"
-    }
+    },
+    "missingCaptcha": "Error de Catpcha!"
+  },
+  "collaborateForm": {
+    "title": "¡Sumate a HAC!",
+    "subtitle": "Completá los datos y te enviamos materiales para que lleves donde quieras!\nAh! No te olvides de pasar por nuestro Instagram <a href='https://www.instagram.com/hireacoop/'>@hireacoop</a> y compartirnos por donde va viajando HAC.\nGracias por ayudarnos a que la campaña llegue a más lugares!\nUn mundo más justo es posible",
+    "emailForm": {
+      "name": "Nombre completo",
+      "organization": "Institución/Organización",
+      "email": "Correo electrónico",
+      "send": "Enviar",
+      "errors": {
+        "requiredField": "Campo requerido",
+        "emailInvalid": "Por favor, ingrese un correo electrónico válido",
+        "organizationMaxLength": "Máximo contenido 100 caracteres",
+        "recaptchaError": "Ocurrió un error al verificar que no seas un robot. Por favor, refrescá la página e intentá de nuevo."
+      },
+      "successMessage": "Mensaje enviado"
+    },
+    "email": {
+      "subject": "MATERIALES HAC 🔥 🙏",
+      "content": "Hola!<br><br> en este <a href='https://hireacoop.tech/es/share' target='_blank'>link</a> tenés disponibles los materiales, muchas gracias por difundir la campaña!!!<br><br>No te olvides que, si querés, podés compartirnos en nuestro Instagram <a href='https://www.instagram.com/hireacoop/' target='_blank'>@hireacoop</a> a donde los llevaste!<br><br>Con amor,<br><br>Equipo Intercooperativo HAC"
+    },
+    "missingCaptcha": "Error de Catpcha!"
   },
   "partners": {
     "title1": "Organizaciones participantes de  Hire a Coop",
@@ -54,5 +85,8 @@
   },
   "footer": {
     "poweredBy": "Diseñado y desarrollado por"
+  },
+  "share": {
+    "text": "Gracias por sumarte a HAC!"
   }
 }

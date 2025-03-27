@@ -5,23 +5,22 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Don't you trust Big Tech?"
+    "title": "Are you imagining a\ntechnological challenge?"
+  },
+  "services": {
+    "title": "Services we offer"
   },
   "about": {
     "title": "About Hire a Coop",
-    "item1Text": "In a context where universities aim to address sustainable development goals (SDGs) and advocate for decent work, hiring cooperatives is a way to circulate the economy outside of large oligopolies.",
-    "item2Text": "The Argentine Federation of Cooperatives for Technology, Innovation, and Knowledge (FACTTIC), and the organizations involved in the Worker-Owned Intersectional Platforms (WOIP) project, works from an intersectional perspective, supporting fair labor and secure data storage. This is done while considering the quality and innovation criteria established by the market."
+    "item1Text": "Hire a COOP is a campaign designed to promote responsible consumption of services and products from self-managed organizations.<br><br>Hiring a cooperative aligns with the <a href='https://sdgs.un.org/goals' target='_blank'>Sustainable Development Goals</a>, fostering decent work, economic redistribution,gender equality and sustainable development.<br><br>The year 2025 has been declared the <a href='https://www.un.org/en/desa/cooperatives-launch-2025-international-year' target='_blank'>International Year of Cooperatives</a> for the United Nations in recognition of their social role in building a better world.<br><br>We invite universities, civil associations, non-profit organizations and any company that wants to align their resources with their values. <br><br><h4>We can contribute to changing the world with each of out actions.</h4>",
+    "item2Text": "At the Argentine Federation of Technology, Innovation, and Knowledge Work Cooperatives (FACTTIC), we are more than 40 technology cooperatives that develop high-quality technology while ensuring fair and inclusive work and data privacy.<br><br>Cooperative means innovation, fairness, and high-quality services.<br><br>We know that incorporating technology is a big decision, which is why we support you from the very beginning to build the most powerful and suitable solution for your needs.<br><br>No project is too small or too big when we work together.<br><br><h4>Count on a co-op for your technological challenges!</h4>"
   },
   "hire": {
     "title2": "Cooperatives are the best alternative to bring our resources to our ideas!"
   },
-  "services": {
-    "title": "Some services offered by cooperatives"
-  },
   "aboutWOIP": {
     "title": "About ",
-    "item1Text": "The research explores the contours of worker-owned digital platforms from an intersectional perspective to envision a more sustainable labor future for workers.\n\nAdopting a research-action approach, the project involves delivery and technology workers in Brazil and Argentina.",
-    "item2Text": "What distinguishes this research project is the use of intersectionality, which integrates queer, feminist, racial, class, and decolonial perspectives as multiple forms of labor oppression.\n\nFunded by the Social Sciences and Humanities Research Council (SSHRC) through an Insight Development Grant (IDG)."
+    "item1Text": "The research explores the contours of worker-owned digital platforms from an intersectional perspective to envision a more sustainable labor future for workers.\n\nAdopting a research-action approach, the project involves delivery and technology workers in Brazil and Argentina.\n\nWhat distinguishes this research project is the use of intersectionality, which integrates queer, feminist, racial, class, and decolonial perspectives as multiple forms of labor oppression.\n\nFunded by the Social Sciences and Humanities Research Council (SSHRC) through an Insight Development Grant (IDG)."
   },
   "cooperativism": {
     "title": "Worker-owned platforms involve:",
@@ -31,12 +30,10 @@
     "item4Text": "Democratic principles at the core"
   },
   "contactForm": {
-    "values": "Equality and diversity are fundamental to our core beliefs and values. We encourage your organization to hire cooperatives for your digital needs. This way, you obtain quality while fostering a fairer and more sustainable future in the workforce.",
+    "values": "Equity and diversity are fundamental to our core beliefs and values. We encourage your organization to hire cooperatives for your digital needs. Thus, you obtain quality while fostering a fairer and more sustainable future in the workforce.",
     "title": "Contact",
     "emailForm": {
       "name": "Full name",
-      "organization": "Organization",
-      "country": "Country",
       "email": "Email",
       "message": "Message",
       "send": "Send",
@@ -45,8 +42,42 @@
         "emailInvalid": "Please enter a valid email address",
         "recaptchaError": "Please verify that you are not a robot"
       },
+      "subject": {
+        "selectSubject": "Select subject",
+        "softwareDevelopment": "Web and mobile application development",
+        "branding": "Branding",
+        "designUxui": "UX/UI design",
+        "communityManager": "Community Manager",
+        "staffAugmentation": "Staff Augmentation",
+        "virtualQueue": "Virtual queue",
+        "socialImpact": "Social impact project management",
+        "other": "Other"
+      },
       "successMessage": "Message sent"
-    }
+    },
+    "missingCaptcha": "Catpcha error!"
+  },
+  "collaborateForm": {
+    "title": "Join HAC!",
+    "subtitle": "Please fill out the form, and we'll send you materials so you can take them wherever you want!\nOh! Don't forget to check out our Instagram <a href='https://www.instagram.com/hireacoop/'>@hireacoop</a> and share with us where HAC is traveling!\nThanks for helping us spread the campaign to more places!\nA fairer world is possible!",
+    "emailForm": {
+      "name": "Full name",
+      "organization": "Institution/Organization",
+      "email": "Email address",
+      "send": "Send",
+      "errors": {
+        "requiredField": "Required field",
+        "emailInvalid": "Please enter a valid email address",
+        "organizationMaxLength": "Max content 100 characters",
+        "recaptchaError": "An error occurred while verifying that you are not a robot. Please refresh the page and try again."
+      },
+      "successMessage": "Message sent"
+    },
+    "email": {
+      "subject": "HAC MATERIALS 🔥 🙏",
+      "content": "Hey!<br><br>Here are the <a href='https://hireacoop.tech/en/share' target='_blank'>materials</a>.<br><br>Thank you so much for spreading the word about our campaign!<br><br>And, if you'd like, you can share with us on Instagram <a href='https://www.instagram.com/hireacoop/' target='_blank'>@hireacoop</a> where you took them!<br><br>Best wishes!<br><br>The HAC Intercooperative Team"
+    },
+    "missingCaptcha": "Catpcha error!"
   },
   "partners": {
     "title1": "Hire a Coop Participating Organizations",
@@ -54,5 +85,8 @@
   },
   "footer": {
     "poweredBy": "Powered by"
+  },
+  "share": {
+    "text": "Thanks for joining HAC!"
   }
 }

@@ -10,7 +10,7 @@
   @extend %section;
   justify-content: space-between;
   align-items: center;
-  
+
   .hero {
     @extend %section;
     background-color: black;
@@ -25,7 +25,7 @@
 
       .image {
         object-fit: cover;
-        object-position: 50% 9%;
+        object-position: 50% 70%;
       }
     }
 
@@ -46,17 +46,12 @@
       justify-content: center;
       align-items: center;
       max-width: 95vw;
-   
+
       h1 {
         position: relative;
         width: 100%;
         text-align: center;
         font-size: 6vw;
-
-        &.en {
-          font-size: 6.5vw;
-          margin-top: 8vh;
-        }
       }
     }
   }
@@ -68,11 +63,6 @@
 
     .link {
       color: white;
-      text-decoration: none;
-    }
-
-    .link:hover {
-      text-decoration: underline;
     }
 
     .itemsContainer {
@@ -104,6 +94,7 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      padding-inline: 10%;
     }
   }
 
@@ -112,7 +103,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    
+
     .cardsContainer {
       width: 75vw;
       display: flex;
@@ -147,13 +138,20 @@
     margin-top: 100px;
     margin-bottom: 40px;
 
-    .ourValues {
+    .formContainer {
       position: relative;
-      width: 70vw;
-      text-align: center;
-      font-size: 24px;
-      font-weight: 600;
+      margin-top: 60px;
+      width: 65vw;
     }
+  }
+
+  .collaborateForm {
+    @extend %section;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
 
     .formContainer {
       position: relative;
@@ -181,11 +179,31 @@
 
 // COMMON
 .sectionTitle {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   text-align: center;
   color: white;
   margin-top: 50px;
+}
+
+.sectionSubtitle {
+  position: relative;
+  width: 70vw;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+@media(min-width: 768px) and (max-width: 1660px) {
+  .main {
+    .hero {
+      .titleContainer {
+        h1 {
+          margin-top: 5vh;
+        }
+      }
+    }
+  }
 }
 
 // Mobile
@@ -193,7 +211,7 @@
   .main {
     .hero {
       .imageContainer {
-        transform: translateY(5%);
+        transform: translateY(-10%);
         .image {
           object-position: 45% top;
         }
@@ -211,12 +229,7 @@
           font-size: 14.5vw;
           line-height: 16vw;
           padding: 0 10px;
-          margin-top: -5vh;
-
-          &.en {
-            font-size: 15vw;
-            margin-top: 0;
-          }
+          margin-top: 5vh;
         }
       }
     }
@@ -243,13 +256,14 @@
       .titlesContainer {
         width: 95vw;
       }
-  
+
       .hireCardsContainer {
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 90vw;
+        flex-direction: column;
         gap: 50px;
+        justify-content: center;
+        padding-inline: 0%;
+        width: 90vw;
       }
     }
 
@@ -268,7 +282,7 @@
     .cooperativism {
       margin-top: 20px;
       margin-bottom: 20px;
-  
+
       .itemsContainer {
         width: 100%;
         padding: 0 20px;
@@ -278,10 +292,6 @@
     }
 
     .contactForm {
-      .ourValues {
-        width: 100%;
-        padding: 0 20px;
-      }
 
       .formContainer {
         width: 100%;
@@ -304,6 +314,11 @@
 
   // COMMON
   .sectionTitle {
+    padding: 0 20px;
+  }
+
+  .sectionSubtitle {
+    width: 100%;
     padding: 0 20px;
   }
 }
